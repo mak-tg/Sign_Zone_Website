@@ -8,7 +8,7 @@ export default function ProcessSteps() {
           <div>
             <div className="eyebrow">How it works</div>
             <h2 className="disp sec-h">
-              From &ldquo;we need a sign&rdquo; to lights on, in six steps.
+              Six steps to lights on.
             </h2>
           </div>
           <p className="lead">

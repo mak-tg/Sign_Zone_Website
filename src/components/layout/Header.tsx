@@ -2,41 +2,61 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useRef, useEffect } from 'react'
-import { LOCATION_PAGES } from '@/data/siteData'
+import { LOCATION_PAGES, INDUSTRIES } from '@/data/siteData'
+
+const RESOURCE_LINKS = [
+  { href: '/toolkit', label: 'Sign Toolkit', desc: 'Calculators, permit checklist and planner' },
+  { href: '/process', label: 'How it works', desc: 'Our six steps, from idea to lights on' },
+  { href: '/guides', label: 'Guides', desc: "Sign buyer's guides and straight answers" },
+]
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [locOpen, setLocOpen] = useState(false)
+  const [openMenu, setOpenMenu] = useState<'loc' | 'res' | 'ind' | null>(null)
   const [isClosing, setIsClosing] = useState(false)
+  const [mobileRes, setMobileRes] = useState(false)
   const locRef = useRef<HTMLDivElement>(null)
+  const resRef = useRef<HTMLDivElement>(null)
+  const indRef = useRef<HTMLDivElement>(null)
+  const locOpen = openMenu === 'loc'
+  const resOpen = openMenu === 'res'
+  const indOpen = openMenu === 'ind'
+  const [mobileInd, setMobileInd] = useState(false)
 
-  const closeLocMenu = () => {
-    if (!locOpen || isClosing) return
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const closeMenu = () => {
+    if (!openMenu || isClosing) return
     setIsClosing(true)
-    setTimeout(() => {
-      setLocOpen(false)
+    closeTimer.current = setTimeout(() => {
+      setOpenMenu(null)
       setIsClosing(false)
     }, 160)
   }
+  const closeLocMenu = closeMenu
 
-  const toggleLocMenu = () => {
-    if (locOpen) {
-      closeLocMenu()
+  const toggleMenu = (menu: 'loc' | 'res' | 'ind') => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current)
+      closeTimer.current = null
+    }
+    if (openMenu === menu && !isClosing) {
+      closeMenu()
     } else {
-      setLocOpen(true)
+      setOpenMenu(menu)
       setIsClosing(false)
     }
   }
 
   useEffect(() => {
-    if (!locOpen) return
+    if (!openMenu) return
     const handleClickOutside = (e: MouseEvent) => {
-      if (locRef.current && !locRef.current.contains(e.target as Node)) {
-        closeLocMenu()
-      }
+      const t = e.target as Node
+      const inside = [locRef, indRef, resRef].some((r) => r.current?.contains(t))
+      if (!inside) closeMenu()
     }
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeLocMenu()
+      if (e.key === 'Escape') closeMenu()
     }
     document.addEventListener('mousedown', handleClickOutside)
     document.addEventListener('keydown', handleKeyDown)
@@ -44,7 +64,7 @@ export default function Header() {
       document.removeEventListener('mousedown', handleClickOutside)
       document.removeEventListener('keydown', handleKeyDown)
     }
-  }, [locOpen, isClosing])
+  }, [openMenu, isClosing])
 
   return (
     <>
@@ -75,14 +95,65 @@ export default function Header() {
 
           <nav className="main" aria-label="Main">
             <Link href="/signs" className="navlink">Signs</Link>
-            <Link href="/industries" className="navlink">Industries</Link>
+
+            {/* Industries mega menu */}
+            <div className="nav-locations" ref={indRef}>
+              <button
+                type="button"
+                className={`navlink nav-locations-btn${indOpen ? ' active' : ''}`}
+                onClick={() => toggleMenu('ind')}
+                aria-expanded={indOpen}
+                aria-haspopup="true"
+              >
+                Industries <span className="loc-chevron" aria-hidden="true">▾</span>
+              </button>
+
+              {indOpen && (
+                <div
+                  className={`nav-locations-panel ${isClosing ? 'closing' : 'open'}`}
+                  role="region"
+                  aria-label="Industries menu"
+                >
+                  <div className="location-menu-intro">
+                    <span className="location-menu-kicker"><i></i> INDUSTRIES</span>
+                    <strong>Signs for<br /><em>your kind of business.</em></strong>
+                    <p>We know the landlord criteria and city codes for each.</p>
+                    <Link href="/industries" className="location-menu-all" onClick={closeMenu}>
+                      View all industries <span>→</span>
+                    </Link>
+                  </div>
+                  <div className="location-menu-places">
+                    <div className="location-menu-label">
+                      CHOOSE YOUR INDUSTRY <span>{String(INDUSTRIES.length).padStart(2, '0')} INDUSTRIES</span>
+                    </div>
+                    <div className="nav-locations-grid">
+                      {INDUSTRIES.map((ind) => (
+                        <Link key={ind.slug} href={`/industries#${ind.slug}`} onClick={closeMenu}>
+                          <span className="menu-pin">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+                              <rect x="4" y="4" width="16" height="16" rx="3" />
+                              <path d="M8 12h8M12 8v8" />
+                            </svg>
+                          </span>
+                          <span className="menu-city">
+                            {ind.name}
+                            <span className="menu-desc">{ind.desc}</span>
+                          </span>
+                          <span className="menu-arrow" aria-hidden="true">↗</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* Locations dropdown */}
             <div className="nav-locations" ref={locRef}>
               <button
                 type="button"
                 className={`navlink nav-locations-btn${locOpen ? ' active' : ''}`}
-                onClick={toggleLocMenu}
+                onClick={() => toggleMenu('loc')}
                 aria-expanded={locOpen}
                 aria-haspopup="true"
               >
@@ -116,7 +187,10 @@ export default function Header() {
                               <circle cx="12" cy="10" r="2.3" />
                             </svg>
                           </span>
-                          <span className="menu-city">{loc.name}</span>
+                          <span className="menu-city">
+                            {loc.name}
+                            <span className="menu-desc">{loc.desc}</span>
+                          </span>
                           <span className="menu-arrow" aria-hidden="true">↗</span>
                         </Link>
                       ))}
@@ -127,10 +201,38 @@ export default function Header() {
             </div>
 
             <Link href="/projects" className="navlink">Projects</Link>
-            <Link href="/toolkit" className="navlink">Sign Toolkit</Link>
-            <Link href="/process" className="navlink">How it works</Link>
+
+            {/* Resources dropdown */}
+            <div className="nav-resources" ref={resRef}>
+              <button
+                type="button"
+                className={`navlink nav-locations-btn${resOpen ? ' active' : ''}`}
+                onClick={() => toggleMenu('res')}
+                aria-expanded={resOpen}
+                aria-haspopup="true"
+              >
+                Resources <span className="loc-chevron" aria-hidden="true">▾</span>
+              </button>
+              {resOpen && (
+                <div
+                  className={`nav-resources-panel ${isClosing ? 'closing' : 'open'}`}
+                  role="region"
+                  aria-label="Resources menu"
+                >
+                  {RESOURCE_LINKS.map((r) => (
+                    <Link key={r.href} href={r.href} onClick={closeMenu}>
+                      <strong>{r.label}</strong>
+                      <span>{r.desc}</span>
+                    </Link>
+                  ))}
+                  <Link href="/resources" onClick={closeMenu} className="res-all">
+                    <strong>View all resources →</strong>
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <Link href="/financing" className="navlink">Financing</Link>
-            <Link href="/guides" className="navlink">Guides</Link>
           </nav>
 
           <div className="hdr-cta">
@@ -155,7 +257,26 @@ export default function Header() {
       {/* Mobile nav */}
       <nav className={`mnav${mobileOpen ? ' open' : ''}`} aria-label="Mobile">
         <Link href="/signs" onClick={() => setMobileOpen(false)}>Signs</Link>
-        <Link href="/industries" onClick={() => setMobileOpen(false)}>Industries</Link>
+        <button
+          type="button"
+          className="mnav-toggle"
+          onClick={() => setMobileInd((v) => !v)}
+          aria-expanded={mobileInd}
+        >
+          Industries <span className="loc-chevron" aria-hidden="true" style={{ transform: mobileInd ? 'rotate(180deg)' : undefined }}>▾</span>
+        </button>
+        {mobileInd && (
+          <>
+            {INDUSTRIES.map((ind) => (
+              <Link key={ind.slug} href={`/industries#${ind.slug}`} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
+                {ind.name}
+              </Link>
+            ))}
+            <Link href="/industries" onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
+              View all industries →
+            </Link>
+          </>
+        )}
         <Link href="/#locations" onClick={() => setMobileOpen(false)}>Locations</Link>
         {LOCATION_PAGES.map((loc) => (
           <Link key={loc.slug} href={`/locations/${loc.slug}`} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
@@ -163,10 +284,20 @@ export default function Header() {
           </Link>
         ))}
         <Link href="/projects" onClick={() => setMobileOpen(false)}>Projects</Link>
-        <Link href="/toolkit" onClick={() => setMobileOpen(false)}>Sign Toolkit</Link>
-        <Link href="/process" onClick={() => setMobileOpen(false)}>How it works</Link>
+        <button
+          type="button"
+          className="mnav-toggle"
+          onClick={() => setMobileRes((v) => !v)}
+          aria-expanded={mobileRes}
+        >
+          Resources <span className="loc-chevron" aria-hidden="true" style={{ transform: mobileRes ? 'rotate(180deg)' : undefined }}>▾</span>
+        </button>
+        {mobileRes && RESOURCE_LINKS.map((r) => (
+          <Link key={r.href} href={r.href} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
+            {r.label}
+          </Link>
+        ))}
         <Link href="/financing" onClick={() => setMobileOpen(false)}>Financing</Link>
-        <Link href="/guides" onClick={() => setMobileOpen(false)}>Guides</Link>
         <Link href="/quote" onClick={() => setMobileOpen(false)}>Get a Free Quote</Link>
       </nav>
     </>

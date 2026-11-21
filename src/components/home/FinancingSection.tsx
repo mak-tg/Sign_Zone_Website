@@ -17,7 +17,7 @@ export default function FinancingSection() {
         <div style={{ flex: '1 1 420px', minWidth: 0 }}>
           <div className="eyebrow" style={{ color: '#DCE7FF' }}>Sign financing</div>
           <h2 className="disp sec-h" style={{ color: '#fff' }}>
-            Open with the sign you want. Pay over time.
+            Get the sign. Pay over time.
           </h2>
           <p style={{ fontSize: 18, lineHeight: 1.6, color: '#E6EEFF', margin: '20px 0 0', maxWidth: 520 }}>
             Spread the cost of your sign over 12–60 months through [financing partner]. Quick application, decision in [X] hours, no effect on your credit score.

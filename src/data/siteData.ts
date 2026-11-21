@@ -108,14 +108,14 @@ export const PROCESS_STEPS = [
 
 // ── Industries ────────────────────────────────────────────────────────────────
 export const INDUSTRIES = [
-  { name: 'Restaurants & QSR',          desc: 'Channel letters, drive-thru menu boards, patio and window graphics' },
-  { name: 'Retail & storefronts',        desc: 'Storefront letters, blade signs, window vinyl, promo banners' },
-  { name: 'Medical & dental',            desc: 'Monument signs, suite signs, ADA and lobby walls' },
-  { name: 'Shopping centers & property', desc: 'Pylons, multi-tenant monuments, tenant panel programs' },
-  { name: 'Churches & schools',          desc: 'Monuments with LED message centers, campus wayfinding' },
-  { name: 'Auto & dealerships',          desc: 'Pylons, service-bay signs, lot banners and fleet wraps' },
-  { name: 'Offices & corporate',         desc: 'Lobby logos, building-top letters, directories, glass graphics' },
-  { name: 'Franchises & chains',         desc: 'Brand-standard rollouts, surveys and permits across cities' },
+  { slug: 'restaurants', name: 'Restaurants & QSR',          desc: 'Channel letters, drive-thru menu boards, patio and window graphics' },
+  { slug: 'retail', name: 'Retail & storefronts',        desc: 'Storefront letters, blade signs, window vinyl, promo banners' },
+  { slug: 'medical-dental', name: 'Medical & dental',            desc: 'Monument signs, suite signs, ADA and lobby walls' },
+  { slug: 'shopping-centers', name: 'Shopping centers & property', desc: 'Pylons, multi-tenant monuments, tenant panel programs' },
+  { slug: 'churches-schools', name: 'Churches & schools',          desc: 'Monuments with LED message centers, campus wayfinding' },
+  { slug: 'auto-dealerships', name: 'Auto & dealerships',          desc: 'Pylons, service-bay signs, lot banners and fleet wraps' },
+  { slug: 'offices', name: 'Offices & corporate',         desc: 'Lobby logos, building-top letters, directories, glass graphics' },
+  { slug: 'franchises', name: 'Franchises & chains',         desc: 'Brand-standard rollouts, surveys and permits across cities' },
 ];
 
 // ── Comparison table ──────────────────────────────────────────────────────────
@@ -153,15 +153,15 @@ export const GUIDES = [
 export const CITIES_ALL = ['Dallas','Fort Worth','Arlington','Plano','Frisco','Irving','Garland','McKinney','Carrollton','Richardson','Allen','Denton','Grand Prairie','Lewisville','Mesquite','Southlake'];
 
 export const LOCATION_PAGES = [
-  { slug: 'dallas',       name: 'Dallas' },
-  { slug: 'carrollton',   name: 'Carrollton' },
-  { slug: 'richardson',   name: 'Richardson' },
-  { slug: 'plano',        name: 'Plano' },
-  { slug: 'frisco',       name: 'Frisco' },
-  { slug: 'mckinney',     name: 'McKinney' },
-  { slug: 'arlington',    name: 'Arlington' },
-  { slug: 'fort-worth',   name: 'Fort Worth' },
-  { slug: 'allen',        name: 'Allen' },
+  { slug: 'dallas',       name: 'Dallas', desc: 'Downtown, Uptown, Deep Ellum and beyond' },
+  { slug: 'carrollton',   name: 'Carrollton', desc: 'Trinity Mills, Josey Lane and the I-35E corridor' },
+  { slug: 'richardson',   name: 'Richardson', desc: 'Telecom Corridor, Central Expressway and retail strips' },
+  { slug: 'plano',        name: 'Plano', desc: 'Legacy, Preston Road and Dallas North Tollway' },
+  { slug: 'frisco',       name: 'Frisco', desc: 'The Star, Main Street and growing retail centers' },
+  { slug: 'mckinney',     name: 'McKinney', desc: 'Historic downtown and the US-75 corridor' },
+  { slug: 'arlington',    name: 'Arlington', desc: 'Entertainment District, I-30 and Cooper Street' },
+  { slug: 'fort-worth',   name: 'Fort Worth', desc: 'Sundance Square, West 7th and the Stockyards' },
+  { slug: 'allen',        name: 'Allen', desc: 'Watters Road, Central Expressway and Allen Premium Outlets' },
 ];
 
 // ── Channel letters data ───────────────────────────────────────────────────────

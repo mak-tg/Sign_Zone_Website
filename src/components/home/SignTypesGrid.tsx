@@ -30,7 +30,7 @@ export default function SignTypesGrid() {
       <div className="wrap">
         <div className="eyebrow">Every kind of sign</div>
         <h2 className="disp sec-h">
-          Outside, inside, on the road. Built in Texas, installed by our crew.
+          Every sign, built in Texas.
         </h2>
 
         <div

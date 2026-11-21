@@ -5,7 +5,7 @@ export default function GuidesSection() {
     <section className="light sec" id="resources">
       <div className="wrap">
         <div className="eyebrow">Sign buyer&apos;s guides</div>
-        <h2 className="disp sec-h">Straight answers before you spend a dollar.</h2>
+        <h2 className="disp sec-h">Straight answers.</h2>
         <div className="grid-auto" id="guides" style={{ marginTop: 40 }}>
           {GUIDES.map((g) => (
             <article key={g.title} className="card" style={{ gap: 10, minHeight: 170 }}>

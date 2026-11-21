@@ -7,12 +7,13 @@ export default function IndustriesSection() {
       <div className="wrap">
         <div className="eyebrow">Industries</div>
         <h2 className="disp sec-h">
-          We speak your landlord&apos;s sign criteria and your city&apos;s code.
+          Built for your industry.
         </h2>
         <div className="grid-auto" id="indGrid" style={{ marginTop: 40, gap: 14 }}>
           {INDUSTRIES.map((ind) => (
             <Link
-              key={ind.name}
+              key={ind.slug}
+              id={ind.slug}
               href="/quote"
               className="card"
               style={{

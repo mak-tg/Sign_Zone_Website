@@ -24,7 +24,7 @@ export default function LocationsSection() {
     <section className="paper sec" id="locations">
       <div className="wrap">
         <div className="eyebrow">Where we work</div>
-        <h2 className="disp sec-h">Local knowledge. Metro-wide reach.</h2>
+        <h2 className="disp sec-h">Serving all of DFW.</h2>
         <p className="loc-intro">
           From storefronts and offices to shopping centers and campuses, we help businesses across Dallas–Fort Worth find the right sign for their location.
         </p>

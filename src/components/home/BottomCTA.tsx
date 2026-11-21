@@ -8,7 +8,6 @@ export default function BottomCTA() {
       <div className="wrap" style={{ position: 'relative', display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'flex-start' }}>
         <div style={{ flex: '1.3 1 480px', minWidth: 0 }}>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(36px,6vw,64px)', lineHeight: 0.95, margin: 0 }}>
-            Tell us about your sign.{' '}
             <span style={{ color: 'var(--elec)' }}>Get a quote in 24 hours.</span>
           </h2>
           <p style={{ fontSize: 19, lineHeight: 1.55, color: 'var(--dsub)', margin: '24px 0 0', maxWidth: 560 }}>

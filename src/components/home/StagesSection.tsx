@@ -13,7 +13,7 @@ export default function StagesSection() {
         <div className="head-row">
           <div>
             <div className="eyebrow">Start where you are</div>
-            <h2 className="disp sec-h">Whatever size your business is, we&apos;ve got the sign plan.</h2>
+            <h2 className="disp sec-h">A sign plan for every stage.</h2>
           </div>
           <p className="lead">
             Pick the one that sounds like you. We&apos;ll show you what most businesses at your stage install, what it costs and how long it takes.
