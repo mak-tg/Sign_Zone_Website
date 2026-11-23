@@ -141,9 +141,9 @@ export const HOME_FAQ = [
 
 // ── Guides ────────────────────────────────────────────────────────────────────
 export const GUIDES = [
-  { tag: 'Cost guide',  title: 'How much does a business sign cost in DFW?',                           meta: '8 min read · updated yearly' },
+  { tag: 'Cost guide',  title: 'How much does a business sign cost in DFW?',                           meta: '8 min read' },
   { tag: 'Compare',     title: 'Channel letters vs. cabinet signs: which one fits your storefront?',   meta: '6 min read' },
-  { tag: 'Permits',     title: 'Sign permits in Dallas, Fort Worth, Plano & Frisco, explained',        meta: '10 min read · by city' },
+  { tag: 'Permits',     title: 'Sign permits in Dallas, Fort Worth, Plano & Frisco, explained',        meta: '10 min read' },
   { tag: 'Checklist',   title: 'What to send us for a fast, accurate quote',                           meta: 'Printable checklist' },
   { tag: 'Leasing',     title: "Your landlord's sign criteria: what it means and what to ask",         meta: '5 min read' },
   { tag: 'Design',      title: 'Colors, fonts and lighting that read from the road',                   meta: '7 min read' },
@@ -153,22 +153,22 @@ export const GUIDES = [
 export const CITIES_ALL = ['Dallas','Fort Worth','Arlington','Plano','Frisco','Irving','Garland','McKinney','Carrollton','Richardson','Allen','Denton','Grand Prairie','Lewisville','Mesquite','Southlake'];
 
 export const LOCATION_PAGES = [
-  { slug: 'dallas', name: 'Dallas', desc: 'Downtown, Uptown, Deep Ellum and beyond' },
-  { slug: 'fort-worth', name: 'Fort Worth', desc: 'Sundance Square, West 7th and the Stockyards' },
-  { slug: 'plano', name: 'Plano', desc: 'Legacy, Preston Road and Dallas North Tollway' },
-  { slug: 'frisco', name: 'Frisco', desc: 'The Star, Main Street and growing retail centers' },
-  { slug: 'arlington', name: 'Arlington', desc: 'Entertainment District, I-30 and Cooper Street' },
-  { slug: 'carrollton', name: 'Carrollton', desc: 'Trinity Mills, Josey Lane and the I-35E corridor' },
-  { slug: 'richardson', name: 'Richardson', desc: 'Telecom Corridor, Central Expressway and retail strips' },
-  { slug: 'mckinney', name: 'McKinney', desc: 'Historic downtown and the US-75 corridor' },
-  { slug: 'allen', name: 'Allen', desc: 'Watters Road, Central Expressway and Allen Premium Outlets' },
-  { slug: 'southlake', name: 'Southlake', desc: 'Southlake Town Square and the SH-114 corridor' },
-  { slug: 'irving', name: 'Irving', desc: 'Las Colinas, the SH-183 corridor and DFW Airport area' },
-  { slug: 'grand-prairie', name: 'Grand Prairie', desc: 'Epic Central, I-20 and Lone Star Park' },
-  { slug: 'mansfield', name: 'Mansfield', desc: 'Historic downtown and the US-287 corridor' },
-  { slug: 'addison', name: 'Addison', desc: 'Addison Circle, Belt Line Road and the Tollway' },
-  { slug: 'coppell', name: 'Coppell', desc: 'Old Town, Sandy Lake Road and MacArthur Boulevard' },
-  { slug: 'ennis', name: 'Ennis', desc: 'Historic downtown and the I-45 corridor' },
+  { slug: 'dallas', name: 'Dallas', desc: 'Downtown & Uptown' },
+  { slug: 'fort-worth', name: 'Fort Worth', desc: 'Stockyards & 7th' },
+  { slug: 'plano', name: 'Plano', desc: 'Legacy & Preston' },
+  { slug: 'frisco', name: 'Frisco', desc: 'The Star & PGA Pkwy' },
+  { slug: 'arlington', name: 'Arlington', desc: 'Entertainment Dist.' },
+  { slug: 'carrollton', name: 'Carrollton', desc: 'I-35E & Josey' },
+  { slug: 'richardson', name: 'Richardson', desc: 'Telecom Corridor' },
+  { slug: 'mckinney', name: 'McKinney', desc: 'Historic Downtown' },
+  { slug: 'allen', name: 'Allen', desc: 'Watters Creek' },
+  { slug: 'southlake', name: 'Southlake', desc: 'Town Square' },
+  { slug: 'irving', name: 'Irving', desc: 'Las Colinas' },
+  { slug: 'grand-prairie', name: 'Grand Prairie', desc: 'EpicCentral' },
+  { slug: 'mansfield', name: 'Mansfield', desc: 'Downtown & US-287' },
+  { slug: 'addison', name: 'Addison', desc: 'Belt Line & Tollway' },
+  { slug: 'coppell', name: 'Coppell', desc: 'Old Town & MacArthur' },
+  { slug: 'ennis', name: 'Ennis', desc: 'Historic District' },
 ];
 
 // ── Channel letters data ───────────────────────────────────────────────────────

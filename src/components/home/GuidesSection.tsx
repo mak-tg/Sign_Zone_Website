@@ -41,10 +41,17 @@ export default function GuidesSection() {
                   marginTop: 'auto',
                   display: 'flex',
                   justifyContent: 'space-between',
-                  alignItems: 'center',
+                  alignItems: 'flex-end',
                 }}
               >
-                <span>{g.readTime}</span>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <span>{g.readTime}</span>
+                  {g.updatedText && (
+                    <span style={{ fontSize: 11, color: 'var(--muted)', fontWeight: 600 }}>
+                      {g.updatedText}
+                    </span>
+                  )}
+                </div>
                 <span style={{ color: 'var(--blue)', fontWeight: 700 }}>Read guide →</span>
               </div>
             </Link>

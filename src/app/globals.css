@@ -273,7 +273,7 @@ td { color: var(--muted); }
 .city-link-item:hover span:last-child {
   color: #fff !important;
 }
-.panel { background: #fff; border: 1px solid var(--soft); border-radius: 20px; padding: 36px; color: var(--text); }
+.panel { background: #fff; border: 1px solid var(--soft); border-radius: 20px; padding: 36px; color: var(--text); box-shadow: 0 6px 24px rgba(6, 38, 102, 0.05); }
 .panel select.inp option { background: #fff; color: var(--text); }
 .flex-main { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
 .flex-main > .main { flex: 999 1 560px; min-width: 0; }
@@ -846,6 +846,21 @@ footer strong { color: #fff; }
   text-overflow: ellipsis;
   font-weight: 700;
   color: inherit;
+}
+.nav-locations-grid .menu-desc {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: #7b93b8;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+.nav-locations-grid a:hover .menu-desc,
+.nav-locations-grid a:focus-visible .menu-desc {
+  color: #a8c2e8;
 }
 .nav-locations-grid .menu-arrow {
   color: #8db6ff;

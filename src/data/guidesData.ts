@@ -15,6 +15,7 @@ export interface GuideArticle {
   metaDesc: string
   tag: string
   readTime: string
+  updatedText?: string
   publishedDate: string
   summary: string
   keyTakeaways: string[]
@@ -30,7 +31,8 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     metaDesc:
       'Realistic 2026 pricing for commercial signs in Dallas–Fort Worth: front-lit & halo-lit channel letters, monument signs, storefront cabinets, permits, and crane installation.',
     tag: 'Cost Guide',
-    readTime: '8 min read · Updated for 2026',
+    readTime: '8 min read',
+    updatedText: 'Updated for 2026',
     publishedDate: 'January 2026',
     summary:
       'A complete, transparent cost breakdown for commercial business signage in the Dallas–Fort Worth Metroplex. Learn what channel letters, monument signs, and storefront cabinets actually cost including engineering, municipal permits, and electrical installation.',
@@ -150,7 +152,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     metaDesc:
       'Everything you need to know about municipal sign permits in North Texas: setback rules, maximum square footage formulas, stamped engineering, and city approval timelines.',
     tag: 'Permits & Codes',
-    readTime: '10 min read · By City',
+    readTime: '10 min read',
     publishedDate: 'February 2026',
     summary:
       'Navigating commercial sign permitting across North Texas municipalities. Learn city-by-city regulations, required wind-load engineering, landlord approval steps, and how to avoid costly city code violations.',

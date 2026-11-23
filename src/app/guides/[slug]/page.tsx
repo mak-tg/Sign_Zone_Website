@@ -114,10 +114,13 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
             >
               {article.title}
             </h1>
-            <div style={{ fontSize: 14, color: 'var(--dsub)', display: 'flex', gap: 20, flexWrap: 'wrap' }}>
-              <span>⏱️ {article.readTime}</span>
-              <span>📅 {article.publishedDate}</span>
-              <span>📍 Sign Zone DFW</span>
+            <div style={{ fontSize: 14, color: 'var(--dsub)', display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <span>{article.readTime}</span>
+              {article.updatedText && (
+                <span style={{ fontSize: 12, color: 'var(--dsub)', opacity: 0.85 }}>
+                  {article.updatedText}
+                </span>
+              )}
             </div>
           </div>
         </section>
