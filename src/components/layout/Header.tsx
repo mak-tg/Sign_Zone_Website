@@ -176,7 +176,7 @@ export default function Header() {
                   </div>
                   <div className="location-menu-places">
                     <div className="location-menu-label">
-                      CHOOSE YOUR CITY <span>09 LOCATIONS</span>
+                      CHOOSE YOUR CITY <span>{LOCATION_PAGES.length} LOCATIONS</span>
                     </div>
                     <div className="nav-locations-grid">
                       {LOCATION_PAGES.map((loc) => (
