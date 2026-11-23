@@ -55,9 +55,9 @@ export default async function LocationPage({ params }: { params: Promise<Params>
                 src={data.heroImg}
                 alt={data.heroAlt || `${loc.name} signs`}
                 width={600}
-                height={480}
+                height={450}
                 priority
-                style={{ width: '100%', height: 'auto', aspectRatio: '5/4', objectFit: 'cover' }}
+                style={{ width: '100%', height: 'auto', aspectRatio: '4/3', objectFit: 'cover' }}
               />
             </div>
           ) : (
@@ -81,13 +81,15 @@ export default async function LocationPage({ params }: { params: Promise<Params>
             <div className="city-project-grid">
               {data.projects.map((project, idx) => (
                 <article key={idx} className="city-project">
-                  <Image
-                    src={project.img}
-                    alt={project.alt}
-                    width={600}
-                    height={375}
-                    style={{ width: '100%', height: 'auto', aspectRatio: '16/10', objectFit: 'cover' }}
-                  />
+                  <Link href={project.link} style={{ display: 'block' }}>
+                    <Image
+                      src={project.img}
+                      alt={project.alt}
+                      width={600}
+                      height={450}
+                      style={{ width: '100%', height: 'auto', aspectRatio: '4/3', objectFit: 'cover' }}
+                    />
+                  </Link>
                   <div className="city-project-body">
                     <div className="eyebrow">{project.eyebrow}</div>
                     <h3>{project.title}</h3>

@@ -153,15 +153,22 @@ export const GUIDES = [
 export const CITIES_ALL = ['Dallas','Fort Worth','Arlington','Plano','Frisco','Irving','Garland','McKinney','Carrollton','Richardson','Allen','Denton','Grand Prairie','Lewisville','Mesquite','Southlake'];
 
 export const LOCATION_PAGES = [
-  { slug: 'dallas',       name: 'Dallas' },
-  { slug: 'carrollton',   name: 'Carrollton' },
-  { slug: 'richardson',   name: 'Richardson' },
-  { slug: 'plano',        name: 'Plano' },
-  { slug: 'frisco',       name: 'Frisco' },
-  { slug: 'mckinney',     name: 'McKinney' },
-  { slug: 'arlington',    name: 'Arlington' },
-  { slug: 'fort-worth',   name: 'Fort Worth' },
-  { slug: 'allen',        name: 'Allen' },
+  { slug: 'dallas',        name: 'Dallas' },
+  { slug: 'fort-worth',    name: 'Fort Worth' },
+  { slug: 'plano',         name: 'Plano' },
+  { slug: 'frisco',        name: 'Frisco' },
+  { slug: 'arlington',     name: 'Arlington' },
+  { slug: 'carrollton',    name: 'Carrollton' },
+  { slug: 'richardson',    name: 'Richardson' },
+  { slug: 'mckinney',      name: 'McKinney' },
+  { slug: 'allen',         name: 'Allen' },
+  { slug: 'southlake',     name: 'Southlake' },
+  { slug: 'irving',        name: 'Irving' },
+  { slug: 'grand-prairie', name: 'Grand Prairie' },
+  { slug: 'mansfield',     name: 'Mansfield' },
+  { slug: 'addison',       name: 'Addison' },
+  { slug: 'coppell',       name: 'Coppell' },
+  { slug: 'ennis',         name: 'Ennis' },
 ];
 
 // ── Channel letters data ───────────────────────────────────────────────────────

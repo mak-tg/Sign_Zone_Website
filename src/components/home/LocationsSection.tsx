@@ -8,15 +8,22 @@ interface LocationItem {
 }
 
 const LOCATIONS_LIST: LocationItem[] = [
-  { slug: 'dallas',       name: 'Dallas',       county: 'Dallas County',          districts: 'Downtown · Uptown · Deep Ellum · North Dallas' },
-  { slug: 'fort-worth',   name: 'Fort Worth',   county: 'Tarrant County',         districts: 'Sundance Square · 7th St · Stockyards' },
-  { slug: 'arlington',    name: 'Arlington',    county: 'Tarrant County',         districts: 'Entertainment District · Highlands · UTA' },
-  { slug: 'plano',        name: 'Plano',        county: 'Collin County',          districts: 'Legacy West · Downtown Plano · Hwy 121' },
-  { slug: 'frisco',       name: 'Frisco',       county: 'Collin & Denton County', districts: 'The Star · PGA Parkway · Preston Road' },
-  { slug: 'mckinney',     name: 'McKinney',     county: 'Collin County',          districts: 'Historic Downtown · Craig Ranch · US-380' },
-  { slug: 'carrollton',   name: 'Carrollton',   county: 'Dallas & Denton County', districts: 'Belt Line Corridor · Koreatown · Valwood' },
-  { slug: 'richardson',   name: 'Richardson',   county: 'Dallas & Collin County', districts: 'Telecom Corridor · CityLine · Arapaho' },
-  { slug: 'allen',        name: 'Allen',        county: 'Collin County',          districts: 'Watters Creek · US-75 · Premium Outlets' },
+  { slug: 'dallas',        name: 'Dallas',        county: 'Dallas County',          districts: 'Downtown · Uptown · Deep Ellum · North Dallas' },
+  { slug: 'fort-worth',    name: 'Fort Worth',    county: 'Tarrant County',         districts: 'Sundance Square · 7th St · Stockyards' },
+  { slug: 'plano',         name: 'Plano',         county: 'Collin County',          districts: 'Legacy West · Downtown Plano · Hwy 121' },
+  { slug: 'frisco',        name: 'Frisco',        county: 'Collin & Denton County', districts: 'The Star · PGA Parkway · Preston Road' },
+  { slug: 'arlington',     name: 'Arlington',     county: 'Tarrant County',         districts: 'Entertainment District · Highlands · UTA' },
+  { slug: 'carrollton',    name: 'Carrollton',    county: 'Dallas & Denton County', districts: 'Belt Line Corridor · Koreatown · Valwood' },
+  { slug: 'richardson',    name: 'Richardson',    county: 'Dallas & Collin County', districts: 'Telecom Corridor · CityLine · Arapaho' },
+  { slug: 'mckinney',      name: 'McKinney',      county: 'Collin County',          districts: 'Historic Downtown · Craig Ranch · US-380' },
+  { slug: 'allen',         name: 'Allen',         county: 'Collin County',          districts: 'Watters Creek · US-75 · Premium Outlets' },
+  { slug: 'southlake',     name: 'Southlake',     county: 'Tarrant & Denton County',districts: 'Town Square · Southlake Blvd · Carroll' },
+  { slug: 'irving',        name: 'Irving',        county: 'Dallas County',          districts: 'Las Colinas · Urban Center · MacArthur' },
+  { slug: 'grand-prairie', name: 'Grand Prairie', county: 'Dallas & Tarrant County',districts: 'EpicCentral · I-20 Corridor · Main St' },
+  { slug: 'mansfield',     name: 'Mansfield',     county: 'Tarrant & Johnson County',districts: 'Historic Downtown · Broad St · US-287' },
+  { slug: 'addison',       name: 'Addison',       county: 'Dallas County',          districts: 'Addison Circle · Belt Line Corridor · Vitruvian' },
+  { slug: 'coppell',       name: 'Coppell',       county: 'Dallas & Denton County', districts: 'Old Town · Sandy Lake · Denton Tap' },
+  { slug: 'ennis',         name: 'Ennis',         county: 'Ellis County',           districts: 'Historic Downtown · I-45 Corridor · Ennis Ave' },
 ]
 
 export default function LocationsSection() {
