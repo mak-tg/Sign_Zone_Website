@@ -14,7 +14,7 @@ export default function IndustriesSection() {
             <Link
               key={ind.slug}
               id={ind.slug}
-              href="/quote"
+              href={`/industries#${ind.slug}`}
               className="card"
               style={{
                 background: 'var(--paper)',
@@ -22,6 +22,7 @@ export default function IndustriesSection() {
                 gap: 8,
                 minHeight: 120,
                 padding: 22,
+                textDecoration: 'none',
               }}
             >
               <span style={{ fontSize: 19, fontWeight: 800, color: 'var(--navy)' }}>

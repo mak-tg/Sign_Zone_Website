@@ -2,16 +2,28 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import LightingDemo from '@/components/channel-letters/LightingDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
+import FaqJsonLd from '@/components/seo/FaqJsonLd'
 import { CL_PARTS, CL_MOUNTS, CL_SIZES, CL_FAQ } from '@/data/siteData'
 
 export const metadata: Metadata = {
-  title: 'Channel letter signs for DFW storefronts | Sign Zone',
-  description: 'Individually built 3D letters, lit with LEDs, mounted to your building. The sign most landlords ask for, and the one customers read from the road.',
+  title: 'Custom LED Channel Letter Signs for DFW Storefronts | Sign Zone',
+  description:
+    'Individually built 3D channel letters, lit with ultra-bright LEDs, mounted to your building. Front-lit, halo-lit, and reverse channel letters built to municipal codes.',
+  alternates: {
+    canonical: '/channel-letters',
+  },
+  openGraph: {
+    title: 'Custom LED Channel Letter Signs for DFW Storefronts | Sign Zone',
+    description:
+      'Individually built 3D channel letters, lit with ultra-bright LEDs, mounted to your building. Designed, permitted, and installed across Dallas–Fort Worth.',
+    url: 'https://www.signzoneusa.com/channel-letters',
+  },
 }
 
 export default function ChannelLettersPage() {
   return (
     <div className="view" id="v-channel-letters">
+      <FaqJsonLd items={CL_FAQ} />
       {/* Hero Section */}
       <section className="dark">
         <div className="wrap" style={{ paddingTop: 28, paddingBottom: 88 }}>

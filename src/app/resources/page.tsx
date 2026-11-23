@@ -1,8 +1,19 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Resources | Sign Zone',
-  description: 'Tools, guides and our process to help you plan your sign.',
+export const metadata: Metadata = {
+  title: 'Commercial Sign Planning Resources & Guides | Sign Zone DFW',
+  description:
+    'Free tools, cost calculators, permit checklists, and sign buyer guides to help you plan your commercial sign in Dallas–Fort Worth.',
+  alternates: {
+    canonical: '/resources',
+  },
+  openGraph: {
+    title: 'Commercial Sign Planning Resources | Sign Zone DFW',
+    description:
+      'Tools, guides, and our 6-step turnkey process to help you plan your sign before spending a dollar.',
+    url: 'https://www.signzoneusa.com/resources',
+  },
 }
 
 const ITEMS = [

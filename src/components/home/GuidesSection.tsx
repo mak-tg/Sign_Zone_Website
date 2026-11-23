@@ -1,22 +1,53 @@
-import { GUIDES } from '@/data/siteData'
+import Link from 'next/link'
+import { GUIDES_ARTICLES } from '@/data/guidesData'
 
 export default function GuidesSection() {
+  const guidesList = Object.values(GUIDES_ARTICLES)
+
   return (
     <section className="light sec" id="resources">
       <div className="wrap">
         <div className="eyebrow">Sign buyer&apos;s guides</div>
-        <h2 className="disp sec-h">Straight answers.</h2>
-        <div className="grid-auto" id="guides" style={{ marginTop: 40 }}>
-          {GUIDES.map((g) => (
-            <article key={g.title} className="card" style={{ gap: 10, minHeight: 170 }}>
-              <span className="tag">{g.tag}</span>
-              <span style={{ fontSize: 20, fontWeight: 800, lineHeight: 1.25, color: 'var(--navy)' }}>
+        <h2 className="disp sec-h">Straight answers before you buy.</h2>
+        <p style={{ color: 'var(--muted)', fontSize: 17, maxWidth: 640, marginTop: 14, lineHeight: 1.55 }}>
+          No sales spin. Straight, engineered answers to commercial sign costs, municipal permits, landlord criteria, and visibility formulas in Dallas–Fort Worth.
+        </p>
+
+        <div className="grid-auto" id="guides" style={{ marginTop: 36, gap: 18 }}>
+          {guidesList.map((g) => (
+            <Link
+              key={g.slug}
+              href={`/guides/${g.slug}`}
+              className="card"
+              style={{
+                gap: 12,
+                minHeight: 190,
+                textDecoration: 'none',
+                display: 'flex',
+                flexDirection: 'column',
+                transition: 'transform .18s ease, box-shadow .18s ease',
+              }}
+            >
+              <span className="tag" style={{ alignSelf: 'flex-start' }}>
+                {g.tag}
+              </span>
+              <span style={{ fontSize: 18, fontWeight: 800, lineHeight: 1.3, color: 'var(--navy)' }}>
                 {g.title}
               </span>
-              <span style={{ fontSize: 14, color: 'var(--muted2)', marginTop: 'auto' }}>
-                {g.meta}
-              </span>
-            </article>
+              <div
+                style={{
+                  fontSize: 13,
+                  color: 'var(--muted2)',
+                  marginTop: 'auto',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}
+              >
+                <span>{g.readTime}</span>
+                <span style={{ color: 'var(--blue)', fontWeight: 700 }}>Read guide →</span>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

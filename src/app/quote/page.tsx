@@ -2,8 +2,18 @@ import type { Metadata } from 'next'
 import QuoteWizard from '@/components/quote/QuoteWizard'
 
 export const metadata: Metadata = {
-  title: 'Get a Free Quote',
-  description: 'Get a free quote for channel letters, monument signs, vehicle wraps and more. Sign Zone serves the entire Dallas–Fort Worth metroplex.',
+  title: 'Get a Free Commercial Sign Quote | Sign Zone DFW',
+  description:
+    'Get a fast, free written quote for channel letters, monument signs, storefront lightboxes, and vehicle wraps across the entire Dallas–Fort Worth metroplex.',
+  alternates: {
+    canonical: '/quote',
+  },
+  openGraph: {
+    title: 'Get a Free Commercial Sign Quote | Sign Zone DFW',
+    description:
+      'Request your free written estimate with local permitting and installation included.',
+    url: 'https://www.signzoneusa.com/quote',
+  },
 }
 
 export default function QuotePage() {

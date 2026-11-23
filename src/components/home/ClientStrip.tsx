@@ -33,7 +33,7 @@ export default function ClientStrip() {
                   <img
                     className={brand.className}
                     src={brand.src}
-                    alt={brand.name}
+                    alt={`${brand.name} commercial signage client`}
                     loading="lazy"
                   />
                 </div>

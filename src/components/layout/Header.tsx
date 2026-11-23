@@ -22,6 +22,7 @@ export default function Header() {
   const resOpen = openMenu === 'res'
   const indOpen = openMenu === 'ind'
   const [mobileInd, setMobileInd] = useState(false)
+  const [mobileLoc, setMobileLoc] = useState(false)
 
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -85,7 +86,7 @@ export default function Header() {
           <Link href="/" aria-label="Sign Zone home" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
             <Image
               src="/images/logo.png"
-              alt="Sign Zone"
+              alt="Sign Zone - Custom Business Signs Dallas-Fort Worth"
               width={167}
               height={52}
               priority
@@ -136,7 +137,7 @@ export default function Header() {
                             </svg>
                           </span>
                           <span className="menu-city">
-                            {ind.name}
+                            <span className="menu-title">{ind.name}</span>
                             <span className="menu-desc">{ind.desc}</span>
                           </span>
                           <span className="menu-arrow" aria-hidden="true">↗</span>
@@ -188,7 +189,7 @@ export default function Header() {
                             </svg>
                           </span>
                           <span className="menu-city">
-                            {loc.name}
+                            <span className="menu-title">{loc.name}</span>
                             <span className="menu-desc">{loc.desc}</span>
                           </span>
                           <span className="menu-arrow" aria-hidden="true">↗</span>
@@ -277,12 +278,26 @@ export default function Header() {
             </Link>
           </>
         )}
-        <Link href="/#locations" onClick={() => setMobileOpen(false)}>Locations</Link>
-        {LOCATION_PAGES.map((loc) => (
-          <Link key={loc.slug} href={`/locations/${loc.slug}`} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
-            {loc.name}
-          </Link>
-        ))}
+        <button
+          type="button"
+          className="mnav-toggle"
+          onClick={() => setMobileLoc((v) => !v)}
+          aria-expanded={mobileLoc}
+        >
+          Locations <span className="loc-chevron" aria-hidden="true" style={{ transform: mobileLoc ? 'rotate(180deg)' : undefined }}>▾</span>
+        </button>
+        {mobileLoc && (
+          <>
+            {LOCATION_PAGES.map((loc) => (
+              <Link key={loc.slug} href={`/locations/${loc.slug}`} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
+                {loc.name}
+              </Link>
+            ))}
+            <Link href="/#locations" onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
+              Explore service areas →
+            </Link>
+          </>
+        )}
         <Link href="/projects" onClick={() => setMobileOpen(false)}>Projects</Link>
         <button
           type="button"

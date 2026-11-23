@@ -2,6 +2,7 @@
 import { useState, useRef } from 'react'
 import { QUOTE_TYPES, TYPE_RANGE } from '@/data/siteData'
 import ChipGroup from '@/components/ui/ChipGroup'
+import { trackQuoteSubmission } from '@/lib/analytics'
 
 const STEPS = [
   'What kind of sign do you need?',
@@ -92,6 +93,7 @@ export default function QuoteWizard({ preselect }: { preselect?: string }) {
 
   function submit() {
     if (!validate()) return
+    trackQuoteSubmission(q.types, q.biz)
     setDone(true)
     topRef.current?.scrollIntoView({ behavior: 'smooth' })
   }

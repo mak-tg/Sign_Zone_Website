@@ -300,8 +300,10 @@ export default function ProjectsSection() {
               <div className="case-image">
                 <img
                   src={project.image}
-                  alt={`${project.name} signage`}
+                  alt={`${project.name} - custom ${project.signType.toLowerCase()} designed, permitted and installed by Sign Zone DFW`}
                   loading="lazy"
+                  width={600}
+                  height={450}
                 />
               </div>
               <div className="case-body">

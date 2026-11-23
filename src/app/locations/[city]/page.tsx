@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { LOCATION_PAGES } from '@/data/siteData'
 import { CITY_PAGES_DATA } from '@/data/locationData'
+import { CITY_GEO_DATA } from '@/data/geoData'
 
 export const instant = false
 
@@ -15,11 +16,55 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { city } = await params
+  const loc = LOCATION_PAGES.find((l) => l.slug === city)
   const data = CITY_PAGES_DATA[city]
-  if (!data) return {}
+  const geo = CITY_GEO_DATA[city]
+  if (!loc || !data || !geo) return {}
+
+  const cityName = `${loc.name}, Texas`
   return {
     title: data.title,
     description: data.metaDesc,
+    keywords: [
+      `commercial signs ${geo.name}`,
+      `channel letters ${geo.name} TX`,
+      `monument signs ${geo.name}`,
+      `storefront signs ${geo.name}`,
+      `custom business signs ${geo.name} Texas`,
+      `sign company ${geo.county}`,
+      ...geo.corridors,
+    ],
+    alternates: {
+      canonical: `/locations/${city}`,
+    },
+    openGraph: {
+      title: data.title,
+      description: data.metaDesc,
+      url: `https://www.signzoneusa.com/locations/${city}`,
+      siteName: 'Sign Zone DFW',
+      locale: 'en_US',
+      type: 'article',
+      images: [
+        {
+          url: data.heroImg || '/images/logo.png',
+          width: 1600,
+          height: 1200,
+          alt: data.heroAlt || `${cityName} Commercial Business Signage`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: data.title,
+      description: data.metaDesc,
+      images: [data.heroImg || '/images/logo.png'],
+    },
+    other: {
+      'geo.region': 'US-TX',
+      'geo.placename': `${geo.name}, Texas`,
+      'geo.position': `${geo.lat};${geo.lng}`,
+      ICBM: `${geo.lat}, ${geo.lng}`,
+    },
   }
 }
 
@@ -27,10 +72,92 @@ export default async function LocationPage({ params }: { params: Promise<Params>
   const { city } = await params
   const loc = LOCATION_PAGES.find((l) => l.slug === city)
   const data = CITY_PAGES_DATA[city]
-  if (!loc || !data) notFound()
+  const geo = CITY_GEO_DATA[city]
+  if (!loc || !data || !geo) notFound()
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://www.signzoneusa.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Locations',
+        item: 'https://www.signzoneusa.com/#locations',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `${loc.name}, TX`,
+        item: `https://www.signzoneusa.com/locations/${loc.slug}`,
+      },
+    ],
+  }
+
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': ['LocalBusiness', 'SignShop'],
+    '@id': `https://www.signzoneusa.com/locations/${loc.slug}#localbusiness`,
+    name: `Sign Zone - ${loc.name} Commercial Signs`,
+    alternateName: `Sign Zone ${loc.name}`,
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Sign Zone',
+      url: 'https://www.signzoneusa.com',
+    },
+    url: `https://www.signzoneusa.com/locations/${loc.slug}`,
+    telephone: '+1-214-714-4623',
+    email: 'Alex@signzoneusa.com',
+    priceRange: '$$$',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: loc.name,
+      addressRegion: 'TX',
+      postalCode: geo.primaryZip,
+      addressCountry: 'US',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: geo.lat,
+      longitude: geo.lng,
+    },
+    areaServed: {
+      '@type': 'City',
+      name: `${loc.name}, Texas`,
+      containedInPlace: {
+        '@type': 'AdministrativeArea',
+        name: `${geo.county}, Texas`,
+      },
+    },
+    hasMap: `https://www.google.com/maps/search/?api=1&query=${geo.lat},${geo.lng}`,
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '18:00',
+      },
+    ],
+    description: data.metaDesc,
+  }
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+
       {/* City Hero */}
       <section className="city-hero dark">
         <div className="wrap">
@@ -38,14 +165,20 @@ export default async function LocationPage({ params }: { params: Promise<Params>
             <div className="city-crumb">
               <Link href="/">Home</Link> / <Link href="/#locations">Locations</Link> / {loc.name}
             </div>
-            <div className="eyebrow">{loc.name}, Texas · Commercial signs</div>
+            <div className="eyebrow">
+              {loc.name}, Texas · {geo.county}
+            </div>
             <h1 className="disp">
               Business signs built for <span>{data.h1City}</span>
             </h1>
             <p>{data.intro}</p>
             <div className="btn-row">
-              <Link href="/quote" className="btn btn-blue">Get my free quote →</Link>
-              <a href="tel:2147144623" className="btn btn-ghost">Call 214-714-4623</a>
+              <Link href="/quote" className="btn btn-blue">
+                Get my free quote →
+              </Link>
+              <a href="tel:2147144623" className="btn btn-ghost">
+                Call 214-714-4623
+              </a>
             </div>
           </div>
 
@@ -63,7 +196,11 @@ export default async function LocationPage({ params }: { params: Promise<Params>
           ) : (
             <div className="city-hero-panel">
               <div className="eyebrow">Signs for every setting</div>
-              <strong>From first sketch<br />to final install.</strong>
+              <strong>
+                From first sketch
+                <br />
+                to final install.
+              </strong>
               <span>Storefronts · monuments · interiors</span>
             </div>
           )}
@@ -87,7 +224,12 @@ export default async function LocationPage({ params }: { params: Promise<Params>
                       alt={project.alt}
                       width={600}
                       height={450}
-                      style={{ width: '100%', height: 'auto', aspectRatio: '4/3', objectFit: 'cover' }}
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                        aspectRatio: '4/3',
+                        objectFit: 'cover',
+                      }}
                     />
                   </Link>
                   <div className="city-project-body">
@@ -104,7 +246,10 @@ export default async function LocationPage({ params }: { params: Promise<Params>
           ) : (
             <div className="city-empty">
               <h3>Make your business easier to find.</h3>
-              <p>Explore the sign types available for your property, then tell us what you have in mind.</p>
+              <p>
+                Explore the sign types available for your property, then tell us what you have in
+                mind.
+              </p>
               <Link className="btn btn-blue" href="/#signs">
                 Explore sign types →
               </Link>
@@ -121,7 +266,9 @@ export default async function LocationPage({ params }: { params: Promise<Params>
             <h2 className="disp sec-h">{data.ctaH2}</h2>
             <p>{data.ctaP}</p>
           </div>
-          <Link href="/quote" className="btn btn-blue">Get my free quote →</Link>
+          <Link href="/quote" className="btn btn-blue">
+            Get my free quote →
+          </Link>
         </div>
       </section>
     </>

@@ -1,9 +1,11 @@
 import FAQAccordion from '@/components/ui/FAQAccordion'
+import FaqJsonLd from '@/components/seo/FaqJsonLd'
 import { HOME_FAQ } from '@/data/siteData'
 
 export default function HomeFAQ() {
   return (
     <section className="paper sec">
+      <FaqJsonLd items={HOME_FAQ} />
       <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 48 }}>
         <div style={{ flex: '1 1 320px', minWidth: 0 }}>
           <div className="eyebrow">FAQ</div>

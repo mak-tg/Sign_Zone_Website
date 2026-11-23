@@ -650,7 +650,8 @@ footer strong { color: #fff; }
   width: 100%;
   padding: 0;
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 240px minmax(0, 1fr);
+  max-height: calc(100vh - 110px);
   overflow: hidden;
   background: #0b1220;
   border: 1px solid #2a416b;
@@ -689,7 +690,7 @@ footer strong { color: #fff; }
 
 .location-menu-intro {
   position: relative;
-  padding: 30px 24px;
+  padding: 24px 22px;
   background: linear-gradient(155deg, #17335d, #0e1b32 75%);
   display: flex;
   flex-direction: column;
@@ -717,9 +718,9 @@ footer strong { color: #fff; }
 .location-menu-intro strong {
   font-family: Archivo, sans-serif;
   color: #fff;
-  font-size: 23px;
-  line-height: 1.14;
-  margin-top: 23px;
+  font-size: 21px;
+  line-height: 1.15;
+  margin-top: 18px;
 }
 .location-menu-intro strong em {
   font-style: normal;
@@ -727,9 +728,9 @@ footer strong { color: #fff; }
 }
 .location-menu-intro p {
   color: #c0cfe6;
-  font-size: 13px;
-  line-height: 1.55;
-  margin: 12px 0 24px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  margin: 10px 0 20px;
 }
 .location-menu-all {
   display: flex;
@@ -751,7 +752,24 @@ footer strong { color: #fff; }
 }
 
 .location-menu-places {
-  padding: 26px 32px;
+  padding: 20px 26px;
+  overflow-y: auto;
+  max-height: calc(100vh - 110px);
+  scrollbar-width: thin;
+  scrollbar-color: #2a416b transparent;
+}
+.location-menu-places::-webkit-scrollbar {
+  width: 6px;
+}
+.location-menu-places::-webkit-scrollbar-track {
+  background: transparent;
+}
+.location-menu-places::-webkit-scrollbar-thumb {
+  background: #2a416b;
+  border-radius: 4px;
+}
+.location-menu-places::-webkit-scrollbar-thumb:hover {
+  background: #4d8dff;
 }
 .location-menu-label {
   display: flex;
@@ -761,7 +779,7 @@ footer strong { color: #fff; }
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .1em;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
   border-bottom: 1px solid #263b5d;
   text-transform: uppercase;
 }
@@ -773,22 +791,22 @@ footer strong { color: #fff; }
 
 .nav-locations-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 5px 36px;
-  margin-top: 12px;
-  max-width: 680px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px 12px;
+  margin-top: 10px;
+  max-width: 100%;
 }
 .nav-locations-grid a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 9px 10px;
-  gap: 10px;
+  padding: 7px 9px;
+  gap: 9px;
   min-width: 0;
   color: #e4eafa;
   text-decoration: none;
-  border-radius: 9px;
-  font-size: 14px;
+  border-radius: 8px;
+  font-size: 13.5px;
   font-weight: 700;
   transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
@@ -797,7 +815,7 @@ footer strong { color: #fff; }
 .nav-locations-grid a[aria-current=page] {
   background: #172b49;
   color: #fff;
-  transform: translateX(3px);
+  transform: translateX(2px);
 }
 .nav-locations-grid .menu-pin {
   opacity: 1;
@@ -805,25 +823,35 @@ footer strong { color: #fff; }
   align-items: center;
   justify-content: center;
   flex: none;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   background: #1a2b47;
   color: #7eaeff;
-  border-radius: 8px;
+  border-radius: 7px;
 }
 .menu-pin svg {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 .nav-locations-grid .menu-city {
   color: inherit;
   opacity: 1;
   flex: 1;
+  min-width: 0;
+}
+.nav-locations-grid .menu-title {
+  display: block;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  color: inherit;
 }
 .nav-locations-grid .menu-arrow {
   color: #8db6ff;
   opacity: 0;
+  flex: none;
+  font-size: 13px;
   transition: opacity .18s, transform .18s;
 }
 .nav-locations-grid a:hover .menu-arrow,
@@ -844,6 +872,30 @@ footer strong { color: #fff; }
   nav.main { gap: 11px; }
   .navlink { font-size: 14px; }
   header.site .wrap { gap: 14px; }
+  .nav-locations-panel {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+  .location-menu-intro {
+    padding: 20px 16px;
+  }
+  .location-menu-places {
+    padding: 16px 18px;
+  }
+  .nav-locations-grid {
+    gap: 4px 8px;
+  }
+  .nav-locations-grid a {
+    padding: 6px 7px;
+    gap: 7px;
+    font-size: 12.5px;
+  }
+  .nav-locations-grid .menu-pin {
+    width: 24px;
+    height: 24px;
+  }
+  .nav-locations-grid .menu-desc {
+    font-size: 10.5px;
+  }
 }
 @media (max-width: 1100px) {
   nav.main, .hide-md { display: none !important; }
@@ -929,4 +981,3 @@ footer strong { color: #fff; }
   font: inherit; font-weight: 600; cursor: pointer;
 }
 .nav-resources-panel a.res-all { border-top: 1px solid #2a416b; border-radius: 0 0 10px 10px; margin-top: 4px; } .nav-resources-panel a.res-all strong { color: #7fa8ff; font-size: 14px; }
-.nav-locations-grid .menu-desc { display: block; margin-top: 2px; color: #8ea1c2; font-size: 12px; font-weight: 500; line-height: 1.35; white-space: normal; }
