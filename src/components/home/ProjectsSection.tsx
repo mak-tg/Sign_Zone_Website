@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 
 interface ProjectItem {
@@ -284,6 +287,96 @@ const PROJECTS: ProjectItem[] = [
   },
 ]
 
+function ProjectCard({ project }: { project: ProjectItem }) {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <article className="case-card" id={project.id}>
+      <div className="case-image">
+        <img
+          src={project.image}
+          alt={`${project.name} - custom ${project.signType.toLowerCase()} designed, permitted and installed by Sign Zone DFW`}
+          loading="lazy"
+          width={600}
+          height={450}
+        />
+      </div>
+      <div className="case-body">
+        <div className="case-meta">{project.meta}</div>
+        <h3>{project.name}</h3>
+        <p className="case-type">{project.signType}</p>
+
+        {/* Smooth Accordion Toggle Button */}
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className={`case-toggle-btn ${open ? 'open' : ''}`}
+          aria-expanded={open}
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            color: open ? '#ffffff' : 'var(--navy)',
+            background: open ? 'var(--navy)' : 'var(--paper)',
+            border: open ? '1px solid var(--navy)' : '1px solid var(--soft)',
+            borderRadius: 10,
+            padding: '10px 14px',
+            fontSize: 13,
+            fontWeight: 700,
+            cursor: 'pointer',
+            userSelect: 'none',
+            transition: 'all 0.2s ease',
+            marginTop: 6,
+          }}
+        >
+          <span>{open ? 'Hide case study' : 'Explore case study'}</span>
+          <span
+            style={{
+              fontSize: 18,
+              lineHeight: 1,
+              display: 'inline-block',
+              transform: open ? 'rotate(45deg)' : 'rotate(0deg)',
+              transition: 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+            }}
+            aria-hidden="true"
+          >
+            +
+          </span>
+        </button>
+
+        {/* Animated Open / Close Drawer */}
+        <div
+          className={`case-drawer ${open ? 'open' : ''}`}
+          style={{
+            display: 'grid',
+            gridTemplateRows: open ? '1fr' : '0fr',
+            opacity: open ? 1 : 0,
+            visibility: open ? 'visible' : 'hidden',
+            transition: 'grid-template-rows 0.32s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.25s ease',
+          }}
+        >
+          <div style={{ minHeight: 0, overflow: 'hidden' }}>
+            <div className="case-detail">
+              <strong>Project overview</strong>
+              <p>{project.overview}</p>
+              <strong>Sign system</strong>
+              <p>{project.signSystem}</p>
+              <Link
+                href={`/quote?type=${project.quoteType || 'channel'}`}
+                className="case-quote-link"
+              >
+                <span>Request a quote for a sign like this</span>
+                <span className="case-arrow">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  )
+}
+
 export default function ProjectsSection() {
   return (
     <section className="light sec" id="projects">
@@ -296,48 +389,7 @@ export default function ProjectsSection() {
 
         <div className="case-grid">
           {PROJECTS.map((project) => (
-            <article className="case-card" id={project.id} key={project.id}>
-              <div className="case-image">
-                <img
-                  src={project.image}
-                  alt={`${project.name} - custom ${project.signType.toLowerCase()} designed, permitted and installed by Sign Zone DFW`}
-                  loading="lazy"
-                  width={600}
-                  height={450}
-                />
-              </div>
-              <div className="case-body">
-                <div className="case-meta">{project.meta}</div>
-                <h3>{project.name}</h3>
-                <p className="case-type">{project.signType}</p>
-                <details>
-                  <summary>
-                    Explore case study
-                    <span aria-hidden="true">+</span>
-                  </summary>
-                  <div className="case-detail">
-                    <strong>Project overview</strong>
-                    <p>{project.overview}</p>
-                    <strong>Sign system</strong>
-                    <p>{project.signSystem}</p>
-                    <Link
-                      href={`/quote?type=${project.quoteType || 'channel'}`}
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: 6,
-                        marginTop: 12,
-                        fontSize: 14,
-                        fontWeight: 700,
-                        color: 'var(--blue)',
-                      }}
-                    >
-                      Request a quote for a sign like this →
-                    </Link>
-                  </div>
-                </details>
-              </div>
-            </article>
+            <ProjectCard project={project} key={project.id} />
           ))}
         </div>
       </div>
