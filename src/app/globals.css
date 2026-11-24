@@ -1369,3 +1369,134 @@ footer strong { color: #fff; }
   .review-cta-btn { transition: none !important; }
   .quote-sign-btn, .quote-sign-btn .quote-sign-arrow { transition: none !important; transform: none !important; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════
+   THEME: light (default) / dark
+   Dark = the original look, untouched (all rules above). Light is applied by
+   <html data-theme="light"> and works by (1) remapping the dark-surface variables,
+   (2) overriding the few rules that hard-code white text or dark surfaces, and
+   (3) re-darkening a handful of "tool" panels on purpose (.keep-dark).
+   Switch + persistence: components/layout/ThemeToggle.tsx; pre-paint script in layout.tsx.
+   ══════════════════════════════════════════════════════════════════════ */
+:root { --hl: #fff; --logo-1: #fff; --logo-2: #3380FF; color-scheme: dark; }
+
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 12px; border: 0; cursor: pointer; background: #1A2132; color: #D5DCEA; flex: none; }
+.theme-toggle:hover { background: #243050; color: #fff; }
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --ink: #FFFFFF;      /* page + header surface */
+  --panel: #F4F7FC;
+  --line: #DCE3EF;
+  --line2: #E6EBF3;
+  --dtext: #0B1220;
+  --dsub: #4A5568;
+  --dmuted: #5B6475;
+  --elec: #0050F0;     /* accent text on the (now light) "dark" sections */
+  --hl: #0B1220;       /* heading-strength text on a themed surface */
+  --logo-1: #0B1220;
+  --logo-2: #0050F0;
+}
+/* Dark islands inside the light theme: re-assert the original dark variables */
+html[data-theme="light"] .keep-dark,
+html[data-theme="light"] .tool,
+html[data-theme="light"] .out,
+html[data-theme="light"] .loc-anchor,
+html[data-theme="light"] .location-menu-intro {
+  --ink: #07090F; --panel: #0E1424; --line: #22325A; --line2: #1A2132;
+  --dtext: #E9EEF7; --dsub: #B8C3D6; --dmuted: #A3AEC2; --elec: #4D8DFF;
+  color: var(--dtext);
+}
+
+/* Surfaces */
+html[data-theme="light"] .dark { background: var(--paper); color: var(--text); }
+html[data-theme="light"] .dark .sec-h { color: var(--navy); }
+html[data-theme="light"] .dark .lead { color: var(--muted); }
+html[data-theme="light"] .theme-toggle { background: var(--paper); color: var(--navy); box-shadow: inset 0 0 0 1px var(--soft); }
+html[data-theme="light"] .theme-toggle:hover { background: #E6EEFF; color: var(--blue); }
+html[data-theme="light"] .btn-dark { background: var(--navy); color: #fff; }
+html[data-theme="light"] .btn-dark:hover { background: #0A3585; color: #fff; }
+html[data-theme="light"] .btn-ghost { color: var(--navy); box-shadow: inset 0 0 0 2px rgba(6,38,102,.28); }
+html[data-theme="light"] .btn-ghost:hover { color: var(--navy); box-shadow: inset 0 0 0 2px var(--navy); }
+html[data-theme="light"] .chip-d { background: #fff; color: var(--navy); box-shadow: inset 0 0 0 1px #CBD5E6; }
+html[data-theme="light"] .chip-d:hover { background: #fff; box-shadow: inset 0 0 0 2px var(--blue); }
+html[data-theme="light"] .chip-d[aria-pressed="true"], html[data-theme="light"] .chip-d[aria-selected="true"] { background: var(--blue); color: #fff; box-shadow: none; }
+html[data-theme="light"] a:hover { color: #0040C0; }
+
+/* Trust bar */
+html[data-theme="light"] .trust .disp { color: var(--navy); }
+html[data-theme="light"] .trust { background: var(--paper); }
+
+/* Header */
+html[data-theme="light"] header.site { box-shadow: 0 1px 0 var(--line2); }
+html[data-theme="light"] .navlink, html[data-theme="light"] .nav-locations-btn { color: var(--text); }
+html[data-theme="light"] .navlink:hover, html[data-theme="light"] .navlink.cur { color: var(--blue); }
+html[data-theme="light"] .nav-locations-btn:hover, html[data-theme="light"] .nav-locations-btn.active { background: var(--sky); color: var(--blue); border-color: #BFD3FF; }
+html[data-theme="light"] .burger { background: var(--paper); color: var(--navy); box-shadow: inset 0 0 0 1px var(--soft); }
+html[data-theme="light"] .mnav a, html[data-theme="light"] .mnav-toggle { color: var(--text); }
+html[data-theme="light"] .mbar { box-shadow: 0 -4px 16px rgba(6,38,102,.08); }
+/* mega-menu panels */
+html[data-theme="light"] .nav-locations-panel, html[data-theme="light"] .nav-resources-panel { background: #fff; border-color: var(--soft); box-shadow: 0 24px 60px rgba(6,38,102,.18); }
+html[data-theme="light"] .location-menu-label { color: var(--muted2); border-bottom-color: var(--soft); }
+html[data-theme="light"] .location-menu-label span { color: var(--muted2); }
+html[data-theme="light"] .nav-locations-grid a { color: var(--text); }
+html[data-theme="light"] .nav-locations-grid a:hover, html[data-theme="light"] .nav-locations-grid a:focus-visible, html[data-theme="light"] .nav-locations-grid a[aria-current=page] { background: var(--sky); color: var(--blue); }
+html[data-theme="light"] .nav-locations-grid .menu-pin { background: var(--sky); color: var(--blue); }
+html[data-theme="light"] .nav-locations-grid .menu-desc { color: var(--muted2); }
+html[data-theme="light"] .nav-locations-grid a:hover .menu-desc, html[data-theme="light"] .nav-locations-grid a:focus-visible .menu-desc { color: var(--muted); }
+html[data-theme="light"] .nav-locations-grid .menu-arrow { color: var(--blue); }
+html[data-theme="light"] .location-menu-places { scrollbar-color: #BFD3FF transparent; }
+html[data-theme="light"] .nav-resources-panel a strong { color: var(--navy); }
+html[data-theme="light"] .nav-resources-panel a span { color: var(--muted2); }
+html[data-theme="light"] .nav-resources-panel a:hover, html[data-theme="light"] .nav-resources-panel a:focus-visible { background: var(--sky); }
+html[data-theme="light"] .nav-resources-panel a.res-all { border-top-color: var(--soft); }
+html[data-theme="light"] .nav-resources-panel a.res-all strong { color: var(--blue); }
+
+/* Footer */
+html[data-theme="light"] footer { background: var(--paper); border-top-color: var(--soft); color: var(--muted); }
+html[data-theme="light"] footer a:not(.btn) { color: var(--muted); }
+html[data-theme="light"] footer a:not(.btn):hover { color: var(--blue); }
+html[data-theme="light"] footer strong { color: var(--navy); }
+html[data-theme="light"] .legal { border-top-color: var(--soft); color: var(--muted2); }
+
+/* Hero: light wash over the photo slideshow, dark text */
+html[data-theme="light"] .hero-overlay { background: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.93) 34%, rgba(255,255,255,.62) 64%, rgba(255,255,255,.2) 100%); }
+html[data-theme="light"] .hero h1 { color: var(--navy); }
+html[data-theme="light"] .hero p.sub { color: var(--muted); }
+html[data-theme="light"] .ticks { color: var(--text); }
+html[data-theme="light"] .pill { background: var(--sky); border-color: #BFD3FF; color: #0040C0; }
+html[data-theme="light"] .dot { background: var(--blue); }
+html[data-theme="light"] .city-hero h1 span { color: var(--blue); }
+html[data-theme="light"] .city-crumb, html[data-theme="light"] .city-crumb a { color: var(--muted2); }
+html[data-theme="light"] .city-hero-copy > p { color: var(--muted); }
+
+/* Cards that were dark panels */
+html[data-theme="light"] .review-card { background: #fff; border-color: var(--soft); box-shadow: 0 6px 24px rgba(6,38,102,.07), inset 0 2px 0 rgba(0,80,240,.35); }
+html[data-theme="light"] .review-card blockquote { color: var(--text); }
+html[data-theme="light"] .review-card figcaption { color: var(--muted2); border-top-color: var(--soft); }
+html[data-theme="light"] .review-card figcaption strong { color: var(--navy); }
+html[data-theme="light"] .review-intro { color: var(--muted); }
+html[data-theme="light"] .facts div { background: #fff; border-color: var(--soft); }
+html[data-theme="light"] .facts dt { color: var(--muted2); }
+html[data-theme="light"] .facts dd { color: var(--navy); }
+
+/* Legacy inline-style adapters: inside sections that turn light, inline white text
+   (written for the dark theme) becomes ink. Buttons and the dark islands are excluded. */
+html[data-theme="light"] .dark [style*="color:#fff"]:not(.btn):not(.btn *):not(.keep-dark *):not(.tool *):not(.out *):not(.loc-anchor *),
+html[data-theme="light"] .dark [style*="color: #fff"]:not(.btn):not(.btn *):not(.keep-dark *):not(.tool *):not(.out *):not(.loc-anchor *),
+html[data-theme="light"] .dark [style*="color:#ffffff"]:not(.btn):not(.btn *):not(.keep-dark *),
+html[data-theme="light"] .dark [style*="color:white"]:not(.btn):not(.btn *):not(.keep-dark *) { color: var(--navy) !important; }
+html[data-theme="light"] .dark [style*="color:rgba(255,255,255"]:not(.btn):not(.btn *):not(.keep-dark *):not(.tool *):not(.out *):not(.loc-anchor *) { color: var(--muted) !important; }
+html[data-theme="light"] .dark [style*="background:rgba(255,255,255"]:not(.keep-dark *):not(.tool *):not(.out *) { background: #fff !important; box-shadow: 0 1px 3px rgba(6,38,102,.08); }
+html[data-theme="light"] .dark [style*="1px solid rgba(255,255,255"]:not(.keep-dark *):not(.tool *):not(.out *) { border-color: var(--soft) !important; }
+/* inline light-grey text written for dark surfaces */
+html[data-theme="light"] .dark :is([style*="color:#D5DCEA" i], [style*="color: #D5DCEA" i], [style*="color:#E9EEF7" i], [style*="color:#B8C3D6" i], [style*="color:#C9D8F4" i], [style*="color:#BFD3FF" i]):not(.btn):not(.btn *):not(.keep-dark *):not(.tool *):not(.out *):not(.loc-anchor *) { color: var(--muted) !important; }
+
+/* Narrow phones: logo + theme switch + burger fit; the sticky bottom bar already carries "Free quote" */
+@media (max-width: 480px) {
+  .hdr-cta { gap: 8px; }
+  .hdr-cta .btn-blue { display: none; }
+  header.site .wrap { gap: 12px; }
+}
+@media (max-width: 420px) { .hero h1 { font-size: 36px; } }
+@media (max-width: 480px) { .btn { white-space: normal; text-align: center; } }

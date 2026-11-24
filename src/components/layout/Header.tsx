@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
+import LogoMark from '@/components/brand/LogoMark'
+import ThemeToggle from '@/components/layout/ThemeToggle'
 import { useState, useRef, useEffect } from 'react'
 import { LOCATION_PAGES, INDUSTRIES } from '@/data/siteData'
 
@@ -84,14 +85,7 @@ export default function Header() {
       <header className="site">
         <div className="wrap">
           <Link href="/" aria-label="Sign Zone home" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-            <Image
-              src="/images/logo.png"
-              alt="Sign Zone - Custom Business Signs Dallas-Fort Worth"
-              width={167}
-              height={52}
-              priority
-              style={{ height: 52, width: 'auto' }}
-            />
+            <LogoMark wordOne="var(--logo-1)" wordTwo="var(--logo-2)" arrow="var(--logo-2)" title="Sign Zone - Custom Business Signs Dallas-Fort Worth" style={{ height: 52, width: 'auto' }} />
           </Link>
 
           <nav className="main" aria-label="Main">
@@ -237,6 +231,7 @@ export default function Header() {
           </nav>
 
           <div className="hdr-cta">
+            <ThemeToggle />
             <a href="tel:2147144623" className="btn btn-dark btn-sm hide-md">214-714-4623</a>
             <Link href="/quote" className="btn btn-blue btn-sm">Get a Free Quote</Link>
             <button

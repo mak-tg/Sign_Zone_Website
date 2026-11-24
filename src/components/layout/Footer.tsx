@@ -1,18 +1,12 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import LogoMark from '@/components/brand/LogoMark'
 
 export default function Footer() {
   return (
     <footer>
       <div className="wrap cols">
         <div className="col">
-          <Image
-            src="/images/logo.png"
-            alt="Sign Zone Commercial Business Signs Dallas-Fort Worth"
-            width={180}
-            height={56}
-            style={{ height: 56, width: 'auto', alignSelf: 'flex-start' }}
-          />
+          <LogoMark wordOne="var(--logo-1)" wordTwo="var(--logo-2)" arrow="var(--logo-2)" title="Sign Zone Commercial Business Signs Dallas-Fort Worth" style={{ height: 56, width: 'auto', alignSelf: 'flex-start' }} />
           <span>Custom business signs for Dallas–Fort Worth.</span>
           <span>Dallas–Fort Worth Metroplex, Texas</span>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 10 }}>
@@ -24,9 +18,9 @@ export default function Footer() {
                 letterSpacing: '.05em',
                 padding: '4px 8px',
                 borderRadius: 4,
-                background: '#0e1526',
-                border: '1px solid #2a3a5c',
-                color: '#8b9bb4',
+                background: 'var(--panel)',
+                border: '1px solid var(--line)',
+                color: 'var(--dmuted)',
                 textTransform: 'uppercase',
               }}
             >
@@ -40,9 +34,9 @@ export default function Footer() {
                 letterSpacing: '.05em',
                 padding: '4px 8px',
                 borderRadius: 4,
-                background: '#0e1526',
-                border: '1px solid #2a3a5c',
-                color: '#8b9bb4',
+                background: 'var(--panel)',
+                border: '1px solid var(--line)',
+                color: 'var(--dmuted)',
                 textTransform: 'uppercase',
               }}
             >
@@ -56,9 +50,9 @@ export default function Footer() {
                 letterSpacing: '.05em',
                 padding: '4px 8px',
                 borderRadius: 4,
-                background: '#0e1526',
-                border: '1px solid #2a3a5c',
-                color: '#8b9bb4',
+                background: 'var(--panel)',
+                border: '1px solid var(--line)',
+                color: 'var(--dmuted)',
                 textTransform: 'uppercase',
               }}
             >
@@ -91,7 +85,7 @@ export default function Footer() {
 
         <div className="col">
           <strong>Talk to us</strong>
-          <a href="tel:2147144623" style={{ color: '#fff', fontWeight: 700, fontSize: 18 }}>
+          <a href="tel:2147144623" style={{ color: 'var(--hl)', fontWeight: 700, fontSize: 18 }}>
             214-714-4623
           </a>
           <a href="mailto:Alex@signzoneusa.com">Alex@signzoneusa.com</a>
