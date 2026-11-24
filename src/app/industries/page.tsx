@@ -91,21 +91,38 @@ export default function IndustriesPage() {
                         lineHeight: 1.15,
                       }}
                     >
-                      {ind.headline}
+                      <Link href={`/industries/${ind.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                        {ind.headline}
+                      </Link>
                     </h2>
                   </div>
-                  <div
-                    style={{
-                      background: 'var(--paper)',
-                      border: '1px solid var(--soft)',
-                      padding: '8px 16px',
-                      borderRadius: 8,
-                      fontSize: 13,
-                      fontWeight: 600,
-                      color: 'var(--muted)',
-                    }}
-                  >
-                    ⏱️ Typical Turnaround: {ind.turnaround}
+                  <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
+                    <div
+                      style={{
+                        background: '#eff6ff',
+                        border: '1px solid #bfdbfe',
+                        padding: '8px 16px',
+                        borderRadius: 8,
+                        fontSize: 13,
+                        fontWeight: 700,
+                        color: 'var(--blue)',
+                      }}
+                    >
+                      ✓ {ind.projectIds.length} Verified Installs
+                    </div>
+                    <div
+                      style={{
+                        background: 'var(--paper)',
+                        border: '1px solid var(--soft)',
+                        padding: '8px 16px',
+                        borderRadius: 8,
+                        fontSize: 13,
+                        fontWeight: 600,
+                        color: 'var(--muted)',
+                      }}
+                    >
+                      ⏱️ Turnaround: {ind.turnaround}
+                    </div>
                   </div>
                 </div>
 
@@ -202,17 +219,12 @@ export default function IndustriesPage() {
                 </div>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
-                  {ind.featuredClient && (
-                    <div style={{ fontSize: 13.5, color: 'var(--muted2)' }}>
-                      <strong style={{ color: 'var(--navy)' }}>Recent Clients: </strong> {ind.featuredClient}
-                    </div>
-                  )}
+                  <div style={{ fontSize: 13.5, color: 'var(--muted)' }}>
+                    <strong style={{ color: 'var(--navy)' }}>Portfolio: </strong> {ind.projectIds.length} real projects completed across DFW
+                  </div>
                   <div style={{ display: 'flex', gap: 12, marginLeft: 'auto' }}>
-                    <Link href="/toolkit" className="btn btn-ghost btn-sm" style={{ borderColor: 'var(--soft)', color: 'var(--navy)' }}>
-                      Calculate Cost →
-                    </Link>
-                    <Link href="/quote" className="btn btn-blue btn-sm">
-                      Get Free Quote →
+                    <Link href={`/industries/${ind.slug}`} className="btn btn-blue btn-sm">
+                      View {ind.name} Signs &amp; Projects →
                     </Link>
                   </div>
                 </div>

@@ -37,14 +37,14 @@ export default function AboutPage() {
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '24px 0 0', maxWidth: 680 }}>
             We are not sign brokers or an internet print shop. Sign Zone is a licensed Texas electrical sign contractor
-            with an in-house fabrication facility, licensed install crews, and our own crane truck fleet serving the
-            entire Dallas–Fort Worth Metroplex.
+            with an in-house fabrication facility, licensed install crews, and high-reach crane and bucket service trucks
+            serving the entire Dallas–Fort Worth Metroplex.
           </p>
 
           <dl className="facts" style={{ marginTop: 40 }}>
             <div><dt>Established</dt><dd>2011 (15+ Years)</dd></div>
             <div><dt>Licensing</dt><dd>Texas TDLR Licensed</dd></div>
-            <div><dt>Fleet</dt><dd>Crane &amp; Bucket Trucks</dd></div>
+            <div><dt>Fleet</dt><dd>Crane &amp; Bucket Capability</dd></div>
             <div><dt>Territory</dt><dd>16+ DFW Municipalities</dd></div>
           </dl>
         </div>

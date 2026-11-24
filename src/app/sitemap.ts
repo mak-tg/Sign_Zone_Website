@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { LOCATION_PAGES } from '@/data/siteData'
 import { GUIDES_ARTICLES } from '@/data/guidesData'
+import { INDUSTRY_PROFILES } from '@/data/industryData'
 
 const BASE_URL = 'https://www.signzoneusa.com'
 
@@ -71,6 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/quote`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/contact`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.9,
@@ -159,5 +166,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...coreRoutes, ...locationRoutes, ...guideRoutes]
+  // Dynamic 6 Commercial Industry Landing Pages
+  const industryRoutes: MetadataRoute.Sitemap = Object.keys(INDUSTRY_PROFILES).map((slug) => ({
+    url: `${BASE_URL}/industries/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.85,
+  }))
+
+  return [...coreRoutes, ...locationRoutes, ...guideRoutes, ...industryRoutes]
 }

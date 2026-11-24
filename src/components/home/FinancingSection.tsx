@@ -61,7 +61,7 @@ export default function FinancingSection({ asH1 = false }: { asH1?: boolean }) {
             </h2>
           )}
           <p style={{ fontSize: 18, lineHeight: 1.6, color: '#E6EEFF', margin: '20px 0 0', maxWidth: 520 }}>
-            Spread the cost of your sign over 12–60 months with commercial equipment financing. Quick online application, fast 24–48 hour approvals, and flexible capital-preserving terms.
+            Spread the cost of your sign over 12–60 months with commercial equipment financing. Quick online application, flexible terms, and capital-preserving financing options.
           </p>
           <Link href="/quote" className="btn btn-dark" data-quote="" style={{ marginTop: 28 }}>
             Check my financing options

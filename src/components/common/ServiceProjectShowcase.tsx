@@ -16,9 +16,13 @@ export default function ServiceProjectShowcase({
   // Primary matching projects for this sign category
   const directMatches = PROJECTS.filter((p) => p.category === category)
 
-  // If fewer than 4 direct matches, augment with other prominent commercial installs
-  const fallbackProjects = PROJECTS.filter((p) => p.category !== category)
-  const displayProjects = [...directMatches, ...fallbackProjects].slice(0, 4)
+  // If there are no matching projects for this specific sign category in our current portfolio,
+  // do NOT show a gallery with mismatched sign types.
+  if (directMatches.length === 0) {
+    return null
+  }
+
+  const displayProjects = directMatches.slice(0, 4)
 
   return (
     <section className="light sec" style={{ padding: '72px 0', borderTop: '1px solid var(--soft)' }}>

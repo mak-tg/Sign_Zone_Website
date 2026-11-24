@@ -19,10 +19,13 @@ function renderContentWithLinks(text: string) {
       parts.push(text.slice(lastIndex, match.index))
     }
     const [, label, href] = match
+    const isExternal = href.startsWith('http')
     parts.push(
       <Link
         key={match.index}
         href={href}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
         style={{
           color: 'var(--blue)',
           fontWeight: 600,
@@ -155,6 +158,20 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                   {article.updatedText}
                 </span>
               )}
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 22, paddingTop: 18, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+              <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--blue)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 15, flexShrink: 0 }}>
+                SZ
+              </div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 700, color: '#fff' }}>
+                  Sign Zone Technical Estimating &amp; Permitting Team
+                </div>
+                <div style={{ fontSize: 12, color: 'var(--dsub)' }}>
+                  15+ Years Commercial Sign Experience · Dallas–Fort Worth, TX
+                </div>
+              </div>
             </div>
           </div>
         </section>

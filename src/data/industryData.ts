@@ -7,160 +7,222 @@ export interface IndustryProfile {
   landlordCriteria: string
   permittingNotes: string
   turnaround: string
-  featuredClient?: string
+  projectIds: string[]
+  faqs: { q: string; a: string }[]
 }
 
 export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
   restaurants: {
     slug: 'restaurants',
-    name: 'Restaurants & QSR',
-    headline: 'High-Visibility Dining & Drive-Thru Signage',
+    name: 'Restaurants & Dining',
+    headline: 'High-Visibility Dining, Cafe & Fast-Casual Signage',
     summary:
-      'From fast-casual storefront channel letters to illuminated drive-thru menu boards and patio neon, we build signage engineered to withstand Texas heat, kitchen grease, and high customer traffic.',
+      'From fast-casual storefront channel letters to cafe dimensional lettering, patio illumination, and drive-thru signage, we build restaurant signs engineered to withstand Texas heat, kitchen grease, and high customer volume.',
     popularSigns: [
       'Front-lit & combination LED channel letters',
       'Under-canopy double-sided pedestrian blade signs',
-      'Drive-thru clearance bars & directional pylons',
-      'Architectural patio neon & window vinyl graphics',
+      'Illuminated contour storefront lightboxes',
+      'Architectural patio lighting & window merchandising graphics',
     ],
     landlordCriteria:
-      'Landlords typically mandate raceway mounting to avoid puncturing EIFS or brick facades, plus UL-listed disconnect switches accessible from the exterior.',
+      'Landlords typically mandate raceway mounting to avoid puncturing EIFS or architectural brick facades, plus exterior-accessible UL-listed emergency shutoff disconnect switches.',
     permittingNotes:
-      'Drive-thru directional signs are regulated separately from building wall signs in cities like Plano, Frisco, and Arlington, requiring dedicated site plan clearance reviews.',
+      'Drive-thru directional signs, menu boards, and order point clearance bars are regulated separately from building wall signs in cities like Plano, Frisco, and Arlington, requiring dedicated site-plan reviews.',
     turnaround: '3 – 5 weeks',
-    featuredClient: "Rock N Roll Sushi, Gufo's Pizza, Omiya Sushi",
+    projectIds: [
+      'arwa-coffee',
+      'scratch-wings',
+      'rock-n-roll-sushi',
+      'wings-over-usa',
+      'gufos-pizza',
+      'milk-cake-karwan',
+      'blimpie-coldstone',
+      'omiya',
+      'busy-bee',
+      'pure-green',
+      'moka-co',
+      'inso-kitchen',
+      'la-cuentista',
+    ],
+    faqs: [
+      {
+        q: 'Do Dallas–Fort Worth cities allow neon or faux-neon signs for restaurants?',
+        a: 'Most North Texas municipalities restrict exposed high-voltage neon but eagerly approve low-voltage LED faux-neon and acrylic-faced illuminated channel letters that meet UL 48 standards.',
+      },
+      {
+        q: 'Can Sign Zone help meet our restaurant grand opening deadline?',
+        a: 'Yes. We pull temporary banner permits while your permanent channel letters are progressing through city plan review, ensuring your doors open with prominent visibility.',
+      },
+      {
+        q: 'What type of lighting lasts longest in intense Texas heat?',
+        a: 'We use commercial-grade, IP67-rated constant-current LEDs with heavy aluminum heatsink backing and external low-voltage transformers mounted in well-ventilated raceways.',
+      },
+    ],
   },
+
   retail: {
     slug: 'retail',
     name: 'Retail & Storefronts',
-    headline: 'Storefront Signs that Capture Foot & Vehicle Traffic',
+    headline: 'Storefront Signs that Capture Foot & Highway Traffic',
     summary:
-      'Retail signage must bridge highway visibility with close-up foot traffic. We design, permit, and install high-contrast storefront channel letters and tenant monument panels across major DFW shopping corridors.',
+      'Retail signage must bridge distant roadway visibility with close-up pedestrian foot traffic. We design, permit, and install high-contrast storefront channel letters, illuminated cabinet signs, and luxury monument plaques across DFW shopping centers.',
     popularSigns: [
-      'High-contrast LED channel letters (18"–30" height)',
+      'High-contrast LED channel letters (18"–30" letter height)',
       'Shopping center tenant pylon & monument panels',
-      'Storefront blade signs & window merchandising vinyl',
-      'Illuminated return and border accents',
+      'Pedestrian storefront blade signs & window graphics',
+      'Halo-lit reverse luxury lettering for jewelers & boutiques',
     ],
     landlordCriteria:
-      'Strict square footage ratios (typically 1.0 to 1.5 sq ft per linear foot of facade) and mandated letter height maximums (usually 24 inches for single-line copy).',
+      'Strict square footage formulas (typically 1.0 to 1.5 sq ft per linear foot of store frontage) and mandated letter height caps (usually 24 inches for single-line tenant names).',
     permittingNotes:
-      'Sign Zone calculates maximum allowable square footage against city zoning ordinances before drafting production plans.',
+      'Sign Zone calculates maximum allowable square footage against local municipal zoning ordinances before drafting production drawings to avoid municipal submittal rejections.',
     turnaround: '3 – 4 weeks',
-    featuredClient: 'Malani Jewelers, Sleep Doctors, bclm',
+    projectIds: ['a-mart', 'moda-studio', 'malani-jewelers', 'la-cuentista'],
+    faqs: [
+      {
+        q: 'How do I know what size sign my shopping center allows?',
+        a: 'We review your commercial lease Exhibit titled "Tenant Sign Criteria" to verify allowable square footage, mounting style, font constraints, and illumination guidelines.',
+      },
+      {
+        q: 'What is the difference between direct flush mount and raceway mount?',
+        a: 'Flush mounting attaches each letter directly to the exterior wall with wiring passed through the back, while a raceway mounts all letters to a pre-wired aluminum container painted to match the building facade.',
+      },
+    ],
   },
+
   'medical-dental': {
     slug: 'medical-dental',
-    name: 'Medical & Dental Clinics',
-    headline: 'Clean, Professional Healthcare & Dental Signage',
+    name: 'Medical & Healthcare',
+    headline: 'Authoritative, Professional Healthcare & Dental Signage',
     summary:
-      'Healthcare practices require professional authority and effortless patient wayfinding. We craft elegant reverse halo-lit channel letters, ADA-compliant tactile interior room signage, and exterior monument plaques.',
+      'Healthcare practices require professional authority and effortless patient wayfinding. We craft elegant reverse halo-lit channel letters, ADA-compliant tactile interior room signage, and exterior medical plaza monument plaques.',
     popularSigns: [
       'Halo-lit reverse channel letters (warm white 3000K–4000K)',
-      'ADA-compliant braille room signs & directory boards',
-      'Freestanding medical plaza monument signs',
-      'Brushed metal & acrylic lobby reception logos',
+      'ADA-compliant Grade 2 Braille room identifiers & directories',
+      'Freestanding medical plaza masonry monument signs',
+      'Brushed aluminum & acrylic reception logo walls',
     ],
     landlordCriteria:
       'Subdued, elegant illumination standards; non-glare finishes; and strict compliance with medical complex master sign programs.',
     permittingNotes:
-      'Monument signs along arterial roadways require certified utility locate tickets (Texas811) and foundation setback clearances.',
+      'Monument signs along arterial roadways require certified Texas811 utility locate tickets, structural wind-load engineering, and foundation setback clearances.',
     turnaround: '3 – 5 weeks',
-    featuredClient: 'Fix Dental, Addison Park Smiles, Hand & Stone Spa',
+    projectIds: ['apex-specialty-care', 'fix-dental', 'addison-park', 'sanjiva-spa'],
+    faqs: [
+      {
+        q: 'What interior signs are legally required before a clinic can open in Texas?',
+        a: 'Texas Accessibility Standards (TAS) and ADA codes require tactile room numbers, permanent restroom identifiers with Grade 2 Braille, directional exit wayfinding, and maximum occupancy plaques.',
+      },
+      {
+        q: 'Why do medical clinics prefer halo-lit (reverse) channel letters?',
+        a: 'Halo lighting projects a soft, sophisticated glow onto the wall behind each letter, creating a calm, high-end architectural impression suited for healthcare and aesthetics.',
+      },
+    ],
   },
-  'shopping-centers': {
-    slug: 'shopping-centers',
-    name: 'Shopping Centers & Commercial Properties',
-    headline: 'Multi-Tenant Monuments & Comprehensive Pylon Programs',
+
+  'fitness-wellness': {
+    slug: 'fitness-wellness',
+    name: 'Fitness, Spas & Wellness',
+    headline: 'High-Impact Fitness Centers, Martial Arts & Spa Signage',
     summary:
-      'For property managers and commercial developers, we fabricate and maintain multi-tenant monument signs, highway pylons, and standardized tenant panel changeout programs across North Texas.',
+      'Gyms and fitness studios require bold, energetic exterior branding readable from high-speed roads, while luxury spas and salons demand refined, ambient aesthetics that welcome clients.',
     popularSigns: [
-      'Multi-tenant stone, brick & aluminum monument signs',
-      'Highway pylon signs (20–40 ft structural steel)',
-      'Tenant acrylic replacement panels with UV-laminated vinyl',
-      'Property entrance architectural monument markers',
+      'High-lumen front-lit commercial channel letters',
+      'Architectural halo-lit letters for luxury spas & studios',
+      'Dimensional brushed metal logo signs for reception areas',
+      'High-contrast window vinyl graphics & frosted privacy glass',
     ],
     landlordCriteria:
-      'Standardized tenant panel dimensions (e.g., 18"x48" or 24"x72") ensuring quick, uniform tenant turnover without structural rework.',
+      'Landlords require durable, weatherproof exterior materials and tight electrical enclosures, particularly for facilities operating early morning and late evening hours.',
     permittingNotes:
-      'Highway pylons require stamped structural engineering calculations certified for 115 MPH three-second gust wind loads.',
-    turnaround: '4 – 8 weeks',
-    featuredClient: 'Various DFW retail strips & commercial plazas',
-  },
-  'churches-schools': {
-    slug: 'churches-schools',
-    name: 'Churches & Schools',
-    headline: 'Architectural Monuments & LED Digital Message Centers',
-    summary:
-      'Keep your congregation and community informed with full-color outdoor LED digital message centers integrated into handsome masonry monument bases, plus campus wayfinding signage.',
-    popularSigns: [
-      'High-resolution outdoor LED digital message boards (EMCs)',
-      'Cast stone & brick architectural monument signs',
-      'Campus directional wayfinding & parking lot pylons',
-      'Sanctuary dimensional letters & donor recognition walls',
+      'Exterior illumination must comply with local municipality nighttime light curfew standards (often dimming or turning off between 11:00 PM and 6:00 AM if adjacent to residential zones).',
+    turnaround: '3 – 5 weeks',
+    projectIds: [
+      'burn-boot-camp',
+      'hand-and-stone',
+      'gracie-barra',
+      'kings-gambit',
+      'amazing-nails',
+      'oui-massage',
+      'kathak-rhythms',
+      'the-den',
     ],
-    landlordCriteria:
-      'Usually owner-occupied properties, requiring master campus planning and city zoning board approvals.',
-    permittingNotes:
-      'Digital message centers (EMCs) face strict municipal brightness limits (typically 5,000 nits day / 500 nits night) and minimum message hold times (8 to 12 seconds in most DFW cities).',
-    turnaround: '4 – 6 weeks',
-    featuredClient: 'Community churches & private academies in North Texas',
-  },
-  'auto-dealerships': {
-    slug: 'auto-dealerships',
-    name: 'Auto Dealerships & Service Centers',
-    headline: 'High-Impact Pylons, Bay Signage & Fleet Graphics',
-    summary:
-      'Automotive businesses require massive visibility from expressways and busy commercial thoroughfares. We build heavy-duty highway pylons, illuminated service bay signs, and full fleet vehicle wraps.',
-    popularSigns: [
-      'High-rise highway pylons & illuminated brand cabinets',
-      'Service bay overhead identification signs',
-      'Custom commercial vehicle fleet wraps (3M cast vinyl)',
-      'Heavy-duty perimeter lot banners & pole flags',
+    faqs: [
+      {
+        q: 'Can Sign Zone match national franchise fitness brand guidelines?',
+        a: 'Yes. We match exact corporate Pantone colors, 3M translucent vinyl specs, and font kerning guidelines required by national fitness brands and regional studio chains.',
+      },
+      {
+        q: 'Can our gym exterior sign stay lit 24/7?',
+        a: 'City ordinances vary: commercial corridors along major highways usually permit all-night illumination, whereas centers bordering residential neighborhoods require automatic photocell/timer shutoffs at 11:00 PM.',
+      },
     ],
-    landlordCriteria:
-      'High wind resistance ratings and durable finishes resistant to automotive oils and cleaning chemicals.',
-    permittingNotes:
-      'Dealership pylon signs frequently require city variance hearings if exceeding standard municipal height limits along major freeways.',
-    turnaround: '3 – 6 weeks',
-    featuredClient: 'Independent dealerships & collision centers across DFW',
   },
+
   offices: {
     slug: 'offices',
-    name: 'Offices & Corporate Facilities',
-    headline: 'Architectural Building Tops & Precision Lobby Logos',
+    name: 'Offices & Corporate',
+    headline: 'Architectural Building Tops & Precision Corporate Lobby Logos',
     summary:
-      'Corporate headquarters demand flawless brand representation. We manufacture building-top halo letters visible from highways, laser-cut lobby logos in brushed metals, and frosted glass privacy graphics.',
+      'Corporate headquarters demand flawless brand representation. We manufacture building-top halo letters visible from highways, laser-cut lobby logos in brushed metals, and frosted glass privacy graphics for conference rooms.',
     popularSigns: [
       'High-elevation building-top LED channel letters',
       'Waterjet-cut brushed aluminum & brass lobby logos',
       'Architectural directional directories & floor suite plaques',
-      'Frosted crystal vinyl privacy film for conference rooms',
+      'Frosted crystal vinyl privacy film for glass conference rooms',
     ],
     landlordCriteria:
       'Direct-mount rear-access wiring preferred; exact corporate Pantone brand color matching required.',
     permittingNotes:
       'High-elevation installations require FAA airspace reviews if located within flight approaches for DFW Airport, Dallas Love Field, or Addison Airport.',
     turnaround: '3 – 5 weeks',
-    featuredClient: 'Corporate headquarters & multi-tenant office towers',
+    projectIds: ['all-integrity', 'bclm'],
+    faqs: [
+      {
+        q: 'What materials are best for indoor corporate reception logo walls?',
+        a: 'Brushed aluminum, matte acrylic, solid brass, and painted high-density urethane (HDU) are the most popular materials for modern corporate lobbies.',
+      },
+      {
+        q: 'Do you install conference room privacy film?',
+        a: 'Yes. We cut custom frosted crystal vinyl with company logo knockouts, gradient dust patterns, or solid modesty bands for glass office partitions.',
+      },
+    ],
   },
+
   franchises: {
     slug: 'franchises',
-    name: 'Franchises & Multi-Unit Chains',
+    name: 'Franchises & Chains',
     headline: 'Strict Brand-Standard Rollouts Across Municipalities',
     summary:
       'Multi-unit operators need exact brand compliance across multiple DFW cities. We manage surveys, municipal variances, custom fabrication, and coordinated installations for regional and national franchise brands.',
     popularSigns: [
       'Corporate brand-standard LED channel letters',
-      'Drive-thru lane ordering canopies & preview boards',
-      'Uniform blade signs & interior menu header graphics',
+      'Under-canopy uniform pedestrian blade signs',
+      'Standardized monument & pylon acrylic tenant faces',
       'Multi-location coordinated installation rollouts',
     ],
     landlordCriteria:
-      'Negotiating between rigid corporate franchise brand books and restrictive local shopping center sign criteria.',
+      'Balancing rigid corporate franchise brand books against restrictive local shopping center sign criteria.',
     permittingNotes:
       'We handle permit submittals simultaneously across multiple DFW cities (e.g. opening Plano, Frisco, and Arlington units concurrently).',
     turnaround: '3 – 5 weeks',
-    featuredClient: 'Milk Cake Bakery, Fix Dental, regional franchise partners',
+    projectIds: [
+      'burn-boot-camp',
+      'hand-and-stone',
+      'gracie-barra',
+      'rock-n-roll-sushi',
+      'blimpie-coldstone',
+      'milk-cake-karwan',
+    ],
+    faqs: [
+      {
+        q: 'How do you handle conflicting city and franchise guidelines?',
+        a: 'When city sign codes restrict a franchise’s standard size or color, our engineering team drafts alternative code-compliant layouts that preserve brand integrity while securing quick city approval.',
+      },
+      {
+        q: 'Can you warehouse our signs until general contractors are ready on site?',
+        a: 'Yes. We fabricate sign components in volume, store them in our DFW facility, and deploy install crews precisely when building facade framing is ready.',
+      },
+    ],
   },
 }

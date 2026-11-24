@@ -5,20 +5,23 @@ export default function Hero() {
     <section className="hero dark">
       <img
         src="/images/hero-1.jpg"
-        alt=""
-        aria-hidden="true"
+        alt="Illuminated commercial channel letter signs on storefront at night in Dallas-Fort Worth"
+        width={1920}
+        height={1080}
         className="hero-background hero-slide slide-1"
       />
       <img
         src="/images/hero-2.jpg"
-        alt=""
-        aria-hidden="true"
+        alt="Custom exterior commercial monument sign in North Texas business plaza"
+        width={1920}
+        height={1080}
         className="hero-background hero-slide slide-2"
       />
       <img
         src="/images/hero-3.jpg"
-        alt=""
-        aria-hidden="true"
+        alt="High-impact commercial business sign fabrication and installation in DFW"
+        width={1920}
+        height={1080}
         className="hero-background hero-slide slide-3"
       />
       <div className="hero-overlay" aria-hidden="true" />

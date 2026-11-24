@@ -14,7 +14,7 @@ export default function IndustriesSection() {
             <Link
               key={ind.slug}
               id={ind.slug}
-              href={`/industries#${ind.slug}`}
+              href={`/industries/${ind.slug}`}
               className="card"
               style={{
                 background: 'var(--paper)',

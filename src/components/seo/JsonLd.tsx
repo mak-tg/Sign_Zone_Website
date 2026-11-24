@@ -22,12 +22,7 @@ export default function JsonLd() {
       '@type': 'PostalAddress',
       addressRegion: 'TX',
       addressCountry: 'US',
-      addressLocality: 'Dallas',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 32.7767,
-      longitude: -96.797,
+      addressLocality: 'Dallas-Fort Worth',
     },
     openingHoursSpecification: [
       {

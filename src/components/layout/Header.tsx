@@ -129,7 +129,7 @@ export default function Header() {
                     </div>
                     <div className="nav-locations-grid">
                       {INDUSTRIES.map((ind) => (
-                        <Link key={ind.slug} href={`/industries#${ind.slug}`} onClick={closeMenu}>
+                        <Link key={ind.slug} href={`/industries/${ind.slug}`} onClick={closeMenu}>
                           <span className="menu-pin">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
                               <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -269,7 +269,7 @@ export default function Header() {
         {mobileInd && (
           <>
             {INDUSTRIES.map((ind) => (
-              <Link key={ind.slug} href={`/industries#${ind.slug}`} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
+              <Link key={ind.slug} href={`/industries/${ind.slug}`} onClick={() => setMobileOpen(false)} style={{ paddingLeft: 36, fontSize: 14 }}>
                 {ind.name}
               </Link>
             ))}

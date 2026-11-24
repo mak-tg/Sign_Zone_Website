@@ -86,6 +86,7 @@ export default function Footer() {
           <Link href="/sign-repair">Repair &amp; maintenance</Link>
           <Link href="/franchise-signs">Multi-location programs</Link>
           <Link href="/about">About Sign Zone</Link>
+          <Link href="/contact">Contact us</Link>
         </nav>
 
         <div className="col">
@@ -95,12 +96,31 @@ export default function Footer() {
           </a>
           <a href="mailto:Alex@signzoneusa.com">Alex@signzoneusa.com</a>
           <span>Mon–Fri · 8:00 AM – 6:00 PM</span>
+          <Link
+            href="/contact"
+            className="btn btn-blue"
+            style={{
+              marginTop: 12,
+              padding: '8px 18px',
+              fontSize: 13.5,
+              fontWeight: 700,
+              borderRadius: 8,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 8,
+              alignSelf: 'flex-start',
+            }}
+          >
+            <span>Contact Us</span>
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
 
       <div className="wrap legal">
         <span>© 2026 Sign Zone · www.signzoneusa.com · Licensed Texas Electrical Sign Contractor</span>
         <span>
+          <Link href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</Link> ·{' '}
           <Link href="/privacy" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy</Link> ·{' '}
           <Link href="/terms" style={{ color: 'inherit', textDecoration: 'none' }}>Terms</Link> ·{' '}
           <Link href="/accessibility" style={{ color: 'inherit', textDecoration: 'none' }}>Accessibility</Link> ·{' '}

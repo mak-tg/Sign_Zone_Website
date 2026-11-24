@@ -176,8 +176,7 @@ export default function ReviewGateway() {
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <span style={{ color: '#f59e0b', fontSize: 13 }}>★</span>
-              <span style={{ color: 'var(--navy)', fontWeight: 700 }}>Avg. 4.9 Rating</span>
+              <span style={{ color: 'var(--navy)', fontWeight: 700 }}>Serving North Texas</span>
             </div>
             <span style={{ width: 1, height: 14, background: 'var(--soft)' }} />
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -185,7 +184,7 @@ export default function ReviewGateway() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 <polyline points="9 11 11 13 15 9" />
               </svg>
-              <span><strong style={{ color: 'var(--navy)' }}>500+</strong> Signs Installed across DFW</span>
+              <span><strong style={{ color: 'var(--navy)' }}>15+ Years</strong> of Commercial Sign Experience</span>
             </div>
           </div>
         </div>

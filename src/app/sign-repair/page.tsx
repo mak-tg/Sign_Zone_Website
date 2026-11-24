@@ -51,7 +51,7 @@ export default function SignRepairPage() {
           </nav>
           <span className="pill" style={{ marginBottom: 16 }}>
             <span className="dot" />
-            24–48 Hr Commercial Dispatch Across DFW
+            Prompt Commercial Dispatch Across DFW
           </span>
           <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 4.2vw, 52px)', lineHeight: 1.05, margin: 0, maxWidth: 780, color: '#fff' }}>
             DFW Commercial sign repair, LED retrofits &amp; crane service.
@@ -62,9 +62,9 @@ export default function SignRepairPage() {
             high-efficiency LEDs.
           </p>
           <dl className="facts" style={{ marginTop: 36 }}>
-            <div><dt>Dispatch</dt><dd>24 – 48 Hours</dd></div>
+            <div><dt>Dispatch</dt><dd>Prompt Scheduling</dd></div>
             <div><dt>Technicians</dt><dd>Licensed TDLR Electricians</dd></div>
-            <div><dt>Fleet Reach</dt><dd>Up to 65+ ft Crane Service</dd></div>
+            <div><dt>Fleet Reach</dt><dd>Up to 65+ ft Crane Capability</dd></div>
             <div><dt>Warranty</dt><dd>Parts &amp; Labor Coverage</dd></div>
           </dl>
           <div className="btn-row" style={{ marginTop: 32, gap: 14 }}>

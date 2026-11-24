@@ -38,10 +38,10 @@ export const TYPE_RANGE: Record<string, [number, number]> = {
 
 // ── Trust bar ─────────────────────────────────────────────────────────────────
 export const TRUST_STATS = [
-  { value: '500+',      label: 'Signs installed across DFW' },
-  { value: '4.9★',      label: 'Verified client satisfaction rating' },
-  { value: '24 hrs',    label: 'To a written quote' },
-  { value: 'Lic. #00000', label: 'TDLR electrical sign contractor' },
+  { value: '15+ Yrs',   label: 'Serving Dallas–Fort Worth' },
+  { value: '16 Cities', label: 'Actively permitted & installed' },
+  { value: '24 hrs',    label: 'Turnaround to written quote' },
+  { value: 'TDLR',      label: 'Licensed electrical sign contractor' },
 ];
 
 // ── Stages (what stage are you at) ───────────────────────────────────────────
@@ -111,14 +111,12 @@ export const PROCESS_STEPS = [
 
 // ── Industries ────────────────────────────────────────────────────────────────
 export const INDUSTRIES = [
-  { slug: 'restaurants', name: 'Restaurants & QSR',          desc: 'Channel letters, drive-thru menu boards, patio and window graphics' },
-  { slug: 'retail', name: 'Retail & storefronts',        desc: 'Storefront letters, blade signs, window vinyl, promo banners' },
-  { slug: 'medical-dental', name: 'Medical & dental',            desc: 'Monument signs, suite signs, ADA and lobby walls' },
-  { slug: 'shopping-centers', name: 'Shopping centers & property', desc: 'Pylons, multi-tenant monuments, tenant panel programs' },
-  { slug: 'churches-schools', name: 'Churches & schools',          desc: 'Monuments with LED message centers, campus wayfinding' },
-  { slug: 'auto-dealerships', name: 'Auto & dealerships',          desc: 'Pylons, service-bay signs, lot banners and fleet wraps' },
-  { slug: 'offices', name: 'Offices & corporate',         desc: 'Lobby logos, building-top letters, directories, glass graphics' },
-  { slug: 'franchises', name: 'Franchises & chains',         desc: 'Brand-standard rollouts, surveys and permits across cities' },
+  { slug: 'restaurants', name: 'Restaurants & Dining', desc: 'Channel letters, drive-thru menu boards, patio neon, and window graphics' },
+  { slug: 'retail', name: 'Retail & Storefronts', desc: 'Storefront letters, blade signs, window merchandising vinyl, and promo displays' },
+  { slug: 'medical-dental', name: 'Medical & Healthcare', desc: 'Monument signs, suite signs, ADA tactile braille, and halo-lit lobby walls' },
+  { slug: 'fitness-wellness', name: 'Fitness, Spas & Wellness', desc: 'High-visibility channel letters, branded fascia logos, and interior signage' },
+  { slug: 'offices', name: 'Offices & Corporate', desc: 'Lobby logos, building-top letters, architectural directories, and privacy film' },
+  { slug: 'franchises', name: 'Franchises & Chains', desc: 'Brand-standard rollouts, site surveys, and multi-city permitting' },
 ];
 
 // ── Comparison table ──────────────────────────────────────────────────────────
