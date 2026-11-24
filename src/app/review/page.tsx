@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: 'Leave a Review | Sign Zone Commercial Signs Dallas–Fort Worth',
   description:
     'Share your experience with Sign Zone. Your 5-star review helps local Dallas–Fort Worth business owners find trusted commercial sign design, permitting, and fabrication.',
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: '/review',
   },

@@ -3,11 +3,12 @@ import Link from 'next/link'
 import AdaDemo from '@/components/signs/AdaDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
+import ServiceProjectShowcase from '@/components/common/ServiceProjectShowcase'
 
 export const metadata: Metadata = {
   title: 'ADA & Interior Wayfinding Signs Dallas–Fort Worth | Sign Zone',
   description:
-    'Code-compliant ADA interior signs, tactile room numbers, grade 2 braille, and building wayfinding directories in Dallas–Fort Worth. Guaranteed inspection sign-off.',
+    'Code-compliant ADA interior signs, tactile room numbers, grade 2 braille, and building wayfinding directories in Dallas–Fort Worth. Engineered for smooth municipal inspection sign-off.',
   alternates: {
     canonical: '/interior-ada-signs',
   },
@@ -91,7 +92,7 @@ const ADA_FAQ = [
   },
   {
     q: 'Do you offer on-site ADA placement and installation in DFW?',
-    a: 'Yes. Our installation technicians map your architectural floor plans and install every plaque to exact millimeter tolerances, guaranteeing 100% inspection pass rates.',
+    a: 'Yes. Our installation technicians map your architectural floor plans and install every plaque to exact millimeter tolerances, ensuring strict compliance with ADA and Texas Accessibility Standards.',
   },
 ]
 
@@ -117,12 +118,12 @@ export default function InteriorAdaSignsPage() {
                 ADA signs for Texas building codes.
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 480 }}>
-                Code-compliant room, restroom, and directional signs with Grade 2 Braille and tactile lettering. Guaranteed to pass Texas Accessibility Standards (TAS) inspections.
+                Code-compliant room, restroom, and directional signs with Grade 2 Braille and tactile lettering. Engineered strictly to Texas Accessibility Standards (TAS) and ADA specifications.
               </p>
               <dl className="facts">
                 <div><dt>Typical price</dt><dd>$45 – $250/sign</dd></div>
                 <div><dt>Timeline</dt><dd>5 – 8 days</dd></div>
-                <div><dt>Compliance</dt><dd>100% TAS Pass</dd></div>
+                <div><dt>Compliance</dt><dd>TAS &amp; ADA Compliant</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=ada">Quote my ADA sign package</Link>
@@ -237,6 +238,13 @@ export default function InteriorAdaSignsPage() {
           <p className="note">All signs comply with Americans with Disabilities Act (ADA) and Texas Accessibility Standards (TAS). Volume discounts available for full-building packages.</p>
         </div>
       </section>
+
+      {/* Real Project Proof */}
+      <ServiceProjectShowcase
+        category="interior"
+        title="ADA &amp; interior architectural signage across DFW."
+        subtitle="Grade 2 Braille room markers, wayfinding directories, and tactile signs engineered to Texas code."
+      />
 
       {/* FAQ */}
       <section className="paper sec">

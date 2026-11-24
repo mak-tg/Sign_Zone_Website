@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.signzoneusa.com'),
   title: {
     default: 'Sign Zone | Custom Business Signs in Dallas–Fort Worth',
-    template: '%s | Sign Zone DFW',
+    template: '%s',
   },
   description:
     'Channel letters, monument, pylon, storefront, interior and vehicle signs for Dallas–Fort Worth businesses. Designed, permitted, built and installed by one team.',

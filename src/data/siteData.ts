@@ -129,7 +129,7 @@ export const COMPARE_ROWS = [
   { feature: 'Licensed electrical install', us: 'Our own crew',         other: 'Often subcontracted',    online: 'You hire someone' },
   { feature: 'Online project tracking', us: 'Live status updates',      other: 'Phone calls',            online: 'Shipping tracking only' },
   { feature: 'Financing',               us: '12–60 months',             other: 'Rarely',                 online: 'Card only' },
-  { feature: 'Warranty & maintenance',  us: '[X]-year + service plans', other: 'Varies',                 online: 'Product only' },
+  { feature: 'Warranty & maintenance',  us: 'Multi-year + service plans', other: 'Varies',                 online: 'Product only' },
 ];
 
 // ── FAQ ───────────────────────────────────────────────────────────────────────
@@ -227,7 +227,7 @@ export const CL_SIZES = [
 export const CL_FAQ = [
   { q: 'How much do channel letters cost?',          a: 'Most DFW storefront channel letter projects land between $3,000 and $20,000 including install. Letter height, number of letters, lighting style and install height are the big drivers.' },
   { q: 'Will my landlord approve them?',             a: "Most shopping centers have sign criteria that specify letter height, color, lighting and mounting. Send us your lease exhibit and we design within it, then submit for approval." },
-  { q: 'How long do LED channel letters last?',      a: 'Quality LED modules are rated for many years of nightly use. Our warranty covers parts and labor for [X] years, and maintenance plans are available.' },
+  { q: 'How long do LED channel letters last?',      a: 'Quality LED modules are rated for many years of nightly use. Our warranty covers parts and labor, and ongoing maintenance plans are available.' },
   { q: 'Can you reuse my existing raceway or permit?', a: 'Often, yes, especially for a face change or rebrand on the same wall. We check this during the site survey.' },
   { q: 'Do they need a timer?',                      a: 'We add a photocell or timer so your sign turns on at dusk and off when you choose, which also keeps you within any city lighting rules.' },
 ];

@@ -3,15 +3,16 @@ import { LOCATION_PAGES } from '@/data/siteData'
 export default function JsonLd() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'SignShop'],
+    '@type': ['LocalBusiness', 'ProfessionalService'],
     '@id': 'https://www.signzoneusa.com/#organization',
     name: 'Sign Zone',
     alternateName: 'Sign Zone DFW',
     url: 'https://www.signzoneusa.com',
     logo: 'https://www.signzoneusa.com/images/logo.png',
     image: 'https://www.signzoneusa.com/images/logo.png',
+    foundingDate: '2011',
     description:
-      'Premier commercial sign manufacturer and contractor serving the Dallas–Fort Worth Metroplex. Specializing in custom LED channel letters, monument signs, pylon signs, storefront cabinets, lobby signage, and vehicle wraps.',
+      'Licensed commercial electrical sign contractor and manufacturer serving Dallas–Fort Worth. In-house fabrication, municipal permitting, and installation for LED channel letters, monument signs, pylon signs, storefront cabinets, lobby logos, and vehicle wraps.',
     telephone: '+1-214-714-4623',
     email: 'Alex@signzoneusa.com',
     priceRange: '$$$',

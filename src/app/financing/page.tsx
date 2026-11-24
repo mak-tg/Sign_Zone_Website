@@ -17,5 +17,5 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <FinancingSection />
+  return <FinancingSection asH1={true} />
 }

@@ -17,5 +17,5 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <ProcessSteps />
+  return <ProcessSteps asH1={true} />
 }

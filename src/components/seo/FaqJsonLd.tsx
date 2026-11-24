@@ -12,7 +12,7 @@ export default function FaqJsonLd({ items }: { items: FAQItem[] }) {
       name: item.q,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: item.a,
+        text: item.a.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1'),
       },
     })),
   }

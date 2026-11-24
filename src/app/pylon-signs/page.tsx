@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PylonDemo from '@/components/signs/PylonDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
+import ServiceProjectShowcase from '@/components/common/ServiceProjectShowcase'
 
 export const metadata: Metadata = {
   title: 'Custom Highway Pylon & Pole Signs Dallas–Fort Worth | Sign Zone',
@@ -237,6 +238,13 @@ export default function PylonSignsPage() {
           <p className="note">Calculations based on 65–70 MPH highway speeds (FHWA &amp; USSC formula). Prices reflect structural steel, multi-tenant cabinet fabrication, LED illumination, and heavy crane erection.</p>
         </div>
       </section>
+
+      {/* Real Project Proof */}
+      <ServiceProjectShowcase
+        category="pylon"
+        title="Highway pylon and commercial center sign projects."
+        subtitle="High-impact highway commercial signs fabricated and installed along major DFW corridors."
+      />
 
       {/* FAQ */}
       <section className="paper sec">

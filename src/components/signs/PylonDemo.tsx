@@ -18,7 +18,7 @@ export const PYLON_STYLES: PylonStyle[] = [
     id: 'highway-retail',
     label: 'Highway Center',
     title: 'METROPLEX CROSSING',
-    slots: ['TARGET', 'BEST BUY', 'STARBUCKS', 'CHIPOTLE'],
+    slots: ['CINEMA 14', 'METRO BISTRO', 'HORIZON DENTAL', 'LUMEN FITNESS'],
     desc: 'Towering multi-tenant pylon sign visible from 1,200+ feet along interstate corridors. Individually lit acrylic tenant slots.',
     best: 'I-35, I-635, Hwy 75 regional plazas',
     height: '45 – 65 ft',

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import LobbyDemo from '@/components/signs/LobbyDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
+import ServiceProjectShowcase from '@/components/common/ServiceProjectShowcase'
 
 export const metadata: Metadata = {
   title: 'Custom Lobby & Reception Signs Dallas–Fort Worth | Sign Zone',
@@ -236,6 +237,13 @@ export default function LobbySignsPage() {
           <p className="note">Readable distance is tailored for interior hallway and lobby viewing distances. Prices include laser cutting, custom PMS paint matching, standoff mounting hardware, and professional Dallas–Fort Worth installation.</p>
         </div>
       </section>
+
+      {/* Real Project Proof */}
+      <ServiceProjectShowcase
+        category="interior"
+        title="Lobby, reception &amp; architectural signs in North Texas."
+        subtitle="Dimensional acrylic, brushed metal, and backlit logo walls for professional offices."
+      />
 
       {/* FAQ */}
       <section className="paper sec">

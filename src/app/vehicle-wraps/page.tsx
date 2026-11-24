@@ -3,6 +3,7 @@ import Link from 'next/link'
 import WrapDemo from '@/components/signs/WrapDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
+import ServiceProjectShowcase from '@/components/common/ServiceProjectShowcase'
 
 export const metadata: Metadata = {
   title: 'Commercial Vehicle Wraps & Fleet Graphics Dallas–Fort Worth | Sign Zone',
@@ -238,6 +239,13 @@ export default function VehicleWrapsPage() {
           <p className="note">Prices include 3M Cast vinyl printing, UV laminate protection, and professional Dallas–Fort Worth shop installation. Fleet discounts available for 3+ vehicles.</p>
         </div>
       </section>
+
+      {/* Real Project Proof */}
+      <ServiceProjectShowcase
+        category="wrap"
+        title="Commercial fleet graphics and wraps in Dallas–Fort Worth."
+        subtitle="Turn your work trucks, vans, and trailers into 24/7 mobile billboards with 3M cast vinyl."
+      />
 
       {/* FAQ */}
       <section className="paper sec">

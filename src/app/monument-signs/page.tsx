@@ -3,6 +3,7 @@ import Link from 'next/link'
 import MonumentDemo from '@/components/signs/MonumentDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
+import ServiceProjectShowcase from '@/components/common/ServiceProjectShowcase'
 
 export const metadata: Metadata = {
   title: 'Custom Monument Signs Dallas–Fort Worth | Ground & Architectural Signs',
@@ -242,6 +243,13 @@ export default function MonumentSignsPage() {
           <p className="note">Readable distance is based on road setback and roadway speed (U.S. Sign Council). Prices include structural steel and aluminum fabrication; concrete footing and municipal permits quoted per site conditions.</p>
         </div>
       </section>
+
+      {/* Real Project Proof */}
+      <ServiceProjectShowcase
+        category="monument"
+        title="Freestanding monument and entrance signs in North Texas."
+        subtitle="Custom masonry, aluminum cabinet, and multi-tenant monuments engineered for Texas wind loads."
+      />
 
       {/* FAQ */}
       <section className="paper sec">

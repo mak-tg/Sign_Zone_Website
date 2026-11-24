@@ -17,5 +17,5 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <SignTypesGrid />
+  return <SignTypesGrid asH1={true} />
 }

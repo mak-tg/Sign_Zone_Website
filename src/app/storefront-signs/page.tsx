@@ -3,6 +3,7 @@ import Link from 'next/link'
 import StorefrontDemo from '@/components/signs/StorefrontDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
+import ServiceProjectShowcase from '@/components/common/ServiceProjectShowcase'
 
 export const metadata: Metadata = {
   title: 'Custom Storefront Signs & Lightboxes Dallas–Fort Worth | Sign Zone',
@@ -241,6 +242,13 @@ export default function StorefrontSignsPage() {
           <p className="note">Readable distance is based on road setback and roadway speed (U.S. Sign Council). Prices are complete turnkey estimates including UL electrical certification and local Texas installation.</p>
         </div>
       </section>
+
+      {/* Real Project Proof */}
+      <ServiceProjectShowcase
+        category="storefront"
+        title="Storefront and cabinet signs across Dallas–Fort Worth."
+        subtitle="Extruded aluminum lightboxes, blade signs, and contour dimensional storefront logos."
+      />
 
       {/* FAQ */}
       <section className="paper sec">

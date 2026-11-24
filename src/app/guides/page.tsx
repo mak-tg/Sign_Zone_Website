@@ -17,5 +17,5 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <GuidesSection />
+  return <GuidesSection asH1={true} />
 }

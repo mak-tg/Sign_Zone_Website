@@ -1,15 +1,21 @@
 import { PROCESS_STEPS } from '@/data/siteData'
 
-export default function ProcessSteps() {
+export default function ProcessSteps({ asH1 = false }: { asH1?: boolean }) {
   return (
     <section className="paper sec" id="process">
       <div className="wrap">
         <div className="head-row">
           <div>
             <div className="eyebrow">How it works</div>
-            <h2 className="disp sec-h">
-              Six steps to lights on.
-            </h2>
+            {asH1 ? (
+              <h1 className="disp sec-h">
+                Six steps to lights on.
+              </h1>
+            ) : (
+              <h2 className="disp sec-h">
+                Six steps to lights on.
+              </h2>
+            )}
           </div>
           <p className="lead">
             One project manager, one phone number, the whole way through. You&apos;ll always know what&apos;s happening and what&apos;s next.

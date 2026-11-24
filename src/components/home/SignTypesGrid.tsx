@@ -18,7 +18,7 @@ const CAT_LABELS: Record<string, string> = {
   dig: 'Digital & LED',
 }
 
-export default function SignTypesGrid() {
+export default function SignTypesGrid({ asH1 = false }: { asH1?: boolean }) {
   const [activeCat, setActiveCat] = useState('all')
 
   const filteredSigns = SIGN_TYPES.filter(
@@ -29,9 +29,15 @@ export default function SignTypesGrid() {
     <section className="light sec" id="signs">
       <div className="wrap">
         <div className="eyebrow">Every kind of sign</div>
-        <h2 className="disp sec-h">
-          Every sign, built in Texas.
-        </h2>
+        {asH1 ? (
+          <h1 className="disp sec-h">
+            Every sign, built in Texas.
+          </h1>
+        ) : (
+          <h2 className="disp sec-h">
+            Every sign, built in Texas.
+          </h2>
+        )}
 
         <div
           className="chips"
@@ -73,7 +79,7 @@ export default function SignTypesGrid() {
                 <img
                   className="sign-photo"
                   src={s.image}
-                  alt=""
+                  alt={`${s.name} - Commercial sign fabricated by Sign Zone DFW`}
                   loading="lazy"
                 />
                 <span className="tag">{CAT_LABELS[s.cat]}</span>

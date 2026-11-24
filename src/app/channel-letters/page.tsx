@@ -3,6 +3,7 @@ import Link from 'next/link'
 import LightingDemo from '@/components/channel-letters/LightingDemo'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
+import ServiceProjectShowcase from '@/components/common/ServiceProjectShowcase'
 import { CL_PARTS, CL_MOUNTS, CL_SIZES, CL_FAQ } from '@/data/siteData'
 
 export const metadata: Metadata = {
@@ -46,7 +47,7 @@ export default function ChannelLettersPage() {
               <dl className="facts">
                 <div><dt>Typical project</dt><dd>$3k – $20k+</dd></div>
                 <div><dt>Timeline</dt><dd>4 – 8 weeks</dd></div>
-                <div><dt>Warranty</dt><dd>[X] years</dd></div>
+                <div><dt>Warranty</dt><dd>Parts &amp; Labor</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=channel">Quote my channel letters</Link>
@@ -158,6 +159,13 @@ export default function ChannelLettersPage() {
           <p className="note">Readable = 30 ft per inch (U.S. Sign Council). Stands out = 10 ft per inch. Prices are 2026 U.S. industry ranges for front-lit letters, before install and permits.</p>
         </div>
       </section>
+
+      {/* Real Project Proof */}
+      <ServiceProjectShowcase
+        category="channel"
+        title="Channel letter projects installed across DFW."
+        subtitle="Explore custom front-lit, halo-lit, and combination channel letter signs built by Sign Zone."
+      />
 
       {/* FAQ */}
       <section className="paper sec">

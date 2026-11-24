@@ -245,26 +245,6 @@ export default function ReviewGateway() {
           </span>
         </div>
       </div>
-
-      {/* Direct Resolution Support Note */}
-      <div
-        style={{
-          marginTop: 24,
-          textAlign: 'center',
-          fontSize: 13,
-          color: 'var(--muted)',
-        }}
-      >
-        <span>Need an adjustment before reviewing? </span>
-        <a
-          href="tel:2147144623"
-          onClick={() => trackCall('review_page_support')}
-          style={{ color: 'var(--blue)', fontWeight: 600, textDecoration: 'none' }}
-        >
-          Call directly at 214-714-4623
-        </a>
-        <span> — we stand behind every sign 100%.</span>
-      </div>
     </div>
   )
 }

@@ -100,33 +100,16 @@ export default async function LocationPage({ params }: { params: Promise<Params>
     ],
   }
 
-  const localBusinessSchema = {
+  const localServiceSchema = {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'SignShop'],
-    '@id': `https://www.signzoneusa.com/locations/${loc.slug}#localbusiness`,
-    name: `Sign Zone - ${loc.name} Commercial Signs`,
-    alternateName: `Sign Zone ${loc.name}`,
-    parentOrganization: {
-      '@type': 'Organization',
-      name: 'Sign Zone',
-      url: 'https://www.signzoneusa.com',
+    '@type': 'Service',
+    '@id': `https://www.signzoneusa.com/locations/${loc.slug}#service`,
+    name: `Commercial Sign Fabrication & Installation in ${loc.name}, TX`,
+    serviceType: 'Commercial Sign Contractor',
+    provider: {
+      '@id': 'https://www.signzoneusa.com/#organization',
     },
     url: `https://www.signzoneusa.com/locations/${loc.slug}`,
-    telephone: '+1-214-714-4623',
-    email: 'Alex@signzoneusa.com',
-    priceRange: '$$$',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: loc.name,
-      addressRegion: 'TX',
-      postalCode: geo.primaryZip,
-      addressCountry: 'US',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: geo.lat,
-      longitude: geo.lng,
-    },
     areaServed: {
       '@type': 'City',
       name: `${loc.name}, Texas`,
@@ -134,16 +117,12 @@ export default async function LocationPage({ params }: { params: Promise<Params>
         '@type': 'AdministrativeArea',
         name: `${geo.county}, Texas`,
       },
-    },
-    hasMap: `https://www.google.com/maps/search/?api=1&query=${geo.lat},${geo.lng}`,
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '18:00',
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: geo.lat,
+        longitude: geo.lng,
       },
-    ],
+    },
     description: data.metaDesc,
   }
 
@@ -155,7 +134,7 @@ export default async function LocationPage({ params }: { params: Promise<Params>
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localServiceSchema) }}
       />
 
       {/* City Hero */}

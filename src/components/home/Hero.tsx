@@ -28,7 +28,7 @@ export default function Hero() {
         <div style={{ flex: '1 1 480px', minWidth: 0 }}>
           <span className="pill">
             <span className="dot" />
-            Custom Sign Company in Dallas–Fort Worth, TX
+            Custom Sign Company in Dallas–Fort Worth, TX · Since 2011
           </span>
           <h1 className="disp">
             Custom commercial signs that put your business{' '}
@@ -95,7 +95,7 @@ export default function Hero() {
               <svg className="check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4D8DFF" strokeWidth="2.5" aria-hidden="true">
                 <path d="M4 12l5 5L20 6" />
               </svg>
-              [X]-year warranty on parts &amp; labor
+              Parts &amp; labor warranty included
             </li>
           </ul>
         </div>

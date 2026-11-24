@@ -9,7 +9,7 @@ function money(n: number) {
 
 const PRESETS = [5000, 15000, 30000, 60000, 100000]
 
-export default function FinancingSection() {
+export default function FinancingSection({ asH1 = false }: { asH1?: boolean }) {
   const [amount, setAmount] = useState(15000)
   const animRef = useRef<number | null>(null)
   const r = 0.0999 / 12
@@ -51,11 +51,17 @@ export default function FinancingSection() {
           <div className="eyebrow" style={{ color: '#DCE7FF' }}>
             Sign financing
           </div>
-          <h2 className="disp sec-h" style={{ color: '#fff' }}>
-            Get the sign. Pay over time.
-          </h2>
+          {asH1 ? (
+            <h1 className="disp sec-h" style={{ color: '#fff' }}>
+              Get the sign. Pay over time.
+            </h1>
+          ) : (
+            <h2 className="disp sec-h" style={{ color: '#fff' }}>
+              Get the sign. Pay over time.
+            </h2>
+          )}
           <p style={{ fontSize: 18, lineHeight: 1.6, color: '#E6EEFF', margin: '20px 0 0', maxWidth: 520 }}>
-            Spread the cost of your sign over 12–60 months through [financing partner]. Quick application, decision in [X] hours, no effect on your credit score.
+            Spread the cost of your sign over 12–60 months with commercial equipment financing. Quick online application, fast 24–48 hour approvals, and flexible capital-preserving terms.
           </p>
           <Link href="/quote" className="btn btn-dark" data-quote="" style={{ marginTop: 28 }}>
             Check my financing options

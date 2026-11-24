@@ -181,7 +181,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         },
       },
       {
-        heading: 'The 4 Steps to Guaranteed Permit Approval',
+        heading: 'The 4 Steps to a Smooth Permit Approval',
         content: [
           'To ensure your commercial sign permit is approved on the first submittal without rejection delays. You can also verify your requirements in our free [Sign Planning Toolkit](/toolkit#permits):',
         ],
@@ -209,7 +209,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
       'Landlord sign criteria take legal precedence over city codes if the landlord’s rules are more restrictive.',
       'Check whether your building requires a raceway (pre-painted to match the wall) or allows flush mounting with rear access.',
       'Many upscale centers prohibit standard front-lit plastic letters and mandate reverse halo-lit architectural lettering.',
-      'Sign Zone creates turnkey landlord submittal packages that get stamped and approved in 48 hours.',
+      'Sign Zone creates turnkey landlord submittal packages prepared and ready for review within 48 hours.',
     ],
     sections: [
       {

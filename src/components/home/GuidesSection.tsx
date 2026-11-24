@@ -1,14 +1,18 @@
 import Link from 'next/link'
 import { GUIDES_ARTICLES } from '@/data/guidesData'
 
-export default function GuidesSection() {
+export default function GuidesSection({ asH1 = false }: { asH1?: boolean }) {
   const guidesList = Object.values(GUIDES_ARTICLES)
 
   return (
     <section className="light sec" id="resources">
       <div className="wrap">
         <div className="eyebrow">Sign buyer&apos;s guides</div>
-        <h2 className="disp sec-h">Straight answers before you buy.</h2>
+        {asH1 ? (
+          <h1 className="disp sec-h">Straight answers before you buy.</h1>
+        ) : (
+          <h2 className="disp sec-h">Straight answers before you buy.</h2>
+        )}
         <p style={{ color: 'var(--muted)', fontSize: 17, maxWidth: 640, marginTop: 14, lineHeight: 1.55 }}>
           No sales spin. Straight, engineered answers to commercial sign costs, municipal permits, landlord criteria, and visibility formulas in Dallas–Fort Worth.
         </p>

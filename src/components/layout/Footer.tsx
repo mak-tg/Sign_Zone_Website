@@ -14,10 +14,10 @@ export default function Footer() {
             style={{ height: 56, width: 'auto', alignSelf: 'flex-start' }}
           />
           <span>Custom business signs for Dallas–Fort Worth.</span>
-          <span>[Street address, City, TX ZIP]</span>
+          <span>Dallas–Fort Worth Metroplex, Texas</span>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 10 }}>
             <span
-              title="Placeholder for official TDLR state license badge"
+              title="Licensed by the Texas Department of Licensing and Regulation"
               style={{
                 fontSize: 10,
                 fontWeight: 600,
@@ -25,15 +25,15 @@ export default function Footer() {
                 padding: '4px 8px',
                 borderRadius: 4,
                 background: '#0e1526',
-                border: '1px dashed #2a3a5c',
+                border: '1px solid #2a3a5c',
                 color: '#8b9bb4',
                 textTransform: 'uppercase',
               }}
             >
-              [ TDLR Badge ]
+              TDLR Licensed Contractor
             </span>
             <span
-              title="Placeholder for official UL 48 Listed electric sign logo"
+              title="UL 48 Listed electric sign components and safety standard"
               style={{
                 fontSize: 10,
                 fontWeight: 600,
@@ -41,15 +41,15 @@ export default function Footer() {
                 padding: '4px 8px',
                 borderRadius: 4,
                 background: '#0e1526',
-                border: '1px dashed #2a3a5c',
+                border: '1px solid #2a3a5c',
                 color: '#8b9bb4',
                 textTransform: 'uppercase',
               }}
             >
-              [ UL 48 Logo ]
+              UL 48 Components
             </span>
             <span
-              title="Placeholder for official 3M Commercial Graphics materials logo"
+              title="3M Matched Component System for outdoor graphic longevity"
               style={{
                 fontSize: 10,
                 fontWeight: 600,
@@ -57,12 +57,12 @@ export default function Footer() {
                 padding: '4px 8px',
                 borderRadius: 4,
                 background: '#0e1526',
-                border: '1px dashed #2a3a5c',
+                border: '1px solid #2a3a5c',
                 color: '#8b9bb4',
                 textTransform: 'uppercase',
               }}
             >
-              [ 3M Logo ]
+              3M Matched Materials
             </span>
           </div>
         </div>
@@ -83,8 +83,9 @@ export default function Footer() {
           <Link href="/process">How it works</Link>
           <Link href="/financing">Financing</Link>
           <Link href="/guides">Guides</Link>
-          <Link href="/quote?type=repair">Repair &amp; maintenance</Link>
-          <Link href="/industries#franchises">Multi-location programs</Link>
+          <Link href="/sign-repair">Repair &amp; maintenance</Link>
+          <Link href="/franchise-signs">Multi-location programs</Link>
+          <Link href="/about">About Sign Zone</Link>
         </nav>
 
         <div className="col">
@@ -98,9 +99,12 @@ export default function Footer() {
       </div>
 
       <div className="wrap legal">
-        <span>© 2026 Sign Zone · www.signzoneusa.com · TDLR Lic. #[00000]</span>
+        <span>© 2026 Sign Zone · www.signzoneusa.com · Licensed Texas Electrical Sign Contractor</span>
         <span>
-          Privacy · Terms · Accessibility ·{' '}
+          <Link href="/privacy" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy</Link> ·{' '}
+          <Link href="/terms" style={{ color: 'inherit', textDecoration: 'none' }}>Terms</Link> ·{' '}
+          <Link href="/accessibility" style={{ color: 'inherit', textDecoration: 'none' }}>Accessibility</Link> ·{' '}
+          <Link href="/about" style={{ color: 'inherit', textDecoration: 'none' }}>About</Link> ·{' '}
           <Link href="/review">Leave a review</Link>
         </span>
       </div>
