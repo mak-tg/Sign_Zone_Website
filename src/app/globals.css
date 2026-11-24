@@ -996,3 +996,98 @@ footer strong { color: #fff; }
   font: inherit; font-weight: 600; cursor: pointer;
 }
 .nav-resources-panel a.res-all { border-top: 1px solid #2a416b; border-radius: 0 0 10px 10px; margin-top: 4px; } .nav-resources-panel a.res-all strong { color: #7fa8ff; font-size: 14px; }
+
+/* ── Review Gateway Styles & Keyframes ────────────────────────────── */
+@keyframes reviewGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(0, 80, 240, 0.25), 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(0, 80, 240, 0.45), 0 12px 36px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes starShimmer {
+  0% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.4)); }
+  50% { transform: scale(1.04); filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.9)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.4)); }
+}
+
+@keyframes qrScanBeam {
+  0% { top: 6px; opacity: 0; }
+  15% { opacity: 0.9; }
+  85% { opacity: 0.9; }
+  100% { top: calc(100% - 10px); opacity: 0; }
+}
+
+@keyframes toastSlideUp {
+  from { opacity: 0; transform: translate(-50%, 12px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.review-card-interactive {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.22s, box-shadow 0.22s;
+}
+.review-card-interactive:hover {
+  transform: translateY(-2px);
+  border-color: rgba(77, 141, 255, 0.4) !important;
+}
+
+.review-cta-btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.review-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 80, 240, 0.55), 0 0 24px rgba(77, 141, 255, 0.3);
+}
+.review-cta-btn:active {
+  transform: translateY(1px);
+}
+.review-cta-btn:hover .cta-arrow {
+  transform: translateX(4px);
+}
+.cta-arrow {
+  transition: transform 0.2s ease;
+}
+
+.review-chip-btn {
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.review-chip-btn:hover {
+  background: rgba(31, 102, 255, 0.2) !important;
+  border-color: var(--elec) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+.review-chip-btn:active {
+  transform: scale(0.97);
+}
+
+.qr-scanner-frame {
+  position: relative;
+  display: inline-block;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(6, 38, 102, 0.12);
+  overflow: hidden;
+}
+.qr-scan-line {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 3.5px;
+  background: linear-gradient(90deg, transparent, #0050F0, #00D2FF, #0050F0, transparent);
+  box-shadow: 0 0 12px #00D2FF, 0 0 4px #0050F0;
+  animation: qrScanBeam 2.4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qr-scan-line { animation: none !important; display: none; }
+  .review-cta-btn { transition: none !important; }
+}
