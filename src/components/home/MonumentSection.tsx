@@ -40,11 +40,11 @@ export default function MonumentSection() {
             </li>
           </ul>
           <div className="btn-row" style={{ marginTop: 32 }}>
-            <Link href="/quote?type=monument" className="btn btn-blue" data-quote="monument">
-              Quote a monument sign
+            <Link href="/monument-signs" className="btn btn-blue">
+              Explore Monument Signs →
             </Link>
-            <Link href="/toolkit" className="btn btn-ghost">
-              Plan your budget
+            <Link href="/quote?type=monument" className="btn btn-ghost" data-quote="monument">
+              Get written quote
             </Link>
           </div>
         </div>

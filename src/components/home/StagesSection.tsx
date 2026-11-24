@@ -53,14 +53,21 @@ export default function StagesSection() {
                 <div className="big">{s.time}</div>
               </div>
             </div>
-            <Link
-              href="/quote"
-              className="btn btn-blue"
-              data-quote={s.type}
-              style={{ marginTop: 32 }}
-            >
-              {s.cta}
-            </Link>
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 32 }}>
+              <Link
+                href={s.link || '/quote'}
+                className="btn btn-blue"
+              >
+                Learn more about this sign system →
+              </Link>
+              <Link
+                href="/quote"
+                className="btn btn-ghost"
+                data-quote={s.type}
+              >
+                {s.cta}
+              </Link>
+            </div>
           </div>
           <div>
             <div className="kv">Your sign stack</div>

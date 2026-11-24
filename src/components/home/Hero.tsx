@@ -28,14 +28,38 @@ export default function Hero() {
         <div style={{ flex: '1 1 480px', minWidth: 0 }}>
           <span className="pill">
             <span className="dot" />
-            Free design mockup with every quote
+            Custom Sign Company in Dallas–Fort Worth, TX
           </span>
           <h1 className="disp">
-            Signs that put your business{' '}
+            Custom commercial signs that put your business{' '}
             <span style={{ color: 'var(--elec)' }}>on the map.</span>
           </h1>
           <p className="sub">
-            Channel letters, monument, pylon, storefront, interior and vehicle signs for Dallas–Fort Worth businesses of every size. One team designs it, permits it, builds it and installs it.
+            Sign Zone is a premier commercial sign company in{' '}
+            <Link href="/locations/dallas" style={{ color: 'var(--dtext)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.3)', textUnderlineOffset: 3 }}>
+              Dallas
+            </Link>{' '}
+            and{' '}
+            <Link href="/locations/fort-worth" style={{ color: 'var(--dtext)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.3)', textUnderlineOffset: 3 }}>
+              Fort Worth, TX
+            </Link>
+            . We design, fabricate, permit, and install custom business signs under one roof —{' '}
+            <Link href="/channel-letters" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+              channel letters
+            </Link>
+            ,{' '}
+            <Link href="/monument-signs" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+              monument signs
+            </Link>
+            ,{' '}
+            <Link href="/pylon-signs" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+              pylon signs
+            </Link>
+            , and{' '}
+            <Link href="/storefront-signs" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+              storefront lightboxes
+            </Link>{' '}
+            across North Texas.
           </p>
           <div className="btn-row" style={{ marginTop: 36 }}>
             <Link href="/quote" className="btn btn-blue" data-quote="">

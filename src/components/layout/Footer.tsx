@@ -70,21 +70,21 @@ export default function Footer() {
         <nav aria-label="Signs">
           <strong>Signs</strong>
           <Link href="/channel-letters">Channel letters</Link>
-          <Link href="/#signs">Monument signs</Link>
-          <Link href="/#signs">Pylon &amp; pole signs</Link>
-          <Link href="/#signs">Storefront &amp; cabinet signs</Link>
-          <Link href="/#signs">Interior &amp; ADA</Link>
-          <Link href="/#signs">Vehicle wraps</Link>
+          <Link href="/monument-signs">Monument signs</Link>
+          <Link href="/pylon-signs">Pylon &amp; pole signs</Link>
+          <Link href="/storefront-signs">Storefront &amp; cabinet signs</Link>
+          <Link href="/interior-ada-signs">Interior &amp; ADA</Link>
+          <Link href="/vehicle-wraps">Vehicle wraps</Link>
         </nav>
 
         <nav aria-label="Plan">
           <strong>Plan</strong>
           <Link href="/toolkit">Sign Toolkit</Link>
-          <Link href="/#process">How it works</Link>
-          <Link href="/#financing">Financing</Link>
-          <Link href="/#resources">Guides</Link>
-          <Link href="/quote">Repair &amp; maintenance</Link>
-          <Link href="/quote">Multi-location programs</Link>
+          <Link href="/process">How it works</Link>
+          <Link href="/financing">Financing</Link>
+          <Link href="/guides">Guides</Link>
+          <Link href="/quote?type=repair">Repair &amp; maintenance</Link>
+          <Link href="/industries#franchises">Multi-location programs</Link>
         </nav>
 
         <div className="col">

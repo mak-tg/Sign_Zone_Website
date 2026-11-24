@@ -35,7 +35,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     updatedText: 'Updated for 2026',
     publishedDate: 'January 2026',
     summary:
-      'A complete, transparent cost breakdown for commercial business signage in the Dallas–Fort Worth Metroplex. Learn what channel letters, monument signs, and storefront cabinets actually cost including engineering, municipal permits, and electrical installation.',
+      'A complete, transparent cost breakdown for commercial business signage in the Dallas–Fort Worth Metroplex. Learn what [channel letters](/channel-letters), [monument signs](/monument-signs), and [storefront cabinets](/storefront-signs) actually cost including engineering, [municipal permits](/guides/dfw-sign-permits-explained), and electrical installation.',
     keyTakeaways: [
       'Standard LED channel letters for a typical DFW retail storefront range from $3,500 to $8,500 installed.',
       'Freestanding monument signs start around $6,500 for single-tenant masonry bases and reach $25,000+ for illuminated multi-tenant pylons.',
@@ -52,12 +52,12 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         table: {
           headers: ['Sign Type', 'Typical Size', 'Installed Price Range', 'Best Suited For'],
           rows: [
-            ['Front-Lit LED Channel Letters', '12–18 ft width, 18–24" letters', '$3,500 – $7,200', 'Retail centers, strip malls, restaurants'],
-            ['Halo-Lit (Reverse) Channel Letters', '10–16 ft width, architectural', '$4,500 – $9,500', 'Boutiques, dental clinics, luxury corporate'],
-            ['Combination Front/Back Lit', 'Multi-layer 3D illuminated', '$6,000 – $12,500', 'Flagship dining, entertainment venues'],
-            ['Storefront Lightbox Cabinet', '3 ft x 10 ft extruded aluminum', '$2,800 – $5,500', 'Industrial parks, gas stations, strip centers'],
-            ['Masonry Monument Sign', '6 ft height x 8 ft width', '$7,500 – $18,000', 'Office parks, medical plazas, shopping hubs'],
-            ['Multi-Tenant Pylon Sign', '20–35 ft highway freestanding', '$18,000 – $65,000+', 'Highways (US-75, I-35, I-30, SH-114)'],
+            ['[Front-Lit LED Channel Letters](/channel-letters)', '12–18 ft width, 18–24" letters', '$3,500 – $7,200', 'Retail centers, strip malls, restaurants'],
+            ['[Halo-Lit (Reverse) Channel Letters](/channel-letters)', '10–16 ft width, architectural', '$4,500 – $9,500', 'Boutiques, dental clinics, luxury corporate'],
+            ['[Combination Front/Back Lit](/channel-letters)', 'Multi-layer 3D illuminated', '$6,000 – $12,500', 'Flagship dining, entertainment venues'],
+            ['[Storefront Lightbox Cabinet](/storefront-signs)', '3 ft x 10 ft extruded aluminum', '$2,800 – $5,500', 'Industrial parks, gas stations, strip centers'],
+            ['[Masonry Monument Sign](/monument-signs)', '6 ft height x 8 ft width', '$7,500 – $18,000', 'Office parks, medical plazas, shopping hubs'],
+            ['[Multi-Tenant Pylon Sign](/pylon-signs)', '20–35 ft highway freestanding', '$18,000 – $65,000+', 'Highways (US-75, I-35, I-30, SH-114)'],
           ],
         },
       },
@@ -78,18 +78,18 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         heading: 'How to Maximize Your Sign ROI',
         content: [
           'According to the U.S. Small Business Administration (SBA), an on-premise business sign is your most cost-effective marketing medium, delivering impressions at under $0.20 per thousand views.',
-          'To maximize your return, prioritize letter height: at 45 MPH along suburban corridors like Preston Road or Cooper Street, drivers need at least 18-to-24 inch letters to read your business name safely.',
+          'To maximize your return, prioritize letter height: at 45 MPH along suburban corridors like Preston Road or Cooper Street, drivers need at least 18-to-24 inch letters to read your business name safely. Calculate your exact sightline with our [Letter Visibility Calculator](/toolkit#visibility).',
         ],
       },
     ],
     faqs: [
       {
         q: 'Do you offer financing for commercial signs in DFW?',
-        a: 'Yes. Sign Zone partners with commercial equipment lenders to provide 12 to 60-month financing terms, allowing you to preserve working capital.',
+        a: 'Yes. Sign Zone partners with commercial equipment lenders to provide [12 to 60-month financing terms](/financing), allowing you to preserve working capital.',
       },
       {
         q: 'How long does a commercial sign take from deposit to installation?',
-        a: 'Typically 3 to 6 weeks. The longest step is usually city permit approvals (which take 1 to 3 weeks depending on the municipality).',
+        a: 'Typically 3 to 6 weeks. The longest step is usually city permit approvals (which take 1 to 3 weeks depending on the municipality). Plan your project using our [Opening-Day Timeline Planner](/toolkit#timeline).',
       },
     ],
   },
@@ -120,8 +120,8 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         table: {
           headers: ['Feature', 'LED Channel Letters', 'Extruded Cabinet Signs'],
           rows: [
-            ['Average Installed Cost', '$3,500 – $8,500', '$2,800 – $5,500'],
-            ['Aesthetic Appearance', 'Individual 3D letters (architectural)', 'Single rectangular box with printed face'],
+            ['Average Installed Cost', '[3D Channel Letters](/channel-letters): $3,500 – $8,500', '[Storefront Cabinet Signs](/storefront-signs): $2,800 – $5,500'],
+            ['Aesthetic Appearance', 'Individual 3D letters (architectural depth)', 'Single rectangular box with printed face'],
             ['Night Visibility', 'Ultra-high contrast, crisp illumination', 'Even face glow, lower edge contrast'],
             ['Landlord Acceptance', 'Accepted in 95%+ of DFW retail leases', 'Often restricted to secondary/industrial centers'],
             ['Wall Penetrations', 'Few (with raceway) or many (flush mount)', 'Minimal (4 to 6 structural bracket anchors)'],
@@ -132,15 +132,15 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
       {
         heading: 'When Channel Letters Are the Clear Winner',
         content: [
-          'Channel letters are essential if your business operates in a modern lifestyle center (such as Legacy West, Southlake Town Square, or Watters Creek) or any commercial center with a published "Tenant Sign Criteria Document".',
-          'They give your brand a high-end corporate presence and are available in front-lit, halo-lit reverse (glowing from behind), and open-face styles.',
+          'Channel letters are essential if your business operates in a modern lifestyle center (such as Legacy West in [Plano](/locations/plano), Southlake Town Square in [Southlake](/locations/southlake), or Watters Creek in [Allen](/locations/allen)) or any commercial center with a published "Tenant Sign Criteria Document".',
+          'They give your brand a high-end corporate presence and are available in front-lit, halo-lit reverse (glowing from behind), and open-face styles. Explore our [Channel Letter Guide & Live Lighting Demo](/channel-letters).',
         ],
       },
       {
         heading: 'When a Cabinet Sign Makes More Financial Sense',
         content: [
           'Cabinet signs (also known as lightbox signs or box signs) remain an excellent choice for convenience stores, industrial flex spaces, auto repair centers, and legacy strip centers where the landlord permits them.',
-          'If your logo features complex photographic gradients, intricate mascot illustrations, or tiny script taglines that cannot physically be bent into 3D metal returns, a digitally printed polycarbonate cabinet face is often the most economical solution.',
+          'If your logo features complex photographic gradients, intricate mascot illustrations, or tiny script taglines that cannot physically be bent into 3D metal returns, a digitally printed polycarbonate cabinet face is often the most economical solution. Learn more about our [Storefront Sign Solutions](/storefront-signs).',
         ],
       },
     ],
@@ -166,24 +166,24 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
       {
         heading: 'How Municipalities Regulate Commercial Signs in DFW',
         content: [
-          'Every municipality in the Dallas–Fort Worth Metroplex maintains its own Chapter of Sign Ordinances. What is permitted along Northwest Highway in Dallas may be strictly prohibited along Preston Road in Plano.',
+          'Every municipality in the Dallas–Fort Worth Metroplex maintains its own Chapter of Sign Ordinances. What is permitted along Northwest Highway in [Dallas](/locations/dallas) may be strictly prohibited along Preston Road in [Plano](/locations/plano).',
           'Here is a breakdown of key municipal permit considerations across five major DFW business centers:',
         ],
         table: {
           headers: ['Municipality', 'Typical Approval Time', 'Primary Regulation Notes', 'Engineering Wind-Load Required?'],
           rows: [
-            ['City of Dallas', '2 – 4 weeks', 'Special Sign Districts (Downtown, Deep Ellum) have unique criteria', 'Yes (115 MPH)'],
-            ['City of Plano', '1 – 2 weeks', 'Strict raceway color matching; maximum 1.5 sq ft per linear ft facade', 'Yes (115 MPH)'],
-            ['City of Frisco', '2 – 3 weeks', 'High architectural standards; illumination limits along scenic corridors', 'Yes (115 MPH)'],
-            ['City of Fort Worth', '2 – 3 weeks', 'Historic district reviews (Sundance Square, Stockyards) take longer', 'Yes (115 MPH)'],
-            ['City of Arlington', '1 – 2 weeks', 'Entertainment District has specialized high-visibility allowances', 'Yes (115 MPH)'],
+            ['[City of Dallas](/locations/dallas)', '2 – 4 weeks', 'Special Sign Districts (Downtown, Deep Ellum) have unique criteria', 'Yes (115 MPH)'],
+            ['[City of Plano](/locations/plano)', '1 – 2 weeks', 'Strict raceway color matching; maximum 1.5 sq ft per linear ft facade', 'Yes (115 MPH)'],
+            ['[City of Frisco](/locations/frisco)', '2 – 3 weeks', 'High architectural standards; illumination limits along scenic corridors', 'Yes (115 MPH)'],
+            ['[City of Fort Worth](/locations/fort-worth)', '2 – 3 weeks', 'Historic district reviews (Sundance Square, Stockyards) take longer', 'Yes (115 MPH)'],
+            ['[City of Arlington](/locations/arlington)', '1 – 2 weeks', 'Entertainment District has specialized high-visibility allowances', 'Yes (115 MPH)'],
           ],
         },
       },
       {
         heading: 'The 4 Steps to Guaranteed Permit Approval',
         content: [
-          'To ensure your commercial sign permit is approved on the first submittal without rejection delays:',
+          'To ensure your commercial sign permit is approved on the first submittal without rejection delays. You can also verify your requirements in our free [Sign Planning Toolkit](/toolkit#permits):',
         ],
         list: [
           'Step 1: Obtain Written Landlord Sign-Off (Cities will not accept applications without the property manager’s signed approval).',

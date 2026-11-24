@@ -55,6 +55,7 @@ export const STAGES = [
     time: '4 – 8 weeks',
     cta: 'Plan my grand-opening signs',
     type: 'channel',
+    link: '/channel-letters',
     stack: [
       ['Storefront channel letters or cabinet sign', 'Your main ID. Usually required by your landlord.'],
       ['Window graphics & hours', 'Tells walk-ups what you do and when you are open.'],
@@ -71,6 +72,7 @@ export const STAGES = [
     time: '3 – 6 weeks',
     cta: 'Get a rebrand quote',
     type: 'repair',
+    link: '/storefront-signs',
     stack: [
       ['LED retrofit or new sign faces', 'Brightest, cheapest fix for an existing sign.'],
       ['Upgrade to halo-lit or dimensional letters', 'A more premium look on the same wall.'],
@@ -87,6 +89,7 @@ export const STAGES = [
     time: '6 – 16 weeks',
     cta: 'Talk to our programs team',
     type: 'pylon',
+    link: '/pylon-signs',
     stack: [
       ['Pylon or monument with tenant panels', 'Visibility from the road for the whole center.'],
       ['Rollout of channel letters across sites', 'Same look, permitted city by city.'],
@@ -131,12 +134,30 @@ export const COMPARE_ROWS = [
 
 // ── FAQ ───────────────────────────────────────────────────────────────────────
 export const HOME_FAQ = [
-  { q: 'How long does a new sign take?',           a: 'Most storefront signs take 4–8 weeks from approval to install. Permits are usually the longest step, so the earlier you start, the better. Banners and window graphics can be ready in days.' },
-  { q: 'Do you handle permits and landlord approval?', a: 'Yes. We prepare the drawings, get your landlord\'s sign-off and file sign and electrical permits with the city. You just sign the forms.' },
-  { q: 'Can you work with my existing logo?',      a: 'Yes. Send any file you have. If it is low quality we redraw it for production at no extra charge on sign projects.' },
-  { q: "What if I don't have a logo yet?",          a: 'Our designers can create a sign-ready logo and brand colors as part of your project.' },
-  { q: 'Do you repair or relight existing signs?', a: 'Yes. LED retrofits, new faces, ballast and power-supply repairs, and scheduled maintenance plans.' },
-  { q: 'Do you offer financing?',                  a: 'Yes, 12–60 month terms through our lending partner. Applying does not change your quote.' },
+  {
+    q: 'How long does a new sign take?',
+    a: 'Most storefront signs take 4–8 weeks from approval to install. Permits are usually the longest step, so the earlier you start, the better. Banners and window graphics can be ready in days. Use our [Opening-Day Timeline Planner](/toolkit#timeline) to estimate your launch schedule.',
+  },
+  {
+    q: 'Do you handle permits and landlord approval?',
+    a: 'Yes. We prepare the drawings, get your landlord\'s sign-off and file sign and electrical permits with the city. You just sign the forms. Learn how codes work in our [DFW Sign Permits Guide](/guides/dfw-sign-permits-explained).',
+  },
+  {
+    q: 'Can you work with my existing logo?',
+    a: 'Yes. Send any file you have. If it is low quality we redraw it for production at no extra charge on sign projects, ready for 3D [channel letters](/channel-letters) or dimensional [lobby signs](/lobby-signs).',
+  },
+  {
+    q: "What if I don't have a logo yet?",
+    a: 'Our designers can create a sign-ready logo and brand colors as part of your project, coordinated with our [commercial sign fabrication standards](/process).',
+  },
+  {
+    q: 'Do you repair or relight existing signs?',
+    a: 'Yes. LED retrofits, new faces, ballast and power-supply repairs, and scheduled maintenance plans. [Request a repair quote or inspection](/quote?type=repair).',
+  },
+  {
+    q: 'Do you offer financing?',
+    a: 'Yes, 12–60 month terms through our lending partner. Applying does not change your quote. Explore our [commercial sign financing options](/financing).',
+  },
 ];
 
 // ── Guides ────────────────────────────────────────────────────────────────────

@@ -57,6 +57,41 @@ export default function ToolkitPage() {
         </div>
       </section>
 
+      {/* Sign Guides & References */}
+      <section className="paper sec" style={{ padding: '48px 0', borderTop: '1px solid var(--soft)' }}>
+        <div className="wrap">
+          <div className="eyebrow">Product &amp; Pricing Reference</div>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(24px, 3.5vw, 32px)', margin: '0 0 12px' }}>
+            Explore commercial sign systems engineered for Texas.
+          </h2>
+          <p style={{ fontSize: 15, color: 'var(--muted)', maxWidth: 650, marginBottom: 24 }}>
+            Looking for technical specifications, mounting options, or realistic cost baselines for your specific sign style?
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14 }}>
+            <Link href="/channel-letters" className="card" style={{ padding: 18, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 4 }}>Storefront 3D</span>
+              <strong style={{ fontSize: 16, color: 'var(--navy)' }}>Channel Letters →</strong>
+              <span style={{ fontSize: 13, color: 'var(--muted)', marginTop: 4 }}>Front-lit, halo-lit &amp; reverse letters</span>
+            </Link>
+            <Link href="/monument-signs" className="card" style={{ padding: 18, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 4 }}>Ground Architectural</span>
+              <strong style={{ fontSize: 16, color: 'var(--navy)' }}>Monument Signs →</strong>
+              <span style={{ fontSize: 13, color: 'var(--muted)', marginTop: 4 }}>Masonry, stone &amp; aluminum bases</span>
+            </Link>
+            <Link href="/pylon-signs" className="card" style={{ padding: 18, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 4 }}>Highway Visibility</span>
+              <strong style={{ fontSize: 16, color: 'var(--navy)' }}>Pylon Signs →</strong>
+              <span style={{ fontSize: 13, color: 'var(--muted)', marginTop: 4 }}>Freestanding pole &amp; multi-tenant</span>
+            </Link>
+            <Link href="/storefront-signs" className="card" style={{ padding: 18, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 4 }}>Retail Lightbox</span>
+              <strong style={{ fontSize: 16, color: 'var(--navy)' }}>Storefront Lightboxes →</strong>
+              <span style={{ fontSize: 13, color: 'var(--muted)', marginTop: 4 }}>Extruded cabinets &amp; blade signs</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section (Dark Theme) */}
       <section className="dark" style={{ borderTop: '1px solid var(--line2)' }}>
         <div

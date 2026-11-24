@@ -55,7 +55,13 @@ export default function SignTypesGrid() {
 
         <div className="grid-auto" id="signGrid" style={{ marginTop: 28 }}>
           {filteredSigns.map((s) => {
-            const href = s.featured ? '/channel-letters' : `/quote?type=${s.quoteType}`
+            let href = `/quote?type=${s.quoteType}`
+            if (s.name === 'Channel letters') href = '/channel-letters'
+            else if (s.name === 'Monument signs') href = '/monument-signs'
+            else if (s.name === 'Pylon & pole signs') href = '/pylon-signs'
+            else if (s.name === 'Cabinet & lightbox signs') href = '/storefront-signs'
+            else if (s.name === 'Lobby & logo walls') href = '/lobby-signs'
+
             return (
               <Link
                 key={s.name}

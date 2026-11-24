@@ -8,6 +8,40 @@ export const instant = false
 
 type Params = { slug: string }
 
+function renderContentWithLinks(text: string) {
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g
+  const parts: (string | React.ReactNode)[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index))
+    }
+    const [, label, href] = match
+    parts.push(
+      <Link
+        key={match.index}
+        href={href}
+        style={{
+          color: 'var(--blue)',
+          fontWeight: 600,
+          textDecoration: 'underline',
+          textDecorationColor: 'rgba(0, 80, 240, 0.35)',
+          textUnderlineOffset: 3,
+        }}
+      >
+        {label}
+      </Link>
+    )
+    lastIndex = regex.lastIndex
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex))
+  }
+  return parts.length > 0 ? parts : text
+}
+
 export async function generateStaticParams() {
   return Object.keys(GUIDES_ARTICLES).map((slug) => ({ slug }))
 }
@@ -142,7 +176,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
               }}
             >
               <strong style={{ color: 'var(--navy)' }}>Executive Summary: </strong>
-              <span style={{ color: 'var(--muted)' }}>{article.summary}</span>
+              <span style={{ color: 'var(--muted)' }}>{renderContentWithLinks(article.summary)}</span>
             </div>
 
             {/* Key Takeaways Box */}
@@ -159,7 +193,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                 <div className="eyebrow" style={{ marginBottom: 8, fontSize: 12 }}>
                   Executive Insights
                 </div>
-                <h3
+                <h2
                   className="disp"
                   style={{
                     margin: '0 0 16px',
@@ -169,11 +203,11 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                   }}
                 >
                   Key Takeaways for Business Owners:
-                </h3>
+                </h2>
                 <ul style={{ margin: 0, paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {article.keyTakeaways.map((item, idx) => (
                     <li key={idx} style={{ fontSize: 15.5, lineHeight: 1.55, color: 'var(--muted)' }}>
-                      {item}
+                      {renderContentWithLinks(item)}
                     </li>
                   ))}
                 </ul>
@@ -196,7 +230,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                 </h2>
                 {sec.content.map((p, pIdx) => (
                   <p key={pIdx} style={{ fontSize: 16.5, lineHeight: 1.7, color: 'var(--muted)', marginBottom: 16 }}>
-                    {p}
+                    {renderContentWithLinks(p)}
                   </p>
                 ))}
 
@@ -241,7 +275,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                                   fontWeight: cIdx === 0 ? 700 : 400,
                                 }}
                               >
-                                {cell}
+                                {renderContentWithLinks(cell)}
                               </td>
                             ))}
                           </tr>
@@ -263,7 +297,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                   >
                     {sec.list.map((lItem, lIdx) => (
                       <li key={lIdx} style={{ fontSize: 15.5, lineHeight: 1.55, color: 'var(--muted)' }}>
-                        {lItem}
+                        {renderContentWithLinks(lItem)}
                       </li>
                     ))}
                   </ul>
@@ -298,9 +332,9 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                 >
                   Ready to calculate your sign?
                 </span>
-                <h3 className="disp" style={{ margin: '0 0 10px', fontSize: 26, color: '#fff', lineHeight: 1.15 }}>
+                <h2 className="disp" style={{ margin: '0 0 10px', fontSize: 26, color: '#fff', lineHeight: 1.15 }}>
                   Get an engineered quote with zero guesswork.
-                </h3>
+                </h2>
                 <p style={{ margin: 0, fontSize: 15, color: 'var(--dsub)', maxWidth: 480, lineHeight: 1.55 }}>
                   One team handles the drawings, city permits, Texas fabrication, and crane installation.
                 </p>

@@ -312,35 +312,10 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           onClick={() => setOpen(!open)}
           className={`case-toggle-btn ${open ? 'open' : ''}`}
           aria-expanded={open}
-          style={{
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            color: open ? '#ffffff' : 'var(--navy)',
-            background: open ? 'var(--navy)' : 'var(--paper)',
-            border: open ? '1px solid var(--navy)' : '1px solid var(--soft)',
-            borderRadius: 10,
-            padding: '10px 14px',
-            fontSize: 13,
-            fontWeight: 700,
-            cursor: 'pointer',
-            userSelect: 'none',
-            transition: 'all 0.2s ease',
-            marginTop: 6,
-          }}
+          style={{ marginTop: 8 }}
         >
           <span>{open ? 'Hide case study' : 'Explore case study'}</span>
-          <span
-            style={{
-              fontSize: 18,
-              lineHeight: 1,
-              display: 'inline-block',
-              transform: open ? 'rotate(45deg)' : 'rotate(0deg)',
-              transition: 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-            }}
-            aria-hidden="true"
-          >
+          <span className="case-icon" aria-hidden="true">
             +
           </span>
         </button>

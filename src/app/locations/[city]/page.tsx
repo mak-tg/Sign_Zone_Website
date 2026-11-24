@@ -258,6 +258,80 @@ export default async function LocationPage({ params }: { params: Promise<Params>
         </div>
       </section>
 
+      {/* City Sign Types Cross-Linking Section */}
+      <section className="paper sec" style={{ padding: '64px 0', borderTop: '1px solid var(--soft)' }}>
+        <div className="wrap">
+          <div className="eyebrow">Sign Fabrication for {loc.name}</div>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 4vw, 38px)' }}>
+            Commercial sign systems engineered for {loc.name}, TX.
+          </h2>
+          <p style={{ fontSize: 16.5, color: 'var(--muted)', maxWidth: 700, margin: '14px 0 32px' }}>
+            We handle municipal permits directly with the {loc.name} building and zoning department, ensuring all setback, wind-load, and electrical codes are met.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 16 }}>
+            <Link href="/channel-letters" className="card" style={{ padding: 20, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 6 }}>Storefronts</span>
+              <strong style={{ fontSize: 18, color: 'var(--navy)' }}>Channel Letters in {loc.name} →</strong>
+              <span style={{ fontSize: 13.5, color: 'var(--muted)', marginTop: 4 }}>Front-lit, halo-lit &amp; reverse letters built to landlord criteria.</span>
+            </Link>
+            <Link href="/monument-signs" className="card" style={{ padding: 20, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 6 }}>Ground Signs</span>
+              <strong style={{ fontSize: 18, color: 'var(--navy)' }}>Monument Signs in {loc.name} →</strong>
+              <span style={{ fontSize: 13.5, color: 'var(--muted)', marginTop: 4 }}>Stone, brick &amp; aluminum architectural ground monuments.</span>
+            </Link>
+            <Link href="/pylon-signs" className="card" style={{ padding: 20, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 6 }}>Highways</span>
+              <strong style={{ fontSize: 18, color: 'var(--navy)' }}>Pylon &amp; Pole Signs →</strong>
+              <span style={{ fontSize: 13.5, color: 'var(--muted)', marginTop: 4 }}>Corridor highway visibility engineered for Texas wind speeds.</span>
+            </Link>
+            <Link href="/storefront-signs" className="card" style={{ padding: 20, background: '#fff', textDecoration: 'none' }}>
+              <span className="tag" style={{ marginBottom: 6 }}>Retail Strips</span>
+              <strong style={{ fontSize: 18, color: 'var(--navy)' }}>Storefront &amp; Lightboxes →</strong>
+              <span style={{ fontSize: 13.5, color: 'var(--muted)', marginTop: 4 }}>Illuminated aluminum cabinet signs and pedestrian blade signs.</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Nearby DFW Service Areas */}
+      <section className="light sec" style={{ padding: '48px 0', borderTop: '1px solid var(--soft)', background: '#fff' }}>
+        <div className="wrap">
+          <div className="eyebrow">Service Coverage</div>
+          <h3 className="disp sec-h" style={{ fontSize: 'clamp(22px, 3vw, 28px)', margin: '0 0 16px' }}>
+            Signs installed across North Texas commercial corridors.
+          </h3>
+          <p style={{ fontSize: 15, color: 'var(--muted)', maxWidth: 640, marginBottom: 24 }}>
+            In addition to {loc.name}, our licensed installation crews and master electricians operate daily throughout the Dallas–Fort Worth Metroplex:
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+            {LOCATION_PAGES.filter(c => c.slug !== loc.slug).map(c => (
+              <Link
+                key={c.slug}
+                href={`/locations/${c.slug}`}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                  padding: '8px 14px',
+                  borderRadius: 8,
+                  background: 'var(--paper)',
+                  border: '1px solid var(--soft)',
+                  color: 'var(--navy)',
+                  fontSize: 14,
+                  fontWeight: 600,
+                  textDecoration: 'none',
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                <span>{c.name}, TX</span>
+                <span style={{ color: 'var(--blue)', fontSize: 12 }}>→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* City CTA */}
       <section className="paper sec city-cta">
         <div className="wrap">

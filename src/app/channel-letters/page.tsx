@@ -166,9 +166,9 @@ export default function ChannelLettersPage() {
             <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Channel letter questions.</h2>
             <div style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <span className="kv">Often paired with</span>
-              <Link href="/quote?type=window" style={{ fontWeight: 700, color: 'var(--blue)' }}>Window graphics &amp; hours →</Link>
-              <Link href="/quote?type=channel" style={{ fontWeight: 700, color: 'var(--blue)' }}>Blade signs →</Link>
-              <Link href="/quote?type=monument" style={{ fontWeight: 700, color: 'var(--blue)' }}>Monument signs →</Link>
+              <Link href="/monument-signs" style={{ fontWeight: 700, color: 'var(--blue)' }}>Monument signs →</Link>
+              <Link href="/storefront-signs" style={{ fontWeight: 700, color: 'var(--blue)' }}>Storefront lightboxes &amp; blade signs →</Link>
+              <Link href="/lobby-signs" style={{ fontWeight: 700, color: 'var(--blue)' }}>Lobby &amp; reception signs →</Link>
             </div>
           </div>
           <div className="faq" id="clFaq" style={{ flex: '2 1 520px', minWidth: 0 }}>
