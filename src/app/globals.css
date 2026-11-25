@@ -103,6 +103,7 @@ button { font-family: inherit; }
 .light .sec-h, .paper .sec-h { color: var(--navy) !important; }
 .light .eyebrow, .paper .eyebrow { color: var(--eyebrow-color, var(--blue)) !important; }
 .guide-cta { --eyebrow-color: var(--elec); }
+.guide-detail .eyebrow { text-transform: none; letter-spacing: normal; }
 .lead { font-size: 17px; line-height: 1.55; color: var(--muted); margin: 0; max-width: 380px; }
 
 /* Themes */

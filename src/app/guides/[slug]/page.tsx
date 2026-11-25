@@ -125,7 +125,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
       />
       {article.faqs && <FaqJsonLd items={article.faqs} />}
 
-      <article className="view">
+      <article className="view guide-detail">
         {/* Article Header (Dark Theme) */}
         <section className="dark" style={{ paddingTop: 36, paddingBottom: 68 }}>
           <div className="wrap" style={{ maxWidth: 880 }}>
@@ -208,7 +208,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                 }}
               >
                 <div className="eyebrow" style={{ marginBottom: 8, fontSize: 12 }}>
-                  Quick guide
+                  Quick Guide
                 </div>
                 <h2
                   className="disp"
@@ -348,7 +348,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                     marginBottom: 8,
                   }}
                 >
-                  Ready to calculate your sign?
+                  Ready to Calculate Your Sign?
                 </span>
                 <h2 className="disp" style={{ margin: '0 0 10px', fontSize: 26, lineHeight: 1.15 }}>
                   Get a clear quote for your sign.
