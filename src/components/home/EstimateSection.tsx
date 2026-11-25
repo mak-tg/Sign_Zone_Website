@@ -107,7 +107,7 @@ export default function EstimateSection() {
   const distPercent = Math.min(Math.max(((distance - 25) / (600 - 25)) * 100, 0), 100)
 
   return (
-    <section className="dark sec" id="estimate">
+    <section className="dark sec estimate-section" id="estimate">
       <div className="wrap">
         <div className="eyebrow">No-pressure planning tools</div>
         <h2 className="disp sec-h">Plan your sign size and cost.</h2>
@@ -115,8 +115,8 @@ export default function EstimateSection() {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, marginTop: 44 }}>
           {/* Tool 1 */}
           <div className="tool" style={{ flex: '1.3 1 520px', minWidth: 0 }}>
-            <h3>Instant sign estimate</h3>
-            <div className="q">1. What kind of sign?</div>
+            <h3>Instant Sign Estimate</h3>
+            <div className="q">1. What Kind of Sign?</div>
             <div className="chips" id="estTypes" style={{ gap: 8, marginTop: 10 }}>
               {Object.keys(EST_DATA).map((k) => (
                 <button
@@ -134,7 +134,7 @@ export default function EstimateSection() {
               ))}
             </div>
 
-            <div className="q">2. How big?</div>
+            <div className="q">2. How Big?</div>
             <div className="sizes" id="estSizes">
               {config.sizes.map((z, i) => (
                 <button
@@ -152,7 +152,7 @@ export default function EstimateSection() {
 
             {config.unlitFactor !== null && (
               <div id="estLitWrap">
-                <div className="q">3. Lit at night?</div>
+                <div className="q">3. Lit at Night?</div>
                 <div className="chips" style={{ gap: 8, marginTop: 10 }}>
                   <button
                     type="button"
@@ -176,7 +176,7 @@ export default function EstimateSection() {
 
             <div className="result">
               <div>
-                <div className="kv" style={{ color: 'var(--dmuted)' }}>Planning range</div>
+                <div className="kv" style={{ color: 'var(--dmuted)' }}>Planning Range</div>
                 <div aria-live="polite" className="disp" id="estRange" style={{ fontSize: 44, color: '#fff', marginTop: 6 }}>
                   {rangeStr}
                 </div>
@@ -192,9 +192,9 @@ export default function EstimateSection() {
 
           {/* Tool 2 */}
           <div className="tool" style={{ flex: '1 1 380px', minWidth: 0, display: 'flex', flexDirection: 'column' }}>
-            <h3>How big should my letters be?</h3>
+            <h3>How Big Should My Letters Be?</h3>
             <label className="q" htmlFor="dist">
-              How far away is your customer?{' '}
+              How Far Away Is Your Customer?{' '}
               <span id="distLbl" style={{ color: '#fff' }}>{distance} ft</span>
             </label>
             <input
@@ -220,13 +220,13 @@ export default function EstimateSection() {
 
             <div className="mini">
               <div>
-                <div style={{ fontSize: 13, color: 'var(--dmuted)', fontWeight: 600 }}>Readable minimum</div>
+                <div style={{ fontSize: 13, color: 'var(--dmuted)', fontWeight: 600 }}>Readable Minimum</div>
                 <div className="disp" id="minLH" style={{ fontSize: 36, color: '#fff', marginTop: 4 }}>
                   {minLH}&quot;
                 </div>
               </div>
               <div className="hl">
-                <div style={{ fontSize: 13, color: '#DCE7FF', fontWeight: 600 }}>Stand-out size</div>
+                <div style={{ fontSize: 13, color: '#DCE7FF', fontWeight: 600 }}>Stand-Out Size</div>
                 <div className="disp" id="rcmLH" style={{ fontSize: 36, color: '#fff', marginTop: 4 }}>
                   {rcmLH}&quot;
                 </div>

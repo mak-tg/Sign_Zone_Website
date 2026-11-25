@@ -345,6 +345,11 @@ td { color: var(--muted); }
 .tool { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 32px; }
 .tool h3 { margin: 0; font-size: 22px; color: #fff; }
 .q { font-size: 13.5px; font-weight: 700; color: var(--dmuted); margin-top: 24px; text-transform: uppercase; letter-spacing: .06em; }
+.estimate-section .tool h3,
+.estimate-section .q,
+.estimate-section .kv { text-transform: none !important; }
+.estimate-section .q,
+.estimate-section .kv { letter-spacing: normal; }
 .sizes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
 .size { min-height: 66px; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; cursor: pointer; text-align: left; padding: 12px 14px; background: #141C2B; color: #D5DCEA; transition: all 0.15s ease; outline: none; }
 .size:hover { border-color: rgba(0, 80, 240, 0.5); background: #1C273D; }
