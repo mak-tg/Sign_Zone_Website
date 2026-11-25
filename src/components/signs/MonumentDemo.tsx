@@ -65,7 +65,7 @@ export default function MonumentDemo() {
   const s = MONUMENT_STYLES[active]
 
   return (
-    <div style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
+    <div className="monument-sign-demo" style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
       {/* Simulation Stage */}
       <div
         style={{
