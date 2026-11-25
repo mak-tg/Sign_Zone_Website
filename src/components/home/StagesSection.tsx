@@ -37,7 +37,7 @@ export default function StagesSection() {
 
         <div className="stage-box" role="tabpanel">
           <div>
-            <h3 className="disp" style={{ fontSize: 32, lineHeight: 1.05, margin: 0, color: 'var(--navy)' }}>
+            <h3 className="disp stage-box-title" style={{ fontSize: 32, lineHeight: 1.05, margin: 0, color: 'var(--navy)' }}>
               {s.title}
             </h3>
             <p style={{ fontSize: 17, lineHeight: 1.6, color: 'var(--muted)', margin: '16px 0 0' }}>

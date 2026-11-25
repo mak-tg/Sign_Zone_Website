@@ -50,7 +50,7 @@ export const STAGES = [
   {
     id: 'open',
     label: 'Opening a new location',
-    title: 'Opening soon? Get your sign up before your doors open.',
+    title: 'Opening Soon? Get Your Sign Up Before Your Doors Open.',
     body: 'Most leases require an approved exterior sign, and permits take weeks. Start your sign the week you sign the lease and you open with your name lit up, not a banner.',
     budget: '$4k – $15k',
     time: '4 – 8 weeks',
