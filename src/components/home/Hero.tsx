@@ -26,6 +26,7 @@ export default function Hero() {
       />
       <div className="hero-overlay" aria-hidden="true" />
       <div className="stripes" style={{ top: -80, right: -120 }} />
+      <div className="hero-slide-progress" aria-hidden="true"><span /><span /><span /></div>
 
       <div className="wrap">
         <div style={{ flex: '1 1 480px', minWidth: 0 }}>

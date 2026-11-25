@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Hero from '@/components/home/Hero'
 import TrustBar from '@/components/home/TrustBar'
 import ClientStrip from '@/components/home/ClientStrip'
@@ -23,8 +23,58 @@ import FontSwitcher, { FontChoice } from '@/components/common/FontSwitcher'
 export default function HomeClient() {
   const [font, setFont] = useState<FontChoice>('jakarta')
 
+  useEffect(() => {
+    const root = document.querySelector('.home-motion')
+    if (!root) return
+    const targets = root.querySelectorAll<HTMLElement>(
+      ':scope > section:not(.hero):not(.client-strip), #signGrid > .card, #indGrid > .card, .featured-project, .loc-box, .process-step, .guide-card'
+    )
+    if (!('IntersectionObserver' in window)) return
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('motion-visible')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' })
+
+    targets.forEach((target) => {
+      const siblings = target.parentElement?.children
+      const order = siblings ? Array.prototype.indexOf.call(siblings, target) % 4 : 0
+      target.style.setProperty('--motion-order', String(order))
+      target.classList.add('motion-reveal')
+      observer.observe(target)
+    })
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    const hero = document.querySelector<HTMLElement>('.home-motion .hero')
+    if (!hero) return
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    let frame = 0
+    const update = () => {
+      frame = 0
+      const offset = reducedMotion.matches ? 0 : Math.min(window.scrollY * 0.16, 64)
+      hero.style.setProperty('--hero-parallax', `${offset}px`)
+    }
+    const onScroll = () => {
+      if (!frame && window.scrollY < hero.offsetHeight + 100) frame = requestAnimationFrame(update)
+    }
+    update()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    reducedMotion.addEventListener('change', update)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      reducedMotion.removeEventListener('change', update)
+      if (frame) cancelAnimationFrame(frame)
+    }
+  }, [])
+
   return (
-    <div className={`font-variant-${font}`}>
+    <div className={`font-variant-${font} home-motion`}>
       <Hero />
       <TrustBar />
       <ClientStrip />
