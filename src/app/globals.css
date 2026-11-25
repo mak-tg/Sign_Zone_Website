@@ -1363,9 +1363,13 @@ footer strong { color: #fff; }
   .parts { grid-template-columns: 1fr; }
   footer .cols { grid-template-columns: 1fr; }
   #signGrid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .hero .wrap { padding-top: clamp(160px, 24vh, 210px); }
-  .hero-overlay { background: linear-gradient(180deg, rgba(5,8,16,.12) 0%, rgba(5,8,16,.44) 100%); }
-  .hero-overlay::after { opacity: .06 !important; }
+  .hero .wrap { padding-top: clamp(200px, 30vh, 260px); }
+  .hero-slide { object-position: 76% 42%; }
+  .hero-overlay { background: linear-gradient(180deg, rgba(5,8,16,.08) 0%, rgba(5,8,16,.34) 100%); }
+  .hero-overlay::after { opacity: 0 !important; }
+  .hero-copy { padding: 20px; border-radius: 18px; background: rgba(255,255,255,.84); backdrop-filter: blur(5px); }
+  .hero h1 { color: var(--navy) !important; }
+  .hero p.sub { color: #475569; }
   .home-motion .font-switcher,
   .font-switcher { display: none !important; }
 }
