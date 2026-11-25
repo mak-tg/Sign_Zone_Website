@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import JsonLd from '@/components/seo/JsonLd'
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
+import PageMotion from '@/components/layout/PageMotion'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.signzoneusa.com'),
@@ -88,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <GoogleAnalytics />
         <JsonLd />
         <Header />
+        <PageMotion />
         <main>{children}</main>
         <Footer />
         {/* Mobile sticky CTA bar */}
