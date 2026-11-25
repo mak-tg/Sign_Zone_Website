@@ -32,7 +32,6 @@ export default function FontSwitcher({ initialFont = 'jakarta', onFontChange }: 
 
   return (
     <div
-      className="font-switcher"
       style={{
         position: 'fixed',
         bottom: 24,
