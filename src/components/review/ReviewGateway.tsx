@@ -17,10 +17,10 @@ export default function ReviewGateway() {
   }
 
   return (
-    <div style={{ maxWidth: 960, margin: '0 auto' }}>
+    <div className="review-gateway-shell" style={{ maxWidth: 960, margin: '0 auto' }}>
       {/* Redesigned 2-Column Split Container (Project Standard Theme) */}
       <div
-        className="card"
+        className="card review-gateway-grid"
         style={{
           background: '#ffffff',
           border: '1px solid var(--soft)',
@@ -34,7 +34,7 @@ export default function ReviewGateway() {
         }}
       >
         {/* Left Column: Rating & Stars Action */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
+        <div className="review-gateway-rating" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
           <span className="tag" style={{ marginBottom: 14 }}>
             Verified Client Review
           </span>
@@ -66,8 +66,9 @@ export default function ReviewGateway() {
           </p>
 
           {/* Interactive 5-Star Cluster */}
-          <div style={{ width: '100%' }}>
+          <div className="review-rating-actions" style={{ width: '100%' }}>
             <div
+              className="review-star-cluster"
               style={{
                 display: 'inline-flex',
                 gap: 10,
@@ -113,7 +114,7 @@ export default function ReviewGateway() {
             </div>
 
             {/* Clickable Helper Link with Google G Logo */}
-            <div style={{ marginTop: 12 }}>
+            <div className="review-google-link" style={{ marginTop: 12 }}>
               <button
                 type="button"
                 onClick={handleReviewClick}
@@ -162,6 +163,7 @@ export default function ReviewGateway() {
 
           {/* Professional Commercial Trust Signals */}
           <div
+            className="review-trust-signals"
             style={{
               marginTop: 22,
               paddingTop: 16,
@@ -191,6 +193,7 @@ export default function ReviewGateway() {
 
         {/* Right Column: QR Code Container with Animated Laser Scan Beam */}
         <div
+          className="review-qr-panel"
           style={{
             background: 'var(--paper)',
             border: '1px solid var(--soft)',

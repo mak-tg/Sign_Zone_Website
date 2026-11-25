@@ -71,6 +71,18 @@ export default function PageMotion() {
       'main #v-about .about-capabilities > h3',
       'main #v-about .about-capability',
       'main #v-about .about-project-cta',
+      'main #v-review .review-gateway-rating > .tag',
+      'main #v-review .review-gateway-rating > h2',
+      'main #v-review .review-gateway-rating > p',
+      'main #v-review .review-star-cluster',
+      'main #v-review .review-google-link',
+      'main #v-review .review-trust-signals > div',
+      'main #v-review .review-qr-panel > h3',
+      'main #v-review .review-qr-panel > p',
+      'main #v-review .review-qr-panel > .qr-scanner-frame',
+      'main #v-review .review-qr-panel > span',
+      'main #v-review .review-section .head-row h2',
+      'main #v-review .review-section .head-row p',
       'main .guides-card-grid > *',
       'main #guides > *',
       'main .guide-related > *',
@@ -95,6 +107,7 @@ export default function PageMotion() {
       if (item.matches('#v-terms .terms-content')) return
       if (item.matches('#v-accessibility .accessibility-content')) return
       if (item.matches('#v-about .about-story-grid')) return
+      if (item.matches('#v-review .review-gateway-shell, #v-review .review-gateway-grid, #v-review .review-rating-actions, #v-review .review-trust-signals, #v-review .review-section .head-row')) return
       const siblings = item.parentElement?.children
       item.style.setProperty('--page-motion-order', String(siblings ? Array.prototype.indexOf.call(siblings, item) % 4 : 0))
       item.classList.add('page-motion-item')
