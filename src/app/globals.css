@@ -1346,15 +1346,23 @@ footer strong { color: #fff; }
 @media (max-width: 760px) {
   .wrap { padding: 0 20px; }
   .sec { padding: 64px 0; }
+  body { padding-top: 104px; }
   .hero .wrap { padding-top: 48px; padding-bottom: 56px; gap: 36px; }
   .util {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
     z-index: 51;
   }
-  .util .wrap { min-height: 36px; padding-top: 4px; padding-bottom: 4px; }
+  .util .wrap { height: 36px; min-height: 36px; padding-top: 4px; padding-bottom: 4px; }
   header.site {
+    position: fixed;
     top: 36px;
+    left: 0;
+    right: 0;
+    z-index: 50;
   }
   header.site .wrap { min-height: 68px; }
   .mnav.open {
