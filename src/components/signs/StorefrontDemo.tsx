@@ -65,7 +65,7 @@ export default function StorefrontDemo() {
   const s = STOREFRONT_STYLES[active]
 
   return (
-    <div style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
+    <div className="storefront-sign-demo" style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
       {/* Simulation Stage */}
       <div
         style={{
