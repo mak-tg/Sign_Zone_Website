@@ -24,9 +24,14 @@ export default function BottomCTA() {
               Call 214-714-4623
             </a>
           </div>
+          <div className="bottom-cta-proof">
+            <div><strong>24 hours</strong><span>Written quote turnaround</span></div>
+            <div><strong>One local team</strong><span>Design, permits, fabrication, install</span></div>
+            <div><strong>Photo friendly</strong><span>Start with a storefront picture</span></div>
+          </div>
         </div>
 
-        <div className="tool" style={{ flex: '1 1 360px', minWidth: 0, padding: 28 }}>
+        <div className="tool bottom-cta-areas" style={{ flex: '1 1 360px', minWidth: 0, padding: 28 }}>
           <div className="kv" style={{ color: 'var(--dmuted)' }}>Where we install</div>
           <div
             style={{
