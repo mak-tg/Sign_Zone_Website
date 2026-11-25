@@ -1363,6 +1363,10 @@ footer strong { color: #fff; }
   .parts { grid-template-columns: 1fr; }
   footer .cols { grid-template-columns: 1fr; }
   #signGrid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .hero .wrap { padding-top: 76px; }
+  .hero-overlay { background: linear-gradient(180deg, rgba(5,8,16,.32) 0%, rgba(5,8,16,.58) 100%); }
+  .hero-overlay::after { opacity: .18 !important; }
+  .home-motion .font-switcher { display: none !important; }
 }
 @media (max-width: 540px) {
   .case-grid { grid-template-columns: 1fr; }
