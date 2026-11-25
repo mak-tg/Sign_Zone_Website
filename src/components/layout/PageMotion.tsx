@@ -11,15 +11,13 @@ export default function PageMotion() {
     if (!main || main.querySelector('.home-motion')) return
 
     const selector = [
-      'main > .view > section',
-      'main > .view > article',
-      'main > .view > div > section',
+      // Match the homepage: reveal section content blocks, not whole sections.
       'main .view section > .wrap > *',
       'main .view section > .container > *',
+      'main .view .facts > div',
       'main .view .card',
       'main .view [class*="-card"]',
       'main .view .industry-sign-pill',
-      'main .view .facts > div',
       'main .view article',
       'main .view details',
     ].join(', ')
