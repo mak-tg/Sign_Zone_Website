@@ -2057,7 +2057,7 @@ html[data-theme="light"] .legal { border-top-color: var(--soft); color: var(--mu
 html[data-theme="light"] .hero-overlay::after { opacity: 1; }
 @media (min-width: 761px) {
   html[data-theme="light"] .hero-overlay::after {
-    background: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.82) 42%, rgba(255,255,255,.55) 72%, rgba(255,255,255,.34) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.82) 35%, rgba(255,255,255,.32) 70%, rgba(255,255,255,0) 100%);
   }
 }
 html[data-theme="light"] .hero h1 { color: var(--navy); }
