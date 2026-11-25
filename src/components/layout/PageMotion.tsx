@@ -51,6 +51,10 @@ export default function PageMotion() {
       'main #v-contact section:nth-of-type(2) .wrap > div > div > *',
       'main #v-contact section:nth-of-type(2) form > *',
       'main #v-contact section:nth-of-type(3) .wrap > div > *',
+      'main #v-privacy .privacy-policy-content > h2',
+      'main #v-privacy .privacy-policy-content > p',
+      'main #v-privacy .privacy-policy-content > ul',
+      'main #v-privacy .privacy-policy-content > div',
       'main .guides-card-grid > *',
       'main #guides > *',
       'main .guide-related > *',
@@ -71,6 +75,7 @@ export default function PageMotion() {
 
     items.forEach((item) => {
       if (item.closest('header, .hero')) return
+      if (item.matches('#v-privacy .privacy-policy-content')) return
       const siblings = item.parentElement?.children
       item.style.setProperty('--page-motion-order', String(siblings ? Array.prototype.indexOf.call(siblings, item) % 4 : 0))
       item.classList.add('page-motion-item')

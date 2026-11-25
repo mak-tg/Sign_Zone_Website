@@ -38,7 +38,7 @@ export default function PrivacyPage() {
 
       <section className="light sec" style={{ padding: '64px 0' }}>
         <div className="wrap" style={{ maxWidth: 840 }}>
-          <div style={{ lineHeight: 1.75, color: '#334155', fontSize: 16 }}>
+          <div className="privacy-policy-content" style={{ lineHeight: 1.75, color: '#334155', fontSize: 16 }}>
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 0, marginBottom: 16 }}>
               1. About this privacy policy
             </h2>
