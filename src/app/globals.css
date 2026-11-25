@@ -781,7 +781,8 @@ footer strong { color: #fff; }
   margin: 0;
 }
 
-.stage-box-title { text-transform: none; }
+.stage-box-title,
+.loc-anchor-title { text-transform: none !important; }
 
 .loc-anchor-body {
   font-size: 15px;
