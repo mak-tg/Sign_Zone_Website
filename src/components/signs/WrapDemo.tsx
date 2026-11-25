@@ -80,7 +80,7 @@ export default function WrapDemo() {
   const s = WRAP_STYLES[active]
 
   return (
-    <div style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
+    <div className="vehicle-wrap-demo" style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
       {/* Simulation Stage */}
       <div
         style={{
