@@ -462,9 +462,9 @@ footer strong { color: #fff; }
 /* Subtle scroll reveals for homepage sections and content cards. */
 .home-motion .motion-reveal {
   opacity: 0;
-  transform: translate3d(0, 24px, 0);
-  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1);
-  transition-delay: calc(var(--motion-order, 0) * 55ms);
+  transform: translate3d(0, 16px, 0);
+  transition: opacity .62s ease, transform .62s cubic-bezier(.2,.7,.2,1);
+  transition-delay: calc(var(--motion-order, 0) * 75ms);
 }
 .home-motion .motion-reveal.motion-visible { opacity: 1; transform: translate3d(0, 0, 0); }
 .home-motion .card, .home-motion .featured-project, .home-motion .loc-box { transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }

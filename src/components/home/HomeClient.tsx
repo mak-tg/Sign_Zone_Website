@@ -27,7 +27,7 @@ export default function HomeClient() {
     const root = document.querySelector('.home-motion')
     if (!root) return
     const targets = root.querySelectorAll<HTMLElement>(
-      ':scope > section:not(.hero):not(.client-strip), #signGrid > .card, #indGrid > .card, .featured-project, .loc-box, .process-step, .guide-card'
+      '.home-motion > section:not(.hero):not(.client-strip) .wrap > *, .home-motion > section:not(.hero):not(.client-strip) .head-row > *, #signGrid > .card, #indGrid > .card, .featured-project, .loc-box, .process-step, .guide-card'
     )
     if (!('IntersectionObserver' in window)) return
 
@@ -38,7 +38,7 @@ export default function HomeClient() {
           observer.unobserve(entry.target)
         }
       })
-    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' })
+    }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' })
 
     targets.forEach((target) => {
       const siblings = target.parentElement?.children
