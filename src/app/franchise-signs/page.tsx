@@ -38,7 +38,7 @@ export default function FranchiseSignsPage() {
             <span className="dot" />
             North Texas Regional Sign Rollouts
           </span>
-          <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 4.2vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 780, color: '#fff' }}>
+          <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 4.2vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 780 }}>
             Multi-location sign programs &amp; franchise rollouts in DFW.
           </h1>
           <p style={{ fontSize: 18, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 680 }}>
@@ -103,7 +103,7 @@ export default function FranchiseSignsPage() {
       <section className="dark sec" style={{ padding: '80px 0' }}>
         <div className="wrap">
           <div className="eyebrow">Proven Experience</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 42px)', color: '#fff', margin: '8px 0 36px' }}>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 42px)', margin: '8px 0 36px' }}>
             Multi-location brands we have signed across DFW.
           </h2>
 
@@ -111,11 +111,12 @@ export default function FranchiseSignsPage() {
             {franchiseProjects.map((p) => (
               <div
                 key={p.id}
+                className="keep-dark"
                 style={{
-                  background: '#0a101d',
+                  background: 'var(--panel)',
                   borderRadius: 12,
                   overflow: 'hidden',
-                  border: '1px solid rgba(255,255,255,0.08)',
+                  border: '1px solid var(--line2)',
                 }}
               >
                 <div style={{ position: 'relative', width: '100%', height: 200 }}>

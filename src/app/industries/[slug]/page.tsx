@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { INDUSTRY_PROFILES, IndustryProfile } from '@/data/industryData'
-import { PROJECTS, ProjectItem } from '@/data/projectsData'
+import { INDUSTRY_PROFILES } from '@/data/industryData'
+import { PROJECTS } from '@/data/projectsData'
 import FAQAccordion from '@/components/ui/FAQAccordion'
 import FaqJsonLd from '@/components/seo/FaqJsonLd'
 
@@ -75,7 +75,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
             Industry-Specific Commercial Signage · Dallas–Fort Worth
           </span>
 
-          <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.8vw, 54px)', lineHeight: 1.05, margin: 0, color: '#fff', maxWidth: 860 }}>
+          <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.8vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 860 }}>
             {ind.headline}
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 740 }}>
@@ -188,7 +188,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
                 Every sign below was designed, permitted, fabricated, and installed for local North Texas businesses by Sign Zone.
               </p>
             </div>
-            <Link href="/projects" className="btn btn-ghost" style={{ alignSelf: 'flex-start' }}>
+            <Link href="/projects" className="btn btn-line" style={{ alignSelf: 'flex-start' }}>
               View all 30 DFW projects →
             </Link>
           </div>

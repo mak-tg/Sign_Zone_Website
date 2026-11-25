@@ -49,7 +49,7 @@ export default function ServiceProjectShowcase({
               {subtitle}
             </p>
           </div>
-          <Link href="/projects" className="btn btn-ghost" style={{ alignSelf: 'flex-start' }}>
+          <Link href="/projects" className="btn btn-line" style={{ alignSelf: 'flex-start' }}>
             View all 30 DFW projects →
           </Link>
         </div>

@@ -46,7 +46,7 @@ export default function ContactPage() {
           <nav aria-label="Breadcrumb" style={{ fontSize: 14, color: 'var(--dmuted)', marginBottom: 20 }}>
             <Link href="/" style={{ color: 'var(--dmuted)', textDecoration: 'none' }}>Home</Link>
             {' / '}
-            <span style={{ color: '#fff' }}>Contact Us</span>
+            <span style={{ color: 'var(--hl)' }}>Contact Us</span>
           </nav>
 
           <span className="pill" style={{ marginBottom: 16 }}>
@@ -54,7 +54,7 @@ export default function ContactPage() {
             Direct Communication · North Texas Sign Shop
           </span>
 
-          <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.5vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 820, color: '#fff' }}>
+          <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.5vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 820 }}>
             Let&apos;s discuss your commercial sign project.
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 720 }}>

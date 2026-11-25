@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'About Sign Zone | 15+ Years Commercial Sign Contractor Dallas–Fort Worth',
@@ -32,7 +31,7 @@ export default function AboutPage() {
             <span className="dot" />
             Serving North Texas Since 2011
           </span>
-          <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.5vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 760, color: '#fff' }}>
+          <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.5vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 760 }}>
             15+ years building commercial signs that put North Texas on the map.
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '24px 0 0', maxWidth: 680 }}>
@@ -85,7 +84,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div style={{ background: '#0a101d', borderRadius: 16, padding: 36, color: '#fff' }}>
+            <div className="keep-dark" style={{ background: 'var(--panel)', borderRadius: 16, padding: 36, color: '#fff' }}>
               <div style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: '.1em', color: 'var(--elec)', fontWeight: 700, marginBottom: 8 }}>
                 Company Highlights
               </div>
@@ -123,7 +122,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="dark" style={{ padding: '64px 0', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
         <div className="wrap" style={{ textAlign: 'center', maxWidth: 640 }}>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.8vw, 42px)', margin: 0, color: '#fff' }}>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.8vw, 42px)', margin: 0 }}>
             Ready to work with a local sign builder?
           </h2>
           <p style={{ fontSize: 17, color: 'var(--dsub)', margin: '16px 0 32px' }}>

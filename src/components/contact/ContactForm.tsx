@@ -92,7 +92,7 @@ export default function ContactForm() {
               })
               setStatus('idle')
             }}
-            className="btn btn-ghost"
+            className="btn btn-line"
             style={{ fontSize: 14 }}
           >
             Send Another Message

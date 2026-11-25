@@ -39,27 +39,27 @@ export default function Hero() {
           </h1>
           <p className="sub">
             Sign Zone is a premier commercial sign company in{' '}
-            <Link href="/locations/dallas" style={{ color: 'var(--dtext)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.3)', textUnderlineOffset: 3 }}>
+            <Link href="/locations/dallas">
               Dallas
             </Link>{' '}
             and{' '}
-            <Link href="/locations/fort-worth" style={{ color: 'var(--dtext)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.3)', textUnderlineOffset: 3 }}>
+            <Link href="/locations/fort-worth">
               Fort Worth, TX
             </Link>
             . We design, fabricate, permit, and install custom business signs under one roof —{' '}
-            <Link href="/channel-letters" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+            <Link href="/channel-letters">
               channel letters
             </Link>
             ,{' '}
-            <Link href="/monument-signs" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+            <Link href="/monument-signs">
               monument signs
             </Link>
             ,{' '}
-            <Link href="/pylon-signs" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+            <Link href="/pylon-signs">
               pylon signs
             </Link>
             , and{' '}
-            <Link href="/storefront-signs" style={{ color: '#fff', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--elec)', textUnderlineOffset: 3 }}>
+            <Link href="/storefront-signs">
               storefront lightboxes
             </Link>{' '}
             across North Texas.

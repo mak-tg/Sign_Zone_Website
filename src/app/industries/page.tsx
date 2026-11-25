@@ -239,7 +239,7 @@ export default function IndustriesPage() {
         <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 28 }}>
           <div>
             <div className="eyebrow">DFW Turnkey Sign Contractor</div>
-            <h2 className="disp sec-h" style={{ margin: '8px 0', fontSize: 34, color: '#fff' }}>
+            <h2 className="disp sec-h" style={{ margin: '8px 0', fontSize: 34 }}>
               Need signs for your space?
             </h2>
             <p style={{ color: 'var(--dsub)', margin: 0, maxWidth: 540, fontSize: 16.5, lineHeight: 1.55 }}>

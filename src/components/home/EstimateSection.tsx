@@ -104,6 +104,7 @@ export default function EstimateSection() {
 
   const minLH = Math.max(1, Math.round(distance / 30))
   const rcmLH = Math.max(2, Math.round(distance / 10))
+  const distPercent = Math.min(Math.max(((distance - 25) / (600 - 25)) * 100, 0), 100)
 
   return (
     <section className="dark sec" id="estimate">
@@ -204,7 +205,12 @@ export default function EstimateSection() {
               step={5}
               value={distance}
               onChange={(e) => setDistance(+e.target.value)}
-              style={{ marginTop: 14 }}
+              className="dist-slider"
+              aria-label="Distance to customer"
+              style={{
+                marginTop: 14,
+                background: `linear-gradient(to right, #0050F0 0%, #4D8DFF ${distPercent}%, #1E293B ${distPercent}%, #1E293B 100%)`,
+              }}
             />
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, color: '#7D879A' }}>
               <span>Sidewalk</span>

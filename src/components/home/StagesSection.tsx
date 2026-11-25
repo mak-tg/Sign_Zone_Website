@@ -62,7 +62,7 @@ export default function StagesSection() {
               </Link>
               <Link
                 href="/quote"
-                className="btn btn-ghost"
+                className="btn btn-line"
                 data-quote={s.type}
               >
                 {s.cta}

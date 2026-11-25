@@ -145,7 +145,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
               style={{
                 fontSize: 'clamp(32px, 5vw, 50px)',
                 lineHeight: 1.05,
-                color: '#fff',
+                color: 'var(--hl)',
                 marginBottom: 20,
               }}
             >
@@ -161,11 +161,11 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 22, paddingTop: 18, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-              <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--blue)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 15, flexShrink: 0 }}>
+              <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--blue)', color: 'var(--white)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 15, flexShrink: 0 }}>
                 SZ
               </div>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 700, color: '#fff' }}>
+                <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--hl)' }}>
                   Sign Zone Technical Estimating &amp; Permitting Team
                 </div>
                 <div style={{ fontSize: 12, color: 'var(--dsub)' }}>
@@ -324,13 +324,14 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
 
             {/* Authoritative Conversion Box (Dark Theme Panel) */}
             <div
+              className="guide-cta"
               style={{
                 marginTop: 52,
                 padding: '36px 40px',
                 background: 'var(--panel)',
                 border: '1px solid var(--line)',
                 borderRadius: 16,
-                color: '#fff',
+                color: 'var(--hl)',
                 display: 'flex',
                 flexWrap: 'wrap',
                 alignItems: 'center',
@@ -349,7 +350,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                 >
                   Ready to calculate your sign?
                 </span>
-                <h2 className="disp" style={{ margin: '0 0 10px', fontSize: 26, color: '#fff', lineHeight: 1.15 }}>
+                <h2 className="disp" style={{ margin: '0 0 10px', fontSize: 26, lineHeight: 1.15 }}>
                   Get an engineered quote with zero guesswork.
                 </h2>
                 <p style={{ margin: 0, fontSize: 15, color: 'var(--dsub)', maxWidth: 480, lineHeight: 1.55 }}>
