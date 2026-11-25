@@ -28,6 +28,9 @@ export default function PageMotion() {
       'main .guides-card-grid > *',
       'main #guides > *',
       'main .guide-related > *',
+      'main article.view section.light .wrap > section > h2',
+      'main article.view section.light .wrap > section > p',
+      'main article.view section.light .wrap > section > div',
     ].join(', ')
     const items = [...main.querySelectorAll<HTMLElement>(selector)]
     const observer = new IntersectionObserver((entries) => {
