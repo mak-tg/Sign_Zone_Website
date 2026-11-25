@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="hero-slide-progress" aria-hidden="true"><span /><span /><span /></div>
 
       <div className="wrap">
-        <div className="hero-copy" style={{ flex: '1 1 480px', minWidth: 0 }}>
+        <div style={{ flex: '1 1 480px', minWidth: 0 }}>
           <span className="pill">
             <span className="dot" />
             Custom Sign Company in Dallas–Fort Worth, TX · Since 2011
