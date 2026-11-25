@@ -1349,6 +1349,10 @@ footer strong { color: #fff; }
   .hero .wrap { padding-top: 48px; padding-bottom: 56px; gap: 36px; }
   .hero h1 { font-size: 46px; }
   .sec-h { font-size: 34px; }
+  .home-motion :is(h1, h2, h3) { text-align: center; }
+  .home-motion .sec-h { margin-left: auto; margin-right: auto; }
+  .home-motion .btn-row { flex-direction: column; align-items: stretch; }
+  .home-motion .btn { width: 100%; max-width: 100%; white-space: normal; text-align: center; }
   .ticks { grid-template-columns: 1fr; }
   .stage-box, .panel, .tool { padding: 22px; }
   .mbar { display: flex; }
