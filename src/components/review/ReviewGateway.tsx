@@ -50,7 +50,7 @@ export default function ReviewGateway() {
               letterSpacing: '-.01em',
             }}
           >
-            Rate Your Experience
+            Tell us how we did
           </h2>
 
           <p
@@ -212,7 +212,7 @@ export default function ReviewGateway() {
               margin: '0 0 10px',
             }}
           >
-            Scan with Your Phone
+            Use your phone to scan
           </h3>
 
           <p

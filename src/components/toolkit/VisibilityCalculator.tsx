@@ -27,7 +27,7 @@ export default function VisibilityCalculator() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
       <div className="panel" style={{ flex: '999 1 500px', minWidth: 0 }}>
-        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Sign visibility &amp; letter size calculator</h2>
+        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Check sign visibility and letter size</h2>
         <p style={{ margin: '8px 0 0', color: 'var(--muted)', fontSize: 15 }}>Based on the U.S. Sign Council research method.</p>
 
         <span className="lbl" style={{ marginTop: 24, display: 'block' }}>Who needs to read it?</span>

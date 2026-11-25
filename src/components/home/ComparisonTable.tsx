@@ -5,7 +5,7 @@ export default function ComparisonTable() {
     <section className="paper sec">
       <div className="wrap">
         <div className="eyebrow">Why Sign Zone</div>
-        <h2 className="disp sec-h">Local crew. Online speed.</h2>
+        <h2 className="disp sec-h">Local service, with quick online help.</h2>
         <div className="tbl-wrap" style={{ marginTop: 40 }}>
           <table style={{ minWidth: 720 }}>
             <thead>

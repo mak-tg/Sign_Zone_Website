@@ -38,7 +38,7 @@ export default function ROICalculator() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
       <div className="panel" style={{ flex: '999 1 500px', minWidth: 0 }}>
-        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Sign payback calculator</h2>
+        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Estimate how your sign may pay off</h2>
         <p style={{ margin: '8px 0 0', color: 'var(--muted)', fontSize: 15 }}>Your sign works 24/7. See how many new customers it takes to pay for itself.</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 18, marginTop: 24 }}>
           {fields.map(f => (

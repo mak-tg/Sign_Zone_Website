@@ -15,7 +15,7 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
   restaurants: {
     slug: 'restaurants',
     name: 'Restaurants & Dining',
-    headline: 'High-Visibility Dining, Cafe & Fast-Casual Signage',
+    headline: 'Signs that help people find restaurants and cafes',
     summary:
       'From fast-casual storefront channel letters to cafe dimensional lettering, patio illumination, and drive-thru signage, we build restaurant signs engineered to withstand Texas heat, kitchen grease, and high customer volume.',
     popularSigns: [
@@ -63,7 +63,7 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
   retail: {
     slug: 'retail',
     name: 'Retail & Storefronts',
-    headline: 'Storefront Signs that Capture Foot & Highway Traffic',
+    headline: 'Storefront signs people can see from the road and sidewalk',
     summary:
       'Retail signage must bridge distant roadway visibility with close-up pedestrian foot traffic. We design, permit, and install high-contrast storefront channel letters, illuminated cabinet signs, and luxury monument plaques across DFW shopping centers.',
     popularSigns: [
@@ -93,7 +93,7 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
   'medical-dental': {
     slug: 'medical-dental',
     name: 'Medical & Healthcare',
-    headline: 'Authoritative, Professional Healthcare & Dental Signage',
+    headline: 'Clear signs for medical and dental offices',
     summary:
       'Healthcare practices require professional authority and effortless patient wayfinding. We craft elegant reverse halo-lit channel letters, ADA-compliant tactile interior room signage, and exterior medical plaza monument plaques.',
     popularSigns: [
@@ -123,7 +123,7 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
   'fitness-wellness': {
     slug: 'fitness-wellness',
     name: 'Fitness, Spas & Wellness',
-    headline: 'High-Impact Fitness Centers, Martial Arts & Spa Signage',
+    headline: 'Bold signs for gyms, studios, and spas',
     summary:
       'Gyms and fitness studios require bold, energetic exterior branding readable from high-speed roads, while luxury spas and salons demand refined, ambient aesthetics that welcome clients.',
     popularSigns: [
@@ -162,7 +162,7 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
   offices: {
     slug: 'offices',
     name: 'Offices & Corporate',
-    headline: 'Architectural Building Tops & Precision Corporate Lobby Logos',
+    headline: 'Building signs and lobby logos for offices',
     summary:
       'Corporate headquarters demand flawless brand representation. We manufacture building-top halo letters visible from highways, laser-cut lobby logos in brushed metals, and frosted glass privacy graphics for conference rooms.',
     popularSigns: [
@@ -192,7 +192,7 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
   franchises: {
     slug: 'franchises',
     name: 'Franchises & Chains',
-    headline: 'Strict Brand-Standard Rollouts Across Municipalities',
+    headline: 'Keep your signs the same at every location',
     summary:
       'Multi-unit operators need exact brand compliance across multiple DFW cities. We manage surveys, municipal variances, custom fabrication, and coordinated installations for regional and national franchise brands.',
     popularSigns: [

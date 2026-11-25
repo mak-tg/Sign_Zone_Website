@@ -14,7 +14,7 @@ export default function MonumentSection() {
         <div style={{ flex: '1 1 380px', minWidth: 0 }}>
           <div className="eyebrow">Featured: monument signs</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>
-            Monument signs that stand out.
+            Monument signs people can see.
           </h2>
           <p style={{ fontSize: 18, lineHeight: 1.6, color: 'var(--dsub)', margin: '20px 0 0' }}>
             For retail centers, shopping plazas, medical buildings and offices set back from the road. Stone, brick or aluminum bases, lit tenant panels you can swap when tenants change.

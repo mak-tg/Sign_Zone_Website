@@ -115,7 +115,7 @@ export default function VehicleWrapsPage() {
           <div className="cl-hero-grid">
             <div style={{ minWidth: 0 }}>
               <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 3.8vw, 48px)', lineHeight: 1.02, margin: 0, maxWidth: 480 }}>
-                Vehicle wraps for DFW fleets.
+                Vehicle wraps for DFW work vehicles.
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 480 }}>
                 Full and partial vehicle wraps, fleet graphics, and DOT lettering printed on 3M Cast vinyl. Turn every mile driven in North Texas into customer impressions.
@@ -142,7 +142,7 @@ export default function VehicleWrapsPage() {
       <section className="light sec">
         <div className="wrap">
           <div className="eyebrow">What you&apos;re paying for</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Anatomy of a commercial vehicle wrap.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>What goes into a vehicle wrap?</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, marginTop: 40, alignItems: 'center' }}>
             <div className="anat" aria-hidden="true" style={{ flex: '1 1 380px', minWidth: 0 }}>
               {/* Van Body Outline */}
@@ -187,7 +187,7 @@ export default function VehicleWrapsPage() {
       <section className="paper sec">
         <div className="wrap">
           <div className="eyebrow">Coverage Options</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How they cover your commercial fleet.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How we add signs to your vehicles.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 18, marginTop: 40 }} id="wrapMounts">
             {WRAP_MOUNTS.map((m) => (
               <div key={m.name} className="card" style={{ borderRadius: 18, padding: 28, gap: 10 }}>
@@ -208,7 +208,7 @@ export default function VehicleWrapsPage() {
           <div className="head-row">
             <div>
               <div className="eyebrow">Vehicle &amp; pricing guide</div>
-              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Pick a vehicle type. See impressions and price.</h2>
+              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>See how many people may notice your vehicle and what it may cost.</h2>
             </div>
             <Link className="btn btn-dark" href="/toolkit#roi">Open ROI calculator</Link>
           </div>
@@ -251,7 +251,7 @@ export default function VehicleWrapsPage() {
       <section className="paper sec">
         <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 48 }}>
           <div style={{ flex: '1 1 320px', minWidth: 0 }}>
-            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Vehicle wrap questions.</h2>
+            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Questions about vehicle wraps</h2>
             <div style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <span className="kv">Often paired with</span>
               <Link href="/storefront-signs" style={{ fontWeight: 700, color: 'var(--blue)' }}>Storefront lightboxes →</Link>

@@ -75,9 +75,9 @@ export default function ProjectsSection({ asH1 = false }: { asH1?: boolean }) {
       <div className="wrap">
         <div className="eyebrow">Selected projects</div>
         {asH1 ? (
-          <h1 className="disp sec-h">Real signs. Real places.</h1>
+          <h1 className="disp sec-h">See signs we made for real businesses.</h1>
         ) : (
-          <h2 className="disp sec-h">Real signs. Real places.</h2>
+          <h2 className="disp sec-h">See signs we made for real businesses.</h2>
         )}
         <p className="loc-intro">
           See how different sign systems come together for businesses across North Texas. Open a case study to explore the project.

@@ -31,7 +31,7 @@ export default function LocationsSection() {
     <section className="paper sec" id="locations">
       <div className="wrap">
         <div className="eyebrow">Where we work</div>
-        <h2 className="disp sec-h">Serving all of DFW.</h2>
+        <h2 className="disp sec-h">We serve businesses across DFW.</h2>
         <p className="loc-intro">
           From storefronts and offices to shopping centers and campuses, we help businesses across Dallas–Fort Worth find the right sign for their location.
         </p>
@@ -41,7 +41,7 @@ export default function LocationsSection() {
           {/* Left anchor panel */}
           <div className="loc-anchor">
             <span className="loc-anchor-badge">DFW</span>
-            <h3 className="loc-anchor-title">Signs built for your city.</h3>
+            <h3 className="loc-anchor-title">Signs made for your city.</h3>
             <p className="loc-anchor-body">
               Every location has its own property requirements and sign rules. We help you plan for the details, from the first site review to installation.
             </p>

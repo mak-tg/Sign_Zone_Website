@@ -166,7 +166,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
               </div>
               <div>
                 <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--hl)' }}>
-                  Sign Zone Technical Estimating &amp; Permitting Team
+                  Sign Zone project team
                 </div>
                 <div style={{ fontSize: 12, color: 'var(--dsub)' }}>
                   15+ Years Commercial Sign Experience · Dallas–Fort Worth, TX
@@ -208,7 +208,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                 }}
               >
                 <div className="eyebrow" style={{ marginBottom: 8, fontSize: 12 }}>
-                  Executive Insights
+                  Quick guide
                 </div>
                 <h2
                   className="disp"
@@ -219,7 +219,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                     lineHeight: 1.15,
                   }}
                 >
-                  Key Takeaways for Business Owners:
+                  Main points for business owners
                 </h2>
                 <ul style={{ margin: 0, paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {article.keyTakeaways.map((item, idx) => (
@@ -351,7 +351,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                   Ready to calculate your sign?
                 </span>
                 <h2 className="disp" style={{ margin: '0 0 10px', fontSize: 26, lineHeight: 1.15 }}>
-                  Get an engineered quote with zero guesswork.
+                  Get a clear quote for your sign.
                 </h2>
                 <p style={{ margin: 0, fontSize: 15, color: 'var(--dsub)', maxWidth: 480, lineHeight: 1.55 }}>
                   One team handles the drawings, city permits, Texas fabrication, and crane installation.

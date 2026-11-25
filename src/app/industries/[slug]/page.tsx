@@ -105,7 +105,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
         <div className="wrap">
           <div className="eyebrow">Permitting &amp; Compliance</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.5vw, 38px)', color: 'var(--navy)', margin: '8px 0 32px' }}>
-            What {ind.name} businesses must know before building.
+            What {ind.name} businesses need to know before they choose a sign.
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32 }}>
@@ -114,7 +114,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
                 📋
               </div>
               <h3 style={{ fontSize: 20, fontWeight: 800, color: 'var(--navy)', margin: '0 0 10px' }}>
-                Landlord Sign Criteria &amp; Lease Restrictions
+                Landlord rules for your sign
               </h3>
               <p style={{ fontSize: 15.5, lineHeight: 1.65, color: '#475569', margin: 0 }}>
                 {ind.landlordCriteria}
@@ -126,7 +126,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
                 ⚖️
               </div>
               <h3 style={{ fontSize: 20, fontWeight: 800, color: 'var(--navy)', margin: '0 0 10px' }}>
-                Municipal Codes &amp; City Permitting
+                City rules and permits
               </h3>
               <p style={{ fontSize: 15.5, lineHeight: 1.65, color: '#475569', margin: 0 }}>
                 {ind.permittingNotes}
@@ -141,7 +141,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
         <div className="wrap">
           <div className="eyebrow">Sign Systems</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.5vw, 38px)', color: 'var(--navy)', margin: '8px 0 28px' }}>
-            Recommended signage for {ind.name.toLowerCase()}.
+            Signs that work well for {ind.name.toLowerCase()}.
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>

@@ -53,11 +53,11 @@ export default function FinancingSection({ asH1 = false }: { asH1?: boolean }) {
           </div>
           {asH1 ? (
             <h1 className="disp sec-h" style={{ color: '#fff' }}>
-              Get the sign. Pay over time.
+              Get your sign now and pay over time.
             </h1>
           ) : (
             <h2 className="disp sec-h" style={{ color: '#fff' }}>
-              Get the sign. Pay over time.
+              Get your sign now and pay over time.
             </h2>
           )}
           <p style={{ fontSize: 18, lineHeight: 1.6, color: '#E6EEFF', margin: '20px 0 0', maxWidth: 520 }}>

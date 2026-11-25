@@ -115,7 +115,7 @@ export default function LobbySignsPage() {
           <div className="cl-hero-grid">
             <div style={{ minWidth: 0 }}>
               <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 3.8vw, 48px)', lineHeight: 1.02, margin: 0, maxWidth: 480 }}>
-                Lobby signs for DFW corporate spaces.
+                Lobby signs for DFW offices.
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 480 }}>
                 Dimensional logos in brushed metal, acrylic, or halo-lit LEDs behind reception. Precision laser-cut to your vector logo and installed with zero visible hardware.
@@ -142,7 +142,7 @@ export default function LobbySignsPage() {
       <section className="light sec">
         <div className="wrap">
           <div className="eyebrow">What you&apos;re paying for</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Anatomy of an interior lobby sign.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>What goes into a lobby sign?</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, marginTop: 40, alignItems: 'center' }}>
             <div className="anat" aria-hidden="true" style={{ flex: '1 1 380px', minWidth: 0 }}>
               {/* Finished Accent Wall */}
@@ -185,7 +185,7 @@ export default function LobbySignsPage() {
       <section className="paper sec">
         <div className="wrap">
           <div className="eyebrow">Mounting &amp; Wall Options</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How they mount to your reception wall.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How we mount them on your lobby wall.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 18, marginTop: 40 }} id="lobbyMounts">
             {LOBBY_MOUNTS.map((m) => (
               <div key={m.name} className="card" style={{ borderRadius: 18, padding: 28, gap: 10 }}>
@@ -206,7 +206,7 @@ export default function LobbySignsPage() {
           <div className="head-row">
             <div>
               <div className="eyebrow">Size &amp; price guide</div>
-              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Pick a width. See distance and price.</h2>
+              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>See how sign width affects reading distance and price.</h2>
             </div>
             <Link className="btn btn-dark" href="/toolkit#cost">Open the cost calculator</Link>
           </div>
@@ -249,7 +249,7 @@ export default function LobbySignsPage() {
       <section className="paper sec">
         <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 48 }}>
           <div style={{ flex: '1 1 320px', minWidth: 0 }}>
-            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Lobby sign questions.</h2>
+            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Questions about lobby signs</h2>
             <div style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <span className="kv">Often paired with</span>
               <Link href="/channel-letters" style={{ fontWeight: 700, color: 'var(--blue)' }}>Exterior channel letters →</Link>

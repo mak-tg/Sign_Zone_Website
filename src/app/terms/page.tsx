@@ -24,11 +24,11 @@ export default function TermsPage() {
           <nav aria-label="Breadcrumb" style={{ fontSize: 14, color: 'var(--dmuted)', marginBottom: 20 }}>
             <Link href="/" style={{ color: 'var(--dmuted)', textDecoration: 'none' }}>Home</Link>
             {' / '}
-            <span style={{ color: '#fff' }}>Terms &amp; Conditions</span>
+            <span style={{ color: '#fff' }}>Terms and conditions</span>
           </nav>
           <div className="eyebrow" style={{ marginBottom: 12 }}>Commercial Agreement</div>
           <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 4vw, 48px)', margin: 0, color: '#fff' }}>
-            Terms &amp; Conditions
+            Terms and conditions
           </h1>
           <p style={{ fontSize: 16, color: 'var(--dsub)', marginTop: 12 }}>
             Standard Commercial Fabrication &amp; Installation Agreement · 2026
@@ -40,7 +40,7 @@ export default function TermsPage() {
         <div className="wrap" style={{ maxWidth: 840 }}>
           <div style={{ lineHeight: 1.75, color: '#334155', fontSize: 16 }}>
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 0, marginBottom: 16 }}>
-              1. Scope of Agreement
+              1. What this agreement covers
             </h2>
             <p>
               These Terms and Conditions govern all commercial signage proposals, design services, fabrication orders,
@@ -50,7 +50,7 @@ export default function TermsPage() {
             </p>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              2. Estimates &amp; Proof Approvals
+              2. Quotes and design approval
             </h2>
             <ul style={{ paddingLeft: 24, marginBottom: 20 }}>
               <li><strong>Estimate Validity:</strong> Written quotations remain valid for thirty (30) calendar days from issuance due to fluctuating raw material costs (aluminum, acrylic, and commercial LEDs).</li>
@@ -59,7 +59,7 @@ export default function TermsPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              3. Municipal Permitting &amp; Landlord Criteria
+              3. City permits and landlord rules
             </h2>
             <p>
               Sign Zone is a licensed Texas Electrical Sign Contractor experienced in navigating municipal sign codes across Dallas, Collin, Tarrant, Denton, and surrounding counties:
@@ -71,7 +71,7 @@ export default function TermsPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              4. Electrical Provisions &amp; Site Readiness
+              4. Power and site access
             </h2>
             <ul style={{ paddingLeft: 24, marginBottom: 20 }}>
               <li><strong>Primary Power Supply:</strong> Client is responsible for providing dedicated primary 120V or 277V electrical feed to the designated sign location (direct disconnect or J-box) compliant with the National Electrical Code (NEC).</li>
@@ -92,7 +92,7 @@ export default function TermsPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              6. Governing Law
+              6. Which laws apply
             </h2>
             <p>
               This Agreement shall be governed by and construed in accordance with the laws of the State of Texas. Any legal proceedings arising from or relating to commercial signage agreements shall be filed in the courts of Dallas County, Texas.

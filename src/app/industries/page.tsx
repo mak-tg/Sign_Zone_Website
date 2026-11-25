@@ -35,7 +35,7 @@ export default function IndustriesPage() {
             className="disp sec-h"
             style={{ fontSize: 'clamp(36px, 5.5vw, 56px)', lineHeight: 0.98, maxWidth: 880 }}
           >
-            Signs engineered for your kind of business.
+            Signs made for your type of business.
           </h1>
           <p
             style={{

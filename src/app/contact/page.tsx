@@ -55,7 +55,7 @@ export default function ContactPage() {
           </span>
 
           <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.5vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 820 }}>
-            Let&apos;s discuss your commercial sign project.
+            Let&apos;s talk about your business sign.
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 720 }}>
             Have questions about municipal sign codes, pricing, or custom fabrication? Call us directly, send your
@@ -86,7 +86,7 @@ export default function ContactPage() {
             <div>
               <div className="eyebrow">Get In Touch</div>
               <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 40px)', color: 'var(--navy)', margin: '8px 0 24px' }}>
-                Fastest ways to reach our team.
+                Contact our team.
               </h2>
               <p style={{ fontSize: 16, lineHeight: 1.65, color: 'var(--muted)', marginBottom: 32 }}>
                 Whether you need preliminary budget numbers for a lease negotiation or full turnkey fabrication and permitting,
@@ -209,7 +209,7 @@ export default function ContactPage() {
         <div className="wrap" style={{ maxWidth: 840 }}>
           <div className="eyebrow">Common Inquiries</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.2vw, 36px)', color: 'var(--navy)', margin: '8px 0 28px' }}>
-            Frequently asked questions.
+            Questions people often ask.
           </h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

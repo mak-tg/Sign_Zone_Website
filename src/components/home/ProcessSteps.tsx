@@ -9,11 +9,11 @@ export default function ProcessSteps({ asH1 = false }: { asH1?: boolean }) {
             <div className="eyebrow">How it works</div>
             {asH1 ? (
               <h1 className="disp sec-h">
-                Six steps to lights on.
+                Six steps to your new sign.
               </h1>
             ) : (
               <h2 className="disp sec-h">
-                Six steps to lights on.
+                Six steps to your new sign.
               </h2>
             )}
           </div>
