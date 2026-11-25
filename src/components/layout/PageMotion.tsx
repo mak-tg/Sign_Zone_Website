@@ -1,8 +1,10 @@
 'use client'
 
 import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function PageMotion() {
+  const pathname = usePathname()
   useEffect(() => {
     if (!('IntersectionObserver' in window)) return
     const main = document.querySelector('main')
@@ -34,7 +36,7 @@ export default function PageMotion() {
       observer.observe(item)
     })
     return () => observer.disconnect()
-  }, [])
+  }, [pathname])
 
   return null
 }
