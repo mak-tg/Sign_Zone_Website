@@ -14,6 +14,11 @@ export default function PageMotion() {
       // Match the homepage: reveal section content blocks, not whole sections.
       'main .view section > .wrap > *',
       'main .view section > .container > *',
+      'main section > .wrap > *',
+      'main .city-hero-copy > *',
+      'main .city-project',
+      'main .city-project-grid > article',
+      'main .loc-box',
       'main .view .facts > div',
       'main .view .card',
       'main .view [class*="-card"]',
