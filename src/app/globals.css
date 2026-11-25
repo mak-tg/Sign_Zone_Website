@@ -1353,6 +1353,14 @@ footer strong { color: #fff; }
   .home-motion .sec-h { margin-left: auto; margin-right: auto; }
   .home-motion .btn-row { flex-direction: column; align-items: stretch; }
   .home-motion .btn { width: 100%; max-width: 100%; white-space: normal; text-align: center; }
+  .hero-slide { object-position: 76% 42%; }
+  .hero-overlay { background: linear-gradient(180deg, rgba(5,8,16,.08) 0%, rgba(5,8,16,.34) 100%); }
+  .hero-overlay::after { opacity: 0 !important; }
+  .hero-copy { padding: 20px; border-radius: 18px; background: rgba(255,255,255,.84); backdrop-filter: blur(5px); }
+  .hero h1 { color: var(--navy) !important; }
+  .hero p.sub { color: #475569; }
+  .home-motion .font-switcher,
+  .font-switcher { display: none !important; }
   .ticks { grid-template-columns: 1fr; }
   .stage-box, .panel, .tool { padding: 22px; }
   .mbar { display: flex; }
