@@ -3,7 +3,7 @@ import { CITIES_ALL, LOCATION_PAGES } from '@/data/siteData'
 
 export default function BottomCTA() {
   return (
-    <section className="dark sec" style={{ position: 'relative', overflow: 'hidden' }}>
+    <section className="dark sec home-bottom-cta" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="stripes" style={{ bottom: -200, left: -160, opacity: 0.16 }} />
       <div className="wrap" style={{ position: 'relative', display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'flex-start' }}>
         <div style={{ flex: '1.3 1 480px', minWidth: 0 }}>

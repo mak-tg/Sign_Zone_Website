@@ -10,7 +10,7 @@ import LocationsSection from '@/components/home/LocationsSection'
 import ProjectsSection from '@/components/home/ProjectsSection'
 import EstimateSection from '@/components/home/EstimateSection'
 import ProcessSteps from '@/components/home/ProcessSteps'
-import MonumentSection from '@/components/home/MonumentSection'
+import FeaturedProjectsSection from '@/components/home/FeaturedProjectsSection'
 import IndustriesSection from '@/components/home/IndustriesSection'
 import ComparisonTable from '@/components/home/ComparisonTable'
 import ReviewCarousel from '@/components/home/ReviewCarousel'
@@ -34,7 +34,7 @@ export default function HomeClient() {
       <ProjectsSection />
       <EstimateSection />
       <ProcessSteps />
-      <MonumentSection />
+      <FeaturedProjectsSection />
       <IndustriesSection />
       <ComparisonTable />
       <ReviewCarousel />

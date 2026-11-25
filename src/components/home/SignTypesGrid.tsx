@@ -79,10 +79,10 @@ export default function SignTypesGrid({ asH1 = false }: { asH1?: boolean }) {
                 <img
                   className="sign-photo"
                   src={s.image}
-                  alt={`${s.name} - Commercial sign fabricated by Sign Zone DFW`}
+                  alt={`Illustrative example of ${s.name.toLowerCase()}`}
                   loading="lazy"
                 />
-                <span className="tag">{CAT_LABELS[s.cat]}</span>
+                <span className="tag">{CAT_LABELS[s.cat]} · Illustrative example</span>
                 <span
                   className="disp"
                   style={{

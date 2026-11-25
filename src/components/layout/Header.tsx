@@ -105,7 +105,7 @@ export default function Header() {
 
               {indOpen && (
                 <div
-                  className={`nav-locations-panel ${isClosing ? 'closing' : 'open'}`}
+                  className={`nav-locations-panel industries-menu-panel ${isClosing ? 'closing' : 'open'}`}
                   role="region"
                   aria-label="Industries menu"
                 >
@@ -124,10 +124,10 @@ export default function Header() {
                     <div className="nav-locations-grid">
                       {INDUSTRIES.map((ind) => (
                         <Link key={ind.slug} href={`/industries/${ind.slug}`} onClick={closeMenu}>
-                          <span className="menu-pin">
+                          <span className="menu-pin" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
-                              <rect x="4" y="4" width="16" height="16" rx="3" />
-                              <path d="M8 12h8M12 8v8" />
+                              <path d="M3 21h18M5 21V7l7-4v18M12 11h7v10" />
+                              <path d="M8 9h.01M8 13h.01M8 17h.01M15 14h.01M18 14h.01M15 17h.01M18 17h.01" strokeLinecap="round" />
                             </svg>
                           </span>
                           <span className="menu-city">
@@ -157,7 +157,7 @@ export default function Header() {
 
               {locOpen && (
                 <div
-                  className={`nav-locations-panel ${isClosing ? 'closing' : 'open'}`}
+                  className={`nav-locations-panel locations-menu-panel ${isClosing ? 'closing' : 'open'}`}
                   role="region"
                   aria-label="Locations menu"
                 >

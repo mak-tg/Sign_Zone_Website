@@ -2,7 +2,7 @@ import { COMPARE_ROWS } from '@/data/siteData'
 
 export default function ComparisonTable() {
   return (
-    <section className="paper sec">
+    <section className="paper sec" id="comparison">
       <div className="wrap">
         <div className="eyebrow">Why Sign Zone</div>
         <h2 className="disp sec-h">Local service, with quick online help.</h2>

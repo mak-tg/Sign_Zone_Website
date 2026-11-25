@@ -241,6 +241,15 @@ export default function EstimateSection() {
             </Link>
           </div>
         </div>
+
+        <div className="btn-row" style={{ marginTop: 28 }} aria-label="Get help planning your sign">
+          <a href="tel:2147144623" className="btn btn-blue" aria-label="Call Sign Zone at 214-714-4623">
+            Call us: 214-714-4623
+          </a>
+          <a href="sms:2147144623" className="btn btn-ghost" aria-label="Text a photo to Sign Zone at 214-714-4623">
+            Text us a photo
+          </a>
+        </div>
       </div>
     </section>
   )

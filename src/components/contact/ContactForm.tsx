@@ -1,8 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 export default function ContactForm() {
+  const attachmentInputRef = useRef<HTMLInputElement>(null)
+  const [attachments, setAttachments] = useState<File[]>([])
   const [formData, setFormData] = useState({
     name: '',
     business: '',
@@ -15,6 +17,20 @@ export default function ContactForm() {
   })
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+
+  const handleAttachmentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFiles = Array.from(e.target.files ?? [])
+    setAttachments((current) => {
+      const next = [...current]
+      for (const file of selectedFiles) {
+        if (!next.some((existing) => existing.name === file.name && existing.size === file.size)) {
+          next.push(file)
+        }
+      }
+      return next
+    })
+    e.target.value = ''
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target
@@ -90,6 +106,7 @@ export default function ContactForm() {
                 message: '',
                 consent: true,
               })
+              setAttachments([])
               setStatus('idle')
             }}
             className="btn btn-line"
@@ -234,17 +251,62 @@ export default function ContactForm() {
         <label className="lbl" htmlFor="contact-message">
           Project Details or Questions <span style={{ color: '#ef4444' }}>*</span>
         </label>
-        <textarea
-          id="contact-message"
-          name="message"
-          required
-          rows={4}
-          className="inp"
-          placeholder="Tell us about your storefront, dimensions, timeline, or landlord criteria requirements..."
-          value={formData.message}
-          onChange={handleChange}
-          style={{ resize: 'vertical', minHeight: 96 }}
-        />
+        <div className="contact-message-field">
+          <textarea
+            id="contact-message"
+            name="message"
+            required
+            rows={4}
+            className="inp"
+            placeholder="Tell us about your storefront, dimensions, timeline, or landlord criteria requirements..."
+            value={formData.message}
+            onChange={handleChange}
+            style={{ resize: 'vertical', minHeight: 124 }}
+          />
+          <button
+            type="button"
+            className="contact-attach-button"
+            onClick={() => attachmentInputRef.current?.click()}
+            aria-controls="contact-attachments"
+            aria-describedby="contact-attachments-help"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="m21.4 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.82-2.83l8.49-8.48" />
+            </svg>
+            Attach files
+          </button>
+          <input
+            ref={attachmentInputRef}
+            id="contact-attachments"
+            name="attachments"
+            type="file"
+            accept=".pdf,application/pdf,image/*"
+            multiple
+            onChange={handleAttachmentChange}
+            aria-label="Attach PDF plans or image files"
+            hidden
+          />
+        </div>
+        <p id="contact-attachments-help" style={{ margin: '7px 0 0', fontSize: 12.5, color: 'var(--muted2)' }}>
+          Optional · PDF and image files · Multiple files allowed
+        </p>
+        {attachments.length > 0 && (
+          <ul className="contact-attachments" aria-label="Selected attachments" aria-live="polite">
+            {attachments.map((file, index) => (
+              <li key={`${file.name}-${file.size}-${index}`} className="contact-attachment-item">
+                <span className="contact-attachment-name" title={file.name}>{file.name}</span>
+                <button
+                  type="button"
+                  className="contact-attachment-remove"
+                  onClick={() => setAttachments((current) => current.filter((_, fileIndex) => fileIndex !== index))}
+                  aria-label={`Remove ${file.name}`}
+                >
+                  Remove
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       <div style={{ marginBottom: 24 }}>

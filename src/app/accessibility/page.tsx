@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function AccessibilityPage() {
   return (
     <div className="view" id="v-accessibility">
-      <section className="dark" style={{ paddingTop: 48, paddingBottom: 64 }}>
+      <section className="dark legal-page-hero" style={{ paddingTop: 48, paddingBottom: 64 }}>
         <div className="wrap">
           <nav aria-label="Breadcrumb" style={{ fontSize: 14, color: 'var(--dmuted)', marginBottom: 20 }}>
             <Link href="/" style={{ color: 'var(--dmuted)', textDecoration: 'none' }}>Home</Link>

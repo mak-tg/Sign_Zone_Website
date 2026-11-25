@@ -2,6 +2,44 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import ContactForm from '@/components/contact/ContactForm'
 
+function ContactInfoIcon({ type }: { type: 'phone' | 'email' | 'location' }) {
+  const iconProps = {
+    width: 19,
+    height: 19,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth: 1.8,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+    'aria-hidden': true as const,
+  }
+
+  if (type === 'phone') {
+    return (
+      <svg {...iconProps}>
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.04-6.04A19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.07 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.62a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.25-1.25a2 2 0 0 1 2.11-.45c.84.3 1.72.51 2.62.63A2 2 0 0 1 22 16.92Z" />
+      </svg>
+    )
+  }
+
+  if (type === 'email') {
+    return (
+      <svg {...iconProps}>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 7 9 6 9-6" />
+      </svg>
+    )
+  }
+
+  return (
+    <svg {...iconProps}>
+      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </svg>
+  )
+}
+
 export const metadata: Metadata = {
   title: 'Contact Sign Zone | Dallas–Fort Worth Commercial Sign Company',
   description:
@@ -106,7 +144,7 @@ export default function ContactPage() {
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
                     <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>
-                      📞
+                      <ContactInfoIcon type="phone" />
                     </div>
                     <div>
                       <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--blue)' }}>
@@ -137,7 +175,7 @@ export default function ContactPage() {
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
                     <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>
-                      ✉️
+                      <ContactInfoIcon type="email" />
                     </div>
                     <div>
                       <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--blue)' }}>
@@ -165,7 +203,7 @@ export default function ContactPage() {
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
                     <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>
-                      📍
+                      <ContactInfoIcon type="location" />
                     </div>
                     <div>
                       <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--blue)' }}>

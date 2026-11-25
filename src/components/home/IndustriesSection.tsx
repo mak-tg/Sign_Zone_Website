@@ -3,7 +3,7 @@ import { INDUSTRIES } from '@/data/siteData'
 
 export default function IndustriesSection() {
   return (
-    <section className="light sec" id="industries">
+    <section className="light sec home-industries-section" id="industries">
       <div className="wrap">
         <div className="eyebrow">Industries</div>
         <h2 className="disp sec-h">
