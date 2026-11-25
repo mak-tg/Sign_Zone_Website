@@ -26,8 +26,11 @@ export default function HomeClient() {
   useEffect(() => {
     const root = document.querySelector('.home-motion')
     if (!root) return
+    const mobile = window.matchMedia('(max-width: 760px)').matches
     const targets = root.querySelectorAll<HTMLElement>(
-      '.home-motion > section:not(.hero):not(.client-strip) .wrap > *, .home-motion > section:not(.hero):not(.client-strip) .head-row > *, #signGrid > .card, #indGrid > .card, .featured-project, .loc-box, .process-step, .guide-card'
+      `${mobile
+        ? '.home-motion > section:not(.hero):not(.client-strip) .wrap > *:not(.case-grid), .case-grid > .case-card'
+        : '.home-motion > section:not(.hero):not(.client-strip) .wrap > *'}, .home-motion > section:not(.hero):not(.client-strip) .head-row > *, #signGrid > .card, #indGrid > .card, .featured-project, .loc-box, .process-step, .guide-card`
     )
     if (!('IntersectionObserver' in window)) return
 
