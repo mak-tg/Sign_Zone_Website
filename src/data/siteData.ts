@@ -14,6 +14,7 @@ export const SIGN_TYPES = [
   { cat: 'veh', name: 'Banners & temporary',       desc: 'Grand openings, "coming soon" and event signs, fast.',                          price: 'Quote in 24 hrs', quoteType: 'window',   image: '/images/signs/demo-banner.webp' },
   { cat: 'dig', name: 'LED message centers',       desc: 'Programmable full-color displays for pylons and monuments.',                     price: '$5k – $100k+', quoteType: 'digital',  image: '/images/signs/demo-digital.webp' },
   { cat: 'dig', name: 'Digital menu boards',       desc: 'Indoor and drive-thru screens you update from your phone.',                     price: 'Quote in 24 hrs', quoteType: 'digital',  image: '/images/signs/demo-menu.webp' },
+  { cat: 'ext', name: 'Sign repair & relighting', desc: 'Restore faded faces, replace failed lighting, and get existing signs working again.', price: 'Quote in 24 hrs', quoteType: 'repair', image: '/images/signs/demo-channel.webp' },
 ];
 
 // ── Quote types ───────────────────────────────────────────────────────────────
