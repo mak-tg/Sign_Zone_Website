@@ -52,8 +52,8 @@ export default function AboutPage() {
       {/* Story & Differentiators */}
       <section className="light sec" style={{ padding: '80px 0' }}>
         <div className="wrap">
-          <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 48, alignItems: 'center' }}>
-            <div>
+          <div className="grid-2 about-story-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 48, alignItems: 'center' }}>
+            <div className="about-story-copy">
               <div className="eyebrow">The Sign Zone Advantage</div>
               <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 40px)', color: '#0f172a', margin: '8px 0 20px' }}>
                 Why local businesses trust our team.
@@ -68,23 +68,23 @@ export default function AboutPage() {
                 From initial site surveys and landlord criteria reviews to structural CAD engineering, municipal permit expediting,
                 precision CNC routing, letter bending, wiring, and high-reach crane installation, our own team controls every step.
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 24 }}>
-                <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+              <div className="about-differentiators" style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 24 }}>
+                <div className="about-differentiator" style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                   <div style={{ width: 24, height: 24, borderRadius: '50%', background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, flexShrink: 0 }}>✓</div>
                   <div><strong style={{ color: '#0f172a' }}>Direct Municipal Permitting:</strong> We have established relationships with building and zoning departments across Dallas, Fort Worth, Plano, Frisco, Arlington, and surrounding North Texas cities.</div>
                 </div>
-                <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+                <div className="about-differentiator" style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                   <div style={{ width: 24, height: 24, borderRadius: '50%', background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, flexShrink: 0 }}>✓</div>
                   <div><strong style={{ color: '#0f172a' }}>Licensed Master Electrical Craftsmanship:</strong> Compliant with UL 48 electric sign standards, NFPA 70 National Electrical Code, and Texas Department of Licensing and Regulation standards.</div>
                 </div>
-                <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+                <div className="about-differentiator" style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                   <div style={{ width: 24, height: 24, borderRadius: '50%', background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, flexShrink: 0 }}>✓</div>
                   <div><strong style={{ color: '#0f172a' }}>Turnkey Accountability:</strong> You get a dedicated commercial project manager who updates you from site survey to final city inspection sign-off.</div>
                 </div>
               </div>
             </div>
 
-            <div className="keep-dark" style={{ background: 'var(--panel)', borderRadius: 16, padding: 36, color: '#fff' }}>
+            <div className="keep-dark about-capabilities" style={{ background: 'var(--panel)', borderRadius: 16, padding: 36, color: '#fff' }}>
               <div style={{ fontSize: 12, textTransform: 'uppercase', letterSpacing: '.1em', color: 'var(--elec)', fontWeight: 700, marginBottom: 8 }}>
                 Company Highlights
               </div>
@@ -92,24 +92,24 @@ export default function AboutPage() {
                 What we can do for you
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-                <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 16 }}>
+                <div className="about-capability" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 16 }}>
                   <div style={{ fontSize: 18, fontWeight: 700, color: '#fff' }}>Custom Channel Letters</div>
                   <div style={{ fontSize: 14, color: 'var(--dsub)', marginTop: 4 }}>Front-lit, halo-lit reverse, combination open-face, and contour letter cabinets.</div>
                 </div>
-                <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 16 }}>
+                <div className="about-capability" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 16 }}>
                   <div style={{ fontSize: 18, fontWeight: 700, color: '#fff' }}>Monument &amp; Highway Pylons</div>
                   <div style={{ fontSize: 14, color: 'var(--dsub)', marginTop: 4 }}>Heavy-duty steel, masonry integration, electronic message centers, and multi-tenant pylons.</div>
                 </div>
-                <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 16 }}>
+                <div className="about-capability" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 16 }}>
                   <div style={{ fontSize: 18, fontWeight: 700, color: '#fff' }}>Interior &amp; ADA Wayfinding</div>
                   <div style={{ fontSize: 14, color: 'var(--dsub)', marginTop: 4 }}>Grade 2 Braille room identifiers, tactile compliance, dimensional logo lobbies.</div>
                 </div>
-                <div>
+                <div className="about-capability">
                   <div style={{ fontSize: 18, fontWeight: 700, color: '#fff' }}>Service &amp; Retrofit Fleet</div>
                   <div style={{ fontSize: 14, color: 'var(--dsub)', marginTop: 4 }}>Bucket and crane truck dispatch for LED upgrades, transformer replacements, and storm repair.</div>
                 </div>
               </div>
-              <div style={{ marginTop: 28 }}>
+              <div className="about-project-cta" style={{ marginTop: 28 }}>
                 <Link href="/projects" className="btn btn-blue" style={{ width: '100%', textAlign: 'center' }}>
                   Explore 30+ Real DFW Projects
                 </Link>

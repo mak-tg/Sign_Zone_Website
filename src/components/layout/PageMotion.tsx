@@ -63,6 +63,14 @@ export default function PageMotion() {
       'main #v-accessibility .accessibility-content > p',
       'main #v-accessibility .accessibility-content > ul',
       'main #v-accessibility .accessibility-content > div',
+      'main #v-about .about-story-copy > .eyebrow',
+      'main #v-about .about-story-copy > h2',
+      'main #v-about .about-story-copy > p',
+      'main #v-about .about-differentiator',
+      'main #v-about .about-capabilities > .eyebrow',
+      'main #v-about .about-capabilities > h3',
+      'main #v-about .about-capability',
+      'main #v-about .about-project-cta',
       'main .guides-card-grid > *',
       'main #guides > *',
       'main .guide-related > *',
@@ -86,6 +94,7 @@ export default function PageMotion() {
       if (item.matches('#v-privacy .privacy-policy-content')) return
       if (item.matches('#v-terms .terms-content')) return
       if (item.matches('#v-accessibility .accessibility-content')) return
+      if (item.matches('#v-about .about-story-grid')) return
       const siblings = item.parentElement?.children
       item.style.setProperty('--page-motion-order', String(siblings ? Array.prototype.indexOf.call(siblings, item) % 4 : 0))
       item.classList.add('page-motion-item')
