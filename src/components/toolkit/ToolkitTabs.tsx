@@ -11,7 +11,7 @@ const TOOLS = [
   { id: 'visibility', label: 'Letter size',           Component: VisibilityCalculator },
   { id: 'roi',        label: 'Sign payback',          Component: ROICalculator },
   { id: 'permit',     label: 'Permit checklist',      Component: PermitChecklist },
-  { id: 'timeline',   label: 'Opening-day planner',   Component: TimelinePlanner },
+  { id: 'timeline',   label: 'Opening day planner',   Component: TimelinePlanner },
 ]
 
 export default function ToolkitTabs() {

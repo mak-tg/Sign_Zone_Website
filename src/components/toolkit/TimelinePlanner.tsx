@@ -41,7 +41,7 @@ export default function TimelinePlanner() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
       <div className="panel" style={{ flex: '1 1 320px', minWidth: 0 }}>
-        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Opening-day planner</h2>
+        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Opening day planner</h2>
         <p style={{ margin: '8px 0 0', color: 'var(--muted)', fontSize: 15 }}>Enter your opening date. We&apos;ll work backwards so your sign is lit on day one.</p>
 
         <label className="lbl" htmlFor="od" style={{ marginTop: 22, display: 'block' }}>Opening date</label>
@@ -60,7 +60,7 @@ export default function TimelinePlanner() {
       </div>
 
       <div className="panel" style={{ flex: '2 1 480px', minWidth: 0 }}>
-        <h3 style={{ margin: '0 0 20px', fontSize: 22, color: 'var(--navy)' }}>Your backwards schedule</h3>
+        <h3 style={{ margin: '0 0 20px', fontSize: 22, color: 'var(--navy)' }}>Your project schedule</h3>
         <ol style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {schedule.milestones.map((m, i) => (
             <li key={i} style={{ display: 'grid', gridTemplateColumns: '110px minmax(0,1fr)', gap: 18, padding: '14px 0', borderBottom: '1px solid #EDF1F7' }}>

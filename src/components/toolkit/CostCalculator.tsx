@@ -45,7 +45,7 @@ export default function CostCalculator() {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24 }}>
       <div className="panel" style={{ flex: '999 1 500px', minWidth: 0 }}>
-        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Channel letter cost calculator</h2>
+        <h2 style={{ margin: 0, fontSize: 26, color: 'var(--navy)' }}>Estimate channel letter cost</h2>
         <p style={{ margin: '8px 0 0', color: 'var(--muted)', fontSize: 15 }}>Priced the way sign shops price them: per letter, by height, plus lighting, mounting and install.</p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 18, marginTop: 26 }}>

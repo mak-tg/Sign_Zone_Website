@@ -9,9 +9,9 @@ export default function GuidesSection({ asH1 = false }: { asH1?: boolean }) {
       <div className="wrap">
         <div className="eyebrow">Sign buyer&apos;s guides</div>
         {asH1 ? (
-          <h1 className="disp sec-h">Straight answers before you buy.</h1>
+          <h1 className="disp sec-h">Clear answers before you choose a sign.</h1>
         ) : (
-          <h2 className="disp sec-h">Straight answers before you buy.</h2>
+          <h2 className="disp sec-h">Clear answers before you choose a sign.</h2>
         )}
         <p style={{ color: 'var(--muted)', fontSize: 17, maxWidth: 640, marginTop: 14, lineHeight: 1.55 }}>
           No sales spin. Straight, engineered answers to commercial sign costs, municipal permits, landlord criteria, and visibility formulas in Dallas–Fort Worth.

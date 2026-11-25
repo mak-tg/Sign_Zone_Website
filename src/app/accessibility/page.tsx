@@ -40,7 +40,7 @@ export default function AccessibilityPage() {
         <div className="wrap" style={{ maxWidth: 840 }}>
           <div style={{ lineHeight: 1.75, color: '#334155', fontSize: 16 }}>
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 0, marginBottom: 16 }}>
-              1. Our Digital Accessibility Commitment
+              1. Our website accessibility promise
             </h2>
             <p>
               Sign Zone is committed to facilitating the accessibility and usability of our website,{' '}
@@ -50,7 +50,7 @@ export default function AccessibilityPage() {
             </p>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              2. Technical Accessibility Measures
+              2. How we make the site easier to use
             </h2>
             <p>To ensure a robust and accessible browsing experience, we implement the following practices across our website:</p>
             <ul style={{ paddingLeft: 24, marginBottom: 20 }}>
@@ -61,7 +61,7 @@ export default function AccessibilityPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              3. Architectural ADA &amp; Texas Accessibility Standards (TAS)
+              3. Accessible signs for buildings
             </h2>
             <p>
               Beyond our digital platform, accessibility is a core specialty of our fabrication shop. We manufacture
@@ -76,7 +76,7 @@ export default function AccessibilityPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              4. Continuous Improvement &amp; Feedback
+              4. Help us improve access
             </h2>
             <p>
               We continually review and update our site to enhance accessibility as web standards evolve. If you experience difficulty accessing any content, have questions regarding accessibility features, or require information in an alternative format, please let us know:

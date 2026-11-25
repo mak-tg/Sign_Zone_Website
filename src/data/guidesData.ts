@@ -26,7 +26,7 @@ export interface GuideArticle {
 export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
   'commercial-sign-cost-dfw': {
     slug: 'commercial-sign-cost-dfw',
-    title: 'How Much Does a Commercial Business Sign Cost in Dallas–Fort Worth? (2026 Price Guide)',
+    title: 'How much does a business sign cost in Dallas–Fort Worth? (2026 guide)',
     metaTitle: 'Commercial Business Sign Cost in DFW (2026 Pricing Guide) | Sign Zone',
     metaDesc:
       'Realistic 2026 pricing for commercial signs in Dallas–Fort Worth: front-lit & halo-lit channel letters, monument signs, storefront cabinets, permits, and crane installation.',
@@ -44,7 +44,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     ],
     sections: [
       {
-        heading: 'Average Commercial Sign Pricing in North Texas',
+        heading: 'How much business signs cost in North Texas',
         content: [
           'When budgeting for commercial exterior signage in Dallas–Fort Worth, prices are determined by five primary variables: physical dimensions, letter construction type, LED illumination style, mounting substrate (direct mount vs raceway), and municipal permit engineering fees.',
           'Below is a realistic pricing baseline based on hundreds of completed commercial installations across Dallas, Collin, Tarrant, and Denton counties:',
@@ -62,7 +62,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         },
       },
       {
-        heading: 'Hidden Costs to Watch For: Permitting, Engineering & Electrical',
+        heading: 'Other costs: permits, plans, and electrical work',
         content: [
           'Many out-of-state sign brokers quote letter fabrication alone, leaving business owners surprised by installation and permit fees later.',
           'In Texas, electrical sign work requires a licensed TDLR electrical sign contractor. Turnkey commercial signage budgets should always account for:',
@@ -75,7 +75,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         ],
       },
       {
-        heading: 'How to Maximize Your Sign ROI',
+        heading: 'How to get more value from your sign',
         content: [
           'According to the U.S. Small Business Administration (SBA), an on-premise business sign is your most cost-effective marketing medium, delivering impressions at under $0.20 per thousand views.',
           'To maximize your return, prioritize letter height: at 45 MPH along suburban corridors like Preston Road or Cooper Street, drivers need at least 18-to-24 inch letters to read your business name safely. Calculate your exact sightline with our [Letter Visibility Calculator](/toolkit#visibility).',
@@ -95,7 +95,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
   },
   'channel-letters-vs-cabinet-signs': {
     slug: 'channel-letters-vs-cabinet-signs',
-    title: 'Channel Letters vs. Cabinet Signs: Which Fits Your DFW Storefront?',
+    title: 'Channel letters or cabinet signs: which is right for your storefront?',
     metaTitle: 'Channel Letters vs Cabinet Signs: Pros, Cons & Cost | Sign Zone DFW',
     metaDesc:
       'Comparing LED channel letters and storefront cabinet signs for North Texas commercial properties: cost, aesthetics, landlord criteria, and municipal code compliance.',
@@ -112,7 +112,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     ],
     sections: [
       {
-        heading: 'Direct Comparison: Features, Cost & Landlord Rules',
+        heading: 'Compare features, costs, and landlord rules',
         content: [
           'Choosing the right storefront signage is both an aesthetic decision and a lease compliance requirement.',
           'Here is how the two primary commercial exterior sign types compare:',
@@ -130,14 +130,14 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         },
       },
       {
-        heading: 'When Channel Letters Are the Clear Winner',
+        heading: 'When channel letters are a good choice',
         content: [
           'Channel letters are essential if your business operates in a modern lifestyle center (such as Legacy West in [Plano](/locations/plano), Southlake Town Square in [Southlake](/locations/southlake), or Watters Creek in [Allen](/locations/allen)) or any commercial center with a published "Tenant Sign Criteria Document".',
           'They give your brand a high-end corporate presence and are available in front-lit, halo-lit reverse (glowing from behind), and open-face styles. Explore our [Channel Letter Guide & Live Lighting Demo](/channel-letters).',
         ],
       },
       {
-        heading: 'When a Cabinet Sign Makes More Financial Sense',
+        heading: 'When a cabinet sign may cost less',
         content: [
           'Cabinet signs (also known as lightbox signs or box signs) remain an excellent choice for convenience stores, industrial flex spaces, auto repair centers, and legacy strip centers where the landlord permits them.',
           'If your logo features complex photographic gradients, intricate mascot illustrations, or tiny script taglines that cannot physically be bent into 3D metal returns, a digitally printed polycarbonate cabinet face is often the most economical solution. Learn more about our [Storefront Sign Solutions](/storefront-signs).',
@@ -147,7 +147,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
   },
   'dfw-sign-permits-explained': {
     slug: 'dfw-sign-permits-explained',
-    title: 'Commercial Sign Permits in Dallas, Fort Worth, Plano & Frisco Explained',
+    title: 'How to get a sign permit in Dallas, Fort Worth, Plano, and Frisco',
     metaTitle: 'DFW Commercial Sign Permitting Guide (Dallas, Plano, Frisco) | Sign Zone',
     metaDesc:
       'Everything you need to know about municipal sign permits in North Texas: setback rules, maximum square footage formulas, stamped engineering, and city approval timelines.',
@@ -164,7 +164,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     ],
     sections: [
       {
-        heading: 'How Municipalities Regulate Commercial Signs in DFW',
+        heading: 'How DFW cities set sign rules',
         content: [
           'Every municipality in the Dallas–Fort Worth Metroplex maintains its own Chapter of Sign Ordinances. What is permitted along Northwest Highway in [Dallas](/locations/dallas) may be strictly prohibited along Preston Road in [Plano](/locations/plano).',
           'Here is a breakdown of key municipal permit considerations across five major DFW business centers:',
@@ -181,7 +181,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
         },
       },
       {
-        heading: 'The 4 Steps to a Smooth Permit Approval',
+        heading: 'Four steps to get your sign permit',
         content: [
           'To ensure your commercial sign permit is approved on the first submittal without rejection delays. You can also verify your requirements in our free [Sign Planning Toolkit](/toolkit#permits):',
         ],
@@ -196,7 +196,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
   },
   'landlord-sign-criteria-guide': {
     slug: 'landlord-sign-criteria-guide',
-    title: "Landlord Sign Criteria: What Every Commercial Tenant Must Know",
+    title: "What business owners need to know about landlord sign rules",
     metaTitle: "Landlord Sign Criteria Guide for Retail & Restaurant Tenants | Sign Zone",
     metaDesc:
       'Avoid costly lease penalties and delays: understand landlord sign criteria packages, raceway vs flush mounting, letter height caps, and submittal approvals in DFW.',
@@ -213,7 +213,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     ],
     sections: [
       {
-        heading: 'Why Landlords Enforce Strict Signage Packages',
+        heading: 'Why landlords have sign rules',
         content: [
           'Commercial landlords and property management groups (such as Trademark, Regency Centers, and Kimco) enforce strict sign criteria to maintain property value and visual cohesion across their developments.',
           'Before signing your commercial lease, ask for Exhibit C or D (Sign Criteria) and look out for these four critical rules:',
@@ -229,7 +229,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
   },
   'fast-accurate-quote-checklist': {
     slug: 'fast-accurate-quote-checklist',
-    title: 'What to Send Your Sign Contractor for a Fast, Accurate Quote',
+    title: 'What to send us to get a quick, accurate sign quote',
     metaTitle: 'Commercial Sign Quote Checklist: 5 Things to Send | Sign Zone DFW',
     metaDesc:
       'Get a fast, accurate written commercial sign quote in 24 hours: photos, architectural elevations, vector logo files, and lease criteria needed.',
@@ -246,7 +246,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     ],
     sections: [
       {
-        heading: 'The 5 Items for an Instant Quote',
+        heading: 'Five things to send for a quick quote',
         content: [
           'To generate an exact written estimate with permitting and crane installation included, provide:',
         ],
@@ -262,7 +262,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
   },
   'colors-fonts-lighting-road-visibility': {
     slug: 'colors-fonts-lighting-road-visibility',
-    title: 'Sign Visibility: Letter Sizes, High-Contrast Colors & Road Legibility',
+    title: 'Make your sign easy to see from the road',
     metaTitle: 'Sign Legibility & Letter Sizing Rules for Traffic | Sign Zone DFW',
     metaDesc:
       'How to size commercial signs for highway and suburban traffic: letter height formulas, high-contrast color pairings, and 6500K LED illumination ratings.',
@@ -279,7 +279,7 @@ export const GUIDES_ARTICLES: Record<string, GuideArticle> = {
     ],
     sections: [
       {
-        heading: 'Letter Sizing Formula for DFW Road Speeds',
+        heading: 'Choose letter sizes for road speeds',
         content: [
           'Use this formula when sizing your building-mounted letters for vehicular traffic:',
         ],

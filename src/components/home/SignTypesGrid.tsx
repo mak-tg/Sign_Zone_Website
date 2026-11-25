@@ -31,11 +31,11 @@ export default function SignTypesGrid({ asH1 = false }: { asH1?: boolean }) {
         <div className="eyebrow">Every kind of sign</div>
         {asH1 ? (
           <h1 className="disp sec-h">
-            Every sign, built in Texas.
+            Find the right sign for your business.
           </h1>
         ) : (
           <h2 className="disp sec-h">
-            Every sign, built in Texas.
+            Find the right sign for your business.
           </h2>
         )}
 

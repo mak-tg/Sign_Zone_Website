@@ -34,8 +34,8 @@ export default function Hero() {
             Custom Sign Company in Dallas–Fort Worth, TX · Since 2011
           </span>
           <h1 className="disp">
-            Custom commercial signs that put your business{' '}
-            <span style={{ color: 'var(--elec)' }}>on the map.</span>
+            Custom signs that help your business{' '}
+            <span style={{ color: 'var(--elec)' }}>stand out.</span>
           </h1>
           <p className="sub">
             Sign Zone is a premier commercial sign company in{' '}

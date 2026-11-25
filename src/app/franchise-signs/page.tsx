@@ -39,7 +39,7 @@ export default function FranchiseSignsPage() {
             North Texas Regional Sign Rollouts
           </span>
           <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 4.2vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 780 }}>
-            Multi-location sign programs &amp; franchise rollouts in DFW.
+            Signs for franchise businesses across DFW.
           </h1>
           <p style={{ fontSize: 18, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 680 }}>
             Opening five locations across Dallas, Collin, Tarrant, and Denton counties means dealing with five different
@@ -64,33 +64,33 @@ export default function FranchiseSignsPage() {
         <div className="wrap">
           <div className="eyebrow">Scalable Commercial Execution</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 42px)', color: '#0f172a', margin: '8px 0 36px' }}>
-            How we protect your brand across North Texas.
+            Keep your brand the same at every location.
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32 }}>
             <div style={{ borderLeft: '3px solid var(--blue)', paddingLeft: 20 }}>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Strict Brand Consistency</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Same look at every location</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 We adhere strictly to corporate brand books, Pantone colors, 3M vinyl matched components, and exact acrylic formulations. Every storefront looks uniform, whether installed in Southlake, Plano, or Fort Worth.
               </p>
             </div>
 
             <div style={{ borderLeft: '3px solid var(--blue)', paddingLeft: 20 }}>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Multi-City Permitting</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Get permits in each city</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 Every DFW municipality has distinct sign codes—from Frisco’s square-footage ratios to Southlake’s strict architectural review board. We manage all city filings simultaneously to avoid construction delays.
               </p>
             </div>
 
             <div style={{ borderLeft: '3px solid var(--blue)', paddingLeft: 20 }}>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Volume Production &amp; Staging</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Build signs in batches</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 Fabricate sign components in volume to achieve cost efficiencies, then stage them in our facility for coordinated delivery precisely when each location&apos;s general contractor completes exterior facade framing.
               </p>
             </div>
 
             <div style={{ borderLeft: '3px solid var(--blue)', paddingLeft: 20 }}>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Single Point of Contact</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>One person to contact</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 You work directly with a senior sign project manager who coordinates site surveys, engineering packages, city inspections, and installation crews across all sites with weekly consolidated progress reports.
               </p>
@@ -104,7 +104,7 @@ export default function FranchiseSignsPage() {
         <div className="wrap">
           <div className="eyebrow">Proven Experience</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 42px)', margin: '8px 0 36px' }}>
-            Multi-location brands we have signed across DFW.
+            Brands we have helped across DFW.
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>

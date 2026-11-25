@@ -62,7 +62,7 @@ export default function ToolkitPage() {
         <div className="wrap">
           <div className="eyebrow">Product &amp; Pricing Reference</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(24px, 3.5vw, 32px)', margin: '0 0 12px' }}>
-            Explore commercial sign systems engineered for Texas.
+            Explore sign types made for Texas businesses.
           </h2>
           <p style={{ fontSize: 15, color: 'var(--muted)', maxWidth: 650, marginBottom: 24 }}>
             Looking for technical specifications, mounting options, or realistic cost baselines for your specific sign style?

@@ -32,7 +32,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-omiya.webp",
     "heroAlt": "Omiya Sushi Ramen Hibachi signage in Allen",
     "sec2Eye": "Allen · Local work",
-    "sec2H2": "Work in Allen.",
+    "sec2H2": "See signs made in Allen.",
     "sec2P": "Explore signage suited to local storefronts, dining destinations and commercial properties.",
     "projects": [
       {
@@ -56,7 +56,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-arwa.webp",
     "heroAlt": "Arwa Coffee signage in Arlington",
     "sec2Eye": "Arlington · Local work",
-    "sec2H2": "Work in Arlington.",
+    "sec2H2": "See signs made in Arlington.",
     "sec2P": "Explore signage suited to local storefronts, offices and commercial properties.",
     "projects": [
       {
@@ -80,7 +80,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-graciebarra.webp",
     "heroAlt": "Gracie Barra Jiu-Jitsu signage in Carrollton",
     "sec2Eye": "Carrollton · Local work",
-    "sec2H2": "Work in Carrollton.",
+    "sec2H2": "See signs made in Carrollton.",
     "sec2P": "Explore signage suited to local storefronts, sports academies and commercial properties.",
     "projects": [
       {
@@ -112,7 +112,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-sanjiva.webp",
     "heroAlt": "Sanjiva Medical Spa signage in Dallas",
     "sec2Eye": "Dallas · Local work",
-    "sec2H2": "Work in Dallas.",
+    "sec2H2": "See signs made in Dallas.",
     "sec2P": "Explore signage suited to local storefronts, wellness centers, entertainment venues and retail centers.",
     "projects": [
       {
@@ -176,7 +176,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-rock.webp",
     "heroAlt": "Rock N Roll Sushi signage in Fort Worth",
     "sec2Eye": "Fort Worth · Local work",
-    "sec2H2": "Work in Fort Worth.",
+    "sec2H2": "See signs made in Fort Worth.",
     "sec2P": "Explore signage suited to local storefronts, restaurants and commercial properties.",
     "projects": [
       {
@@ -200,7 +200,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-inso.webp",
     "heroAlt": "InSo Live Fire Kitchen signage in Frisco",
     "sec2Eye": "Frisco · Local work",
-    "sec2H2": "Work in Frisco.",
+    "sec2H2": "See signs made in Frisco.",
     "sec2P": "Explore signage suited to local storefronts, dining venues, salons and commercial centers.",
     "projects": [
       {
@@ -240,7 +240,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-allintegrity.webp",
     "heroAlt": "All-Integrity Insurance signage in McKinney",
     "sec2Eye": "McKinney · Local work",
-    "sec2H2": "Work in McKinney.",
+    "sec2H2": "See signs made in McKinney.",
     "sec2P": "Explore signage suited to local storefronts, professional offices and commercial properties.",
     "projects": [
       {
@@ -264,7 +264,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-apex.webp",
     "heroAlt": "Apex Specialty Care signage in Plano",
     "sec2Eye": "Plano · Local work",
-    "sec2H2": "Work in Plano.",
+    "sec2H2": "See signs made in Plano.",
     "sec2P": "Explore signage suited to local medical facilities, martial arts gyms, studios and specialty coffee houses.",
     "projects": [
       {
@@ -312,7 +312,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-fixdental.webp",
     "heroAlt": "Fix Dental and Implant Center signage in Richardson",
     "sec2Eye": "Richardson · Local work",
-    "sec2H2": "Work in Richardson.",
+    "sec2H2": "See signs made in Richardson.",
     "sec2P": "Explore signage suited to local dental practices, dining destinations and commercial properties.",
     "projects": [
       {
@@ -344,7 +344,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-handandstone.webp",
     "heroAlt": "Hand & Stone Massage and Facial Spa signage in Southlake",
     "sec2Eye": "Southlake · Local work",
-    "sec2H2": "Work in Southlake.",
+    "sec2H2": "See signs made in Southlake.",
     "sec2P": "Explore signage suited to upscale retail centers, medical spas and dining destinations.",
     "projects": [
       {
@@ -376,7 +376,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-bclm.webp",
     "heroAlt": "bclm Industrial Facility signage in Irving",
     "sec2Eye": "Irving · Local work",
-    "sec2H2": "Work in Irving.",
+    "sec2H2": "See signs made in Irving.",
     "sec2P": "Explore signage suited to commercial centers, corporate parks, dining destinations and industrial facilities.",
     "projects": [
       {
@@ -408,7 +408,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-scratch.webp",
     "heroAlt": "Scratch Wings signage in Grand Prairie",
     "sec2Eye": "Grand Prairie · Local work",
-    "sec2H2": "Work in Grand Prairie.",
+    "sec2H2": "See signs made in Grand Prairie.",
     "sec2P": "Explore signage designed for local dining, retail and commercial properties.",
     "projects": [
       {
@@ -432,7 +432,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-burnbootcamp.webp",
     "heroAlt": "Burn Boot Camp signage in Mansfield",
     "sec2Eye": "Mansfield · Local work",
-    "sec2H2": "Work in Mansfield.",
+    "sec2H2": "See signs made in Mansfield.",
     "sec2P": "Explore signage suited to fitness facilities, medical offices and retail centers.",
     "projects": [
       {
@@ -456,7 +456,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-addisonpark.webp",
     "heroAlt": "Addison Park Smiles signage in Addison",
     "sec2Eye": "Addison · Local work",
-    "sec2H2": "Work in Addison.",
+    "sec2H2": "See signs made in Addison.",
     "sec2P": "Explore signage engineered for healthcare practices, retail corridors and dining venues.",
     "projects": [
       {
@@ -480,7 +480,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-kathakrhythms.webp",
     "heroAlt": "Kathak Rhythms signage in Coppell",
     "sec2Eye": "Coppell · Local work",
-    "sec2H2": "Work in Coppell.",
+    "sec2H2": "See signs made in Coppell.",
     "sec2P": "Explore signage crafted for creative academies, professional offices and storefronts.",
     "projects": [
       {
@@ -504,7 +504,7 @@ export const CITY_PAGES_DATA: Record<string, CityPageData> = {
     "heroImg": "/images/project-wingsoverusa.webp",
     "heroAlt": "Wings Over USA signage in Ennis",
     "sec2Eye": "Ennis · Local work",
-    "sec2H2": "Work in Ennis.",
+    "sec2H2": "See signs made in Ennis.",
     "sec2P": "Explore high-visibility signage built for restaurants, hospitality and highway frontage.",
     "projects": [
       {

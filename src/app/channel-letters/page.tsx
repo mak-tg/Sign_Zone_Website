@@ -39,7 +39,7 @@ export default function ChannelLettersPage() {
           <div className="cl-hero-grid">
             <div style={{ minWidth: 0 }}>
               <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 3.8vw, 48px)', lineHeight: 1.02, margin: 0, maxWidth: 480 }}>
-                Channel letter signs for DFW storefronts.
+                Channel letter signs for DFW stores.
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 480 }}>
                 Individually built 3D letters, lit with LEDs, mounted to your building. The sign most landlords ask for, and the one customers read from the road.
@@ -66,7 +66,7 @@ export default function ChannelLettersPage() {
       <section className="light sec">
         <div className="wrap">
           <div className="eyebrow">What you&apos;re paying for</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Anatomy of a channel letter.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>What makes up a channel letter sign?</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, marginTop: 40, alignItems: 'center' }}>
             <div className="anat" aria-hidden="true" style={{ flex: '1 1 380px', minWidth: 0 }}>
               <div style={{ position: 'absolute', left: '12%', top: '14%', width: '44%', height: '66%', background: 'var(--blue)', borderRadius: 6, boxShadow: '18px 18px 0 var(--navy)' }} />
@@ -107,7 +107,7 @@ export default function ChannelLettersPage() {
       <section className="paper sec">
         <div className="wrap">
           <div className="eyebrow">Mounting options</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How they attach to your building.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How we attach them to your building.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 18, marginTop: 40 }} id="clMounts">
             {CL_MOUNTS.map((m) => (
               <div key={m.name} className="card" style={{ borderRadius: 18, padding: 28, gap: 10 }}>
@@ -128,7 +128,7 @@ export default function ChannelLettersPage() {
           <div className="head-row">
             <div>
               <div className="eyebrow">Size &amp; price guide</div>
-              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Pick a height. See distance and price.</h2>
+              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>See how letter size affects reading distance and price.</h2>
             </div>
             <Link className="btn btn-dark" href="/toolkit#cost">Open the cost calculator</Link>
           </div>
@@ -171,7 +171,7 @@ export default function ChannelLettersPage() {
       <section className="paper sec">
         <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 48 }}>
           <div style={{ flex: '1 1 320px', minWidth: 0 }}>
-            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Channel letter questions.</h2>
+            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Questions about channel letter signs</h2>
             <div style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <span className="kv">Often paired with</span>
               <Link href="/monument-signs" style={{ fontWeight: 700, color: 'var(--blue)' }}>Monument signs →</Link>

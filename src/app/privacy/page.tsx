@@ -40,7 +40,7 @@ export default function PrivacyPage() {
         <div className="wrap" style={{ maxWidth: 840 }}>
           <div style={{ lineHeight: 1.75, color: '#334155', fontSize: 16 }}>
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 0, marginBottom: 16 }}>
-              1. Introduction &amp; Scope
+              1. About this privacy policy
             </h2>
             <p>
               Sign Zone (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates{' '}
@@ -51,7 +51,7 @@ export default function PrivacyPage() {
             </p>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              2. Information We Collect
+              2. What information we collect
             </h2>
             <p>
               We collect information that you voluntarily provide to us when requesting a commercial sign proposal,
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              3. TCPA &amp; SMS Messaging Compliance
+              3. Text message rules
             </h2>
             <div style={{ background: '#f8fafc', borderLeft: '4px solid var(--blue)', padding: '16px 20px', borderRadius: '0 8px 8px 0', marginBottom: 24 }}>
               <p style={{ margin: 0, fontWeight: 500, color: '#1e293b' }}>
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              5. Information Disclosure &amp; Third Parties
+              5. When we share information
             </h2>
             <p>
               We do not sell, trade, or monetize your personal or corporate information. Information is disclosed solely in the following necessary contexts:
@@ -107,14 +107,14 @@ export default function PrivacyPage() {
             </ul>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              6. Data Security &amp; Retention
+              6. How we protect and keep your data
             </h2>
             <p>
               We implement industry-standard technical and operational security controls to safeguard customer information, design assets, and communications. Project documentation is retained for warranty verification, re-orders, and ongoing service agreement fulfillment.
             </p>
 
             <h2 style={{ fontSize: 24, fontWeight: 800, color: '#0f172a', marginTop: 36, marginBottom: 16 }}>
-              7. Contact Our Privacy Officer
+              7. Contact us about privacy
             </h2>
             <p>
               If you have questions regarding this Privacy Policy or wish to review, update, or delete your contact information, please contact us:

@@ -32,7 +32,7 @@ export default function AboutPage() {
             Serving North Texas Since 2011
           </span>
           <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.5vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 760 }}>
-            15+ years building commercial signs that put North Texas on the map.
+            We have built signs that help North Texas businesses stand out for over 15 years.
           </h1>
           <p style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '24px 0 0', maxWidth: 680 }}>
             We are not sign brokers or an internet print shop. Sign Zone is a licensed Texas electrical sign contractor
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <div>
               <div className="eyebrow">The Sign Zone Advantage</div>
               <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 40px)', color: '#0f172a', margin: '8px 0 20px' }}>
-                Why North Texas businesses trust our crew.
+                Why local businesses trust our team.
               </h2>
               <p style={{ fontSize: 16, lineHeight: 1.7, color: '#475569', marginBottom: 16 }}>
                 Commercial signage is one of the single largest branding investments a brick-and-mortar business makes.
@@ -89,7 +89,7 @@ export default function AboutPage() {
                 Company Highlights
               </div>
               <h3 style={{ fontSize: 26, fontWeight: 800, margin: '0 0 24px', color: '#fff' }}>
-                Our Capabilities at a Glance
+                What we can do for you
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                 <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 16 }}>
@@ -123,7 +123,7 @@ export default function AboutPage() {
       <section className="dark" style={{ padding: '64px 0', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
         <div className="wrap" style={{ textAlign: 'center', maxWidth: 640 }}>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.8vw, 42px)', margin: 0 }}>
-            Ready to work with a local sign builder?
+            Need a sign for your business?
           </h2>
           <p style={{ fontSize: 17, color: 'var(--dsub)', margin: '16px 0 32px' }}>
             Call Alex directly at 214-714-4623 or submit your project details for a written proposal within 24 hours.

@@ -115,7 +115,7 @@ export default function MonumentSignsPage() {
           <div className="cl-hero-grid">
             <div style={{ minWidth: 0 }}>
               <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 3.8vw, 48px)', lineHeight: 1.02, margin: 0, maxWidth: 480 }}>
-                Monument signs for DFW properties.
+                Monument signs for DFW businesses.
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 480 }}>
                 Ground signs with stone, brick, or aluminum bases for centers and offices. Built to municipal setback codes and engineered to withstand 115+ MPH Texas winds.
@@ -142,7 +142,7 @@ export default function MonumentSignsPage() {
       <section className="light sec">
         <div className="wrap">
           <div className="eyebrow">What you&apos;re paying for</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Anatomy of a monument sign.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>What makes up a monument sign?</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, marginTop: 40, alignItems: 'center' }}>
             <div className="anat" aria-hidden="true" style={{ flex: '1 1 380px', minWidth: 0 }}>
               {/* Outer sign cabinet */}
@@ -191,7 +191,7 @@ export default function MonumentSignsPage() {
       <section className="paper sec">
         <div className="wrap">
           <div className="eyebrow">Architectural Base Options</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How they anchor to your property.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How we secure them on your property.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 18, marginTop: 40 }} id="monumentMounts">
             {MONUMENT_MOUNTS.map((m) => (
               <div key={m.name} className="card" style={{ borderRadius: 18, padding: 28, gap: 10 }}>
@@ -212,7 +212,7 @@ export default function MonumentSignsPage() {
           <div className="head-row">
             <div>
               <div className="eyebrow">Size &amp; price guide</div>
-              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Pick a size. See distance and price.</h2>
+              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>See how sign size affects reading distance and price.</h2>
             </div>
             <Link className="btn btn-dark" href="/toolkit#cost">Open the cost calculator</Link>
           </div>
@@ -255,7 +255,7 @@ export default function MonumentSignsPage() {
       <section className="paper sec">
         <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 48 }}>
           <div style={{ flex: '1 1 320px', minWidth: 0 }}>
-            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Monument sign questions.</h2>
+            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Questions about monument signs</h2>
             <div style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <span className="kv">Often paired with</span>
               <Link href="/channel-letters" style={{ fontWeight: 700, color: 'var(--blue)' }}>Channel letters →</Link>

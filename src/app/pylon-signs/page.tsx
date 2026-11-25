@@ -115,7 +115,7 @@ export default function PylonSignsPage() {
           <div className="cl-hero-grid">
             <div style={{ minWidth: 0 }}>
               <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 3.8vw, 48px)', lineHeight: 1.02, margin: 0, maxWidth: 480 }}>
-                Highway pylon signs for Texas speed.
+                Tall pylon signs for Texas roads.
               </h1>
               <p style={{ fontSize: 18, lineHeight: 1.55, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 480 }}>
                 Tall roadside signs that reach highway traffic at 70 MPH. Engineered steel superstructures, multi-tenant cabinets, and digital LED displays built to Texas wind codes.
@@ -142,7 +142,7 @@ export default function PylonSignsPage() {
       <section className="light sec">
         <div className="wrap">
           <div className="eyebrow">What you&apos;re paying for</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Anatomy of a highway pylon sign.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>What makes up a highway pylon sign?</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, marginTop: 40, alignItems: 'center' }}>
             <div className="anat" aria-hidden="true" style={{ flex: '1 1 380px', minWidth: 0 }}>
               {/* Cabinet Head */}
@@ -186,7 +186,7 @@ export default function PylonSignsPage() {
       <section className="paper sec">
         <div className="wrap">
           <div className="eyebrow">Structural Configurations</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How they rise above the highway.</h2>
+          <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>How they stand tall by the highway.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 18, marginTop: 40 }} id="pylonMounts">
             {PYLON_MOUNTS.map((m) => (
               <div key={m.name} className="card" style={{ borderRadius: 18, padding: 28, gap: 10 }}>
@@ -207,7 +207,7 @@ export default function PylonSignsPage() {
           <div className="head-row">
             <div>
               <div className="eyebrow">Height &amp; visibility guide</div>
-              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>Pick an elevation. See distance and price.</h2>
+              <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)' }}>See how sign height affects reading distance and price.</h2>
             </div>
             <Link className="btn btn-dark" href="/toolkit#distance">Open visibility calculator</Link>
           </div>
@@ -250,7 +250,7 @@ export default function PylonSignsPage() {
       <section className="paper sec">
         <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 48 }}>
           <div style={{ flex: '1 1 320px', minWidth: 0 }}>
-            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Highway pylon questions.</h2>
+            <h2 className="disp sec-h" style={{ fontSize: 'clamp(34px,5vw,48px)', margin: 0 }}>Questions about highway pylon signs</h2>
             <div style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <span className="kv">Often paired with</span>
               <Link href="/monument-signs" style={{ fontWeight: 700, color: 'var(--blue)' }}>Monument signs →</Link>

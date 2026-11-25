@@ -224,7 +224,7 @@ export default async function LocationPage({ params }: { params: Promise<Params>
             </div>
           ) : (
             <div className="city-empty">
-              <h3>Make your business easier to find.</h3>
+              <h3>Help people find your business.</h3>
               <p>
                 Explore the sign types available for your property, then tell us what you have in
                 mind.
@@ -242,7 +242,7 @@ export default async function LocationPage({ params }: { params: Promise<Params>
         <div className="wrap">
           <div className="eyebrow">Sign Fabrication for {loc.name}</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 4vw, 38px)' }}>
-            Commercial sign systems engineered for {loc.name}, TX.
+            Business signs made for {loc.name}, TX.
           </h2>
           <p style={{ fontSize: 16.5, color: 'var(--muted)', maxWidth: 700, margin: '14px 0 32px' }}>
             We handle municipal permits directly with the {loc.name} building and zoning department, ensuring all setback, wind-load, and electrical codes are met.
@@ -278,7 +278,7 @@ export default async function LocationPage({ params }: { params: Promise<Params>
         <div className="wrap">
           <div className="eyebrow">Service Coverage</div>
           <h3 className="disp sec-h" style={{ fontSize: 'clamp(22px, 3vw, 28px)', margin: '0 0 16px' }}>
-            Signs installed across North Texas commercial corridors.
+            Signs we have installed across North Texas.
           </h3>
           <p style={{ fontSize: 15, color: 'var(--muted)', maxWidth: 640, marginBottom: 24 }}>
             In addition to {loc.name}, our licensed installation crews and master electricians operate daily throughout the Dallas–Fort Worth Metroplex:

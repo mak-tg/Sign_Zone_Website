@@ -110,7 +110,7 @@ export default function EstimateSection() {
     <section className="dark sec" id="estimate">
       <div className="wrap">
         <div className="eyebrow">No-pressure planning tools</div>
-        <h2 className="disp sec-h">Plan your budget and size.</h2>
+        <h2 className="disp sec-h">Plan your sign size and cost.</h2>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, marginTop: 44 }}>
           {/* Tool 1 */}

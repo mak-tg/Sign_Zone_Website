@@ -54,7 +54,7 @@ export default function SignRepairPage() {
             Prompt Commercial Dispatch Across DFW
           </span>
           <h1 className="disp sec-h" style={{ fontSize: 'clamp(32px, 4.2vw, 52px)', lineHeight: 1.05, margin: 0, maxWidth: 780, color: '#fff' }}>
-            DFW Commercial sign repair, LED retrofits &amp; crane service.
+            We repair and update business signs across DFW.
           </h1>
           <p style={{ fontSize: 18, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 680 }}>
             An unlit or damaged sign drives potential customers straight past your business. Our licensed Texas sign electricians
@@ -79,13 +79,13 @@ export default function SignRepairPage() {
         <div className="wrap">
           <div className="eyebrow">Comprehensive Diagnostic &amp; Field Repair</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 42px)', color: '#0f172a', margin: '8px 0 36px' }}>
-            Commercial sign repair services we handle daily.
+            Signs we repair every day.
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 28 }}>
             <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <div style={{ width: 44, height: 44, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, marginBottom: 18 }}>⚡</div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>LED Retrofits &amp; Power Supplies</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>LED lights and power repairs</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 Replace noisy, energy-draining neon tubing or failing ballasts with modern 12V/24V commercial LEDs. Cut electrical costs up to 75% and enjoy crisp, uniform illumination.
               </p>
@@ -93,7 +93,7 @@ export default function SignRepairPage() {
 
             <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <div style={{ width: 44, height: 44, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, marginBottom: 18 }}>🔧</div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Channel Letter Relamping &amp; Wiring</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Channel letter light and wire repair</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 Dark letters, flickering modules, or faulty raceway wiring diagnosed and repaired quickly. We match existing color temperatures (3000K, 6500K, etc.) for seamless appearance.
               </p>
@@ -101,7 +101,7 @@ export default function SignRepairPage() {
 
             <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <div style={{ width: 44, height: 44, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, marginBottom: 18 }}>🛡️</div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Sign Face Replacement &amp; Cabinet Repair</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Sign face and cabinet repair</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 Cracked acrylic or polycarbonate sign faces fabricated in-house with UV-resistant graphics. Structural cabinet reinforcement for storm and wind damage.
               </p>
@@ -109,7 +109,7 @@ export default function SignRepairPage() {
 
             <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <div style={{ width: 44, height: 44, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, marginBottom: 18 }}>🏗️</div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Pylon &amp; Monument Structural Service</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Tall sign and base repairs</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 High-reach crane access for multistory building wall signs, highway monopoles, and shopping plaza pylons. Foundation inspection and re-anchoring.
               </p>
@@ -117,7 +117,7 @@ export default function SignRepairPage() {
 
             <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <div style={{ width: 44, height: 44, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, marginBottom: 18 }}>⏱️</div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Photocell &amp; Timer Calibration</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Light sensor and timer repair</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 Ensure your exterior sign activates promptly at dusk and shuts off per municipal sign code curfews (such as 11:00 PM residential restrictions in Plano and Frisco).
               </p>
@@ -125,7 +125,7 @@ export default function SignRepairPage() {
 
             <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
               <div style={{ width: 44, height: 44, borderRadius: 8, background: '#eff6ff', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, marginBottom: 18 }}>📋</div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Commercial Maintenance Plans</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 700, color: '#0f172a', margin: '0 0 10px' }}>Sign care plans for businesses</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: '#64748b', margin: 0 }}>
                 Scheduled quarterly or semi-annual maintenance contracts for retail property managers, strip centers, and multi-location franchises.
               </p>
@@ -139,7 +139,7 @@ export default function SignRepairPage() {
         <div className="wrap" style={{ maxWidth: 840 }}>
           <div className="eyebrow">Common Questions</div>
           <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 42px)', color: '#fff', margin: '8px 0 32px' }}>
-            Commercial sign repair FAQs.
+            Questions about sign repair
           </h2>
           <FAQAccordion items={REPAIR_FAQS} />
         </div>

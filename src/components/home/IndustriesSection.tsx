@@ -7,7 +7,7 @@ export default function IndustriesSection() {
       <div className="wrap">
         <div className="eyebrow">Industries</div>
         <h2 className="disp sec-h">
-          Built for your industry.
+          Signs for your kind of business.
         </h2>
         <div className="grid-auto" id="indGrid" style={{ marginTop: 40, gap: 14 }}>
           {INDUSTRIES.map((ind) => (
