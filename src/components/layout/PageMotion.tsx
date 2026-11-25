@@ -47,6 +47,10 @@ export default function PageMotion() {
       'main .view section .wrap form > *',
       'main .view .facts > div',
       'main .view .review-card',
+      'main #v-contact .facts > div',
+      'main #v-contact section:nth-of-type(2) .wrap > div > div > *',
+      'main #v-contact section:nth-of-type(2) form > *',
+      'main #v-contact section:nth-of-type(3) .wrap > div > *',
       'main .guides-card-grid > *',
       'main #guides > *',
       'main .guide-related > *',
@@ -66,7 +70,7 @@ export default function PageMotion() {
     }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' })
 
     items.forEach((item) => {
-      if (item.closest('header, footer, .hero')) return
+      if (item.closest('header, .hero')) return
       const siblings = item.parentElement?.children
       item.style.setProperty('--page-motion-order', String(siblings ? Array.prototype.indexOf.call(siblings, item) % 4 : 0))
       item.classList.add('page-motion-item')
