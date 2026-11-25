@@ -11,16 +11,17 @@ export default function PageMotion() {
     if (!main || main.querySelector('.home-motion')) return
 
     const selector = [
-      'main > section',
-      'main > div > section',
-      'main section > .wrap > *',
-      'main section > .container > *',
-      'main .card',
-      'main [class*="-card"]',
-      'main .industry-sign-pill',
-      'main .facts > div',
-      'main article',
-      'main details',
+      'main > .view > section',
+      'main > .view > article',
+      'main > .view > div > section',
+      'main .view section > .wrap > *',
+      'main .view section > .container > *',
+      'main .view .card',
+      'main .view [class*="-card"]',
+      'main .view .industry-sign-pill',
+      'main .view .facts > div',
+      'main .view article',
+      'main .view details',
     ].join(', ')
     const items = [...main.querySelectorAll<HTMLElement>(selector)]
     const observer = new IntersectionObserver((entries) => {
