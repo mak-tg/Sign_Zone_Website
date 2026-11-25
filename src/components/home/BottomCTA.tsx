@@ -24,10 +24,10 @@ export default function BottomCTA() {
               Call 214-714-4623
             </a>
           </div>
-          <div className="bottom-cta-proof">
-            <div><strong>24 hours</strong><span>Written quote turnaround</span></div>
-            <div><strong>One local team</strong><span>Design, permits, fabrication, install</span></div>
-            <div><strong>Photo friendly</strong><span>Start with a storefront picture</span></div>
+          <div className="bottom-cta-proof" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 10, marginTop: 32 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, padding: 16, border: '1px solid rgba(130,165,225,.2)', borderRadius: 12, background: 'rgba(255,255,255,.035)' }}><strong style={{ color: '#fff', fontSize: 15 }}>24 hours</strong><span style={{ color: 'var(--dmuted)', fontSize: 12, lineHeight: 1.4 }}>Written quote turnaround</span></div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, padding: 16, border: '1px solid rgba(130,165,225,.2)', borderRadius: 12, background: 'rgba(255,255,255,.035)' }}><strong style={{ color: '#fff', fontSize: 15 }}>One local team</strong><span style={{ color: 'var(--dmuted)', fontSize: 12, lineHeight: 1.4 }}>Design, permits, fabrication, install</span></div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, padding: 16, border: '1px solid rgba(130,165,225,.2)', borderRadius: 12, background: 'rgba(255,255,255,.035)' }}><strong style={{ color: '#fff', fontSize: 15 }}>Photo friendly</strong><span style={{ color: 'var(--dmuted)', fontSize: 12, lineHeight: 1.4 }}>Start with a storefront picture</span></div>
           </div>
         </div>
 
