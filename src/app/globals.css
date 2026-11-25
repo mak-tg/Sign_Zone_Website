@@ -1898,6 +1898,12 @@ html[data-theme="light"] .home-bottom-cta {
   color: var(--text);
   border-top: 1px solid var(--soft);
 }
+html[data-theme="light"] .home-bottom-cta .bottom-cta-proof > div {
+  background: var(--paper) !important;
+  border-color: var(--soft) !important;
+}
+html[data-theme="light"] .home-bottom-cta .bottom-cta-proof strong { color: var(--navy) !important; }
+html[data-theme="light"] .home-bottom-cta .bottom-cta-proof span { color: var(--muted) !important; }
 html[data-theme="light"] .home-featured-projects { background: #fff; color: var(--text); border-top: 1px solid var(--soft); }
 html[data-theme="light"] .home-featured-projects .featured-projects-heading p { color: var(--muted); }
 html[data-theme="light"] .home-featured-projects .featured-project { background: #fff; border-color: var(--soft); }
