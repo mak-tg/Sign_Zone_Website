@@ -1363,10 +1363,11 @@ footer strong { color: #fff; }
   .parts { grid-template-columns: 1fr; }
   footer .cols { grid-template-columns: 1fr; }
   #signGrid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .hero .wrap { padding-top: 76px; }
-  .hero-overlay { background: linear-gradient(180deg, rgba(5,8,16,.32) 0%, rgba(5,8,16,.58) 100%); }
-  .hero-overlay::after { opacity: .18 !important; }
-  .home-motion .font-switcher { display: none !important; }
+  .hero .wrap { padding-top: clamp(160px, 24vh, 210px); }
+  .hero-overlay { background: linear-gradient(180deg, rgba(5,8,16,.12) 0%, rgba(5,8,16,.44) 100%); }
+  .hero-overlay::after { opacity: .06 !important; }
+  .home-motion .font-switcher,
+  .font-switcher { display: none !important; }
 }
 @media (max-width: 540px) {
   .case-grid { grid-template-columns: 1fr; }
