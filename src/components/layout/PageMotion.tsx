@@ -25,6 +25,9 @@ export default function PageMotion() {
       'main .view .industry-sign-pill',
       'main .view article',
       'main .view details',
+      'main .guides-card-grid > *',
+      'main #guides > *',
+      'main .guide-related > *',
     ].join(', ')
     const items = [...main.querySelectorAll<HTMLElement>(selector)]
     const observer = new IntersectionObserver((entries) => {
