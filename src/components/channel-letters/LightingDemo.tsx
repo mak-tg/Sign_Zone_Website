@@ -7,7 +7,7 @@ export default function LightingDemo() {
   const s = CL_STYLES[active]
 
   return (
-    <div style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
+    <div className="channel-lighting-demo" style={{ borderRadius: 20, overflow: 'hidden', border: '1px solid var(--line)' }}>
       <div className="demo" id="clDemo" style={{ background: s.bg }}>
         <span
           className="disp"

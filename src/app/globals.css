@@ -1904,6 +1904,10 @@ html[data-theme="light"] .home-bottom-cta .bottom-cta-proof > div {
 }
 html[data-theme="light"] .home-bottom-cta .bottom-cta-proof strong { color: var(--navy) !important; }
 html[data-theme="light"] .home-bottom-cta .bottom-cta-proof span { color: var(--muted) !important; }
+html[data-theme="light"] .channel-lighting-demo > div:last-child { background: #fff !important; }
+html[data-theme="light"] .channel-lighting-demo #clDesc { color: var(--muted) !important; }
+html[data-theme="light"] .channel-lighting-demo #clBest { color: var(--navy) !important; }
+html[data-theme="light"] .channel-lighting-demo #clDesc ~ div { color: var(--muted2); }
 html[data-theme="light"] .home-featured-projects { background: #fff; color: var(--text); border-top: 1px solid var(--soft); }
 html[data-theme="light"] .home-featured-projects .featured-projects-heading p { color: var(--muted); }
 html[data-theme="light"] .home-featured-projects .featured-project { background: #fff; border-color: var(--soft); }
