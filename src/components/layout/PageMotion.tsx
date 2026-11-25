@@ -16,6 +16,9 @@ export default function PageMotion() {
       'main section > .wrap > *',
       'main section > .container > *',
       'main .card',
+      'main [class*="-card"]',
+      'main .industry-sign-pill',
+      'main .facts > div',
       'main article',
       'main details',
     ].join(', ')
