@@ -242,13 +242,18 @@ export default function EstimateSection() {
           </div>
         </div>
 
-        <div className="btn-row" style={{ marginTop: 28 }} aria-label="Get help planning your sign">
+        <div className="estimate-help" style={{ marginTop: 28, textAlign: 'center' }} aria-label="Get help planning your sign">
+          <p style={{ margin: '0 0 14px', color: 'var(--dmuted)', fontSize: 14, lineHeight: 1.5 }}>
+            Still unsure about your sign size or budget? Our team can help you plan it.
+          </p>
+          <div className="btn-row" style={{ justifyContent: 'center', gap: 14 }}>
           <a href="tel:2147144623" className="btn btn-blue" aria-label="Call Sign Zone at 214-714-4623">
             Call us: 214-714-4623
           </a>
           <a href="sms:2147144623" className="btn btn-ghost" aria-label="Text a photo to Sign Zone at 214-714-4623">
             Text us a photo
           </a>
+          </div>
         </div>
       </div>
     </section>
