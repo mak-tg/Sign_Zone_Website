@@ -139,6 +139,13 @@ button { font-family: inherit; }
 
 /* Cards */
 .grid-auto { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px; }
+.industries-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) {
+  .industries-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .industries-card-grid { grid-template-columns: 1fr; }
+}
 .card { display: flex; flex-direction: column; border: 1px solid var(--soft); border-radius: 16px; padding: 24px; background: #fff; text-decoration: none; color: inherit; transition: border-color .15s, box-shadow .15s, transform .15s; }
 a.card:hover, button.card:hover { border-color: var(--blue); box-shadow: 0 10px 30px rgba(6,38,102,.10); transform: translateY(-2px); color: inherit; }
 .tag { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); }

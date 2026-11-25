@@ -9,7 +9,7 @@ export default function IndustriesSection() {
         <h2 className="disp sec-h">
           Signs for your kind of business.
         </h2>
-        <div className="grid-auto" id="indGrid" style={{ marginTop: 40, gap: 14 }}>
+        <div className="grid-auto industries-card-grid" id="indGrid" style={{ marginTop: 40, gap: 14 }}>
           {INDUSTRIES.map((ind) => (
             <Link
               key={ind.slug}
