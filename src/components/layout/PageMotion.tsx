@@ -8,7 +8,7 @@ export default function PageMotion() {
   useEffect(() => {
     if (!('IntersectionObserver' in window)) return
     const main = document.querySelector('main')
-    if (!main || main.querySelector('.home-motion')) return
+    if (!main) return
 
     const selector = [
       // Match the homepage: reveal section content blocks, not whole sections.
@@ -92,7 +92,6 @@ export default function PageMotion() {
       'footer nav a',
       'footer .col > *',
     ].join(', ')
-    const items = [...document.querySelectorAll<HTMLElement>(selector)]
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(({ target, isIntersecting }) => {
         if (!isIntersecting) return
@@ -101,19 +100,30 @@ export default function PageMotion() {
       })
     }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' })
 
-    items.forEach((item) => {
-      if (item.closest('header, .hero')) return
-      if (item.matches('#v-privacy .privacy-policy-content')) return
-      if (item.matches('#v-terms .terms-content')) return
-      if (item.matches('#v-accessibility .accessibility-content')) return
-      if (item.matches('#v-about .about-story-grid')) return
-      if (item.matches('#v-review .review-gateway-shell, #v-review .review-gateway-grid, #v-review .review-rating-actions, #v-review .review-trust-signals, #v-review .review-section .head-row')) return
-      const siblings = item.parentElement?.children
-      item.style.setProperty('--page-motion-order', String(siblings ? Array.prototype.indexOf.call(siblings, item) % 4 : 0))
-      item.classList.add('page-motion-item')
-      observer.observe(item)
-    })
-    return () => observer.disconnect()
+    const observed = new WeakSet<HTMLElement>()
+    const attachReveals = () => {
+      if (main.querySelector('.home-motion')) return
+      document.querySelectorAll<HTMLElement>(selector).forEach((item) => {
+        if (observed.has(item) || item.closest('header, .hero')) return
+        if (item.matches('#v-privacy .privacy-policy-content')) return
+        if (item.matches('#v-terms .terms-content')) return
+        if (item.matches('#v-accessibility .accessibility-content')) return
+        if (item.matches('#v-about .about-story-grid')) return
+        if (item.matches('#v-review .review-gateway-shell, #v-review .review-gateway-grid, #v-review .review-rating-actions, #v-review .review-trust-signals, #v-review .review-section .head-row')) return
+        observed.add(item)
+        const siblings = item.parentElement?.children
+        item.style.setProperty('--page-motion-order', String(siblings ? Array.prototype.indexOf.call(siblings, item) % 4 : 0))
+        item.classList.add('page-motion-item')
+        if (!item.classList.contains('page-motion-visible')) observer.observe(item)
+      })
+    }
+    const mutationObserver = new MutationObserver(attachReveals)
+    mutationObserver.observe(main, { childList: true, subtree: true })
+    attachReveals()
+    return () => {
+      mutationObserver.disconnect()
+      observer.disconnect()
+    }
   }, [pathname])
 
   return null
