@@ -20,7 +20,7 @@ export default function StagesSection() {
           </p>
         </div>
 
-        <div className="chips" role="tablist" aria-label="Business stage" style={{ marginTop: 40 }}>
+        <div className="chips stage-tabs" role="tablist" aria-label="Business stage" style={{ marginTop: 40 }}>
           {STAGES.map((stage, i) => (
             <button
               key={stage.id}

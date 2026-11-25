@@ -1364,6 +1364,9 @@ footer strong { color: #fff; }
   .hero p.sub { color: #475569; }
   .home-motion .font-switcher,
   .font-switcher { display: none !important; }
+  .stage-tabs { flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; padding: 2px 0 8px; }
+  .stage-tabs::-webkit-scrollbar { display: none; }
+  .stage-tabs .chip { flex: 0 0 auto; white-space: nowrap; }
   .ticks { grid-template-columns: 1fr; }
   .stage-box, .panel, .tool { padding: 22px; }
   .mbar { display: flex; }
