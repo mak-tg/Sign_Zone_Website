@@ -53,8 +53,10 @@ export default function PageMotion() {
       'main article.view section.light .wrap > section > h2',
       'main article.view section.light .wrap > section > p',
       'main article.view section.light .wrap > section > div',
+      'footer nav a',
+      'footer .col > *',
     ].join(', ')
-    const items = [...main.querySelectorAll<HTMLElement>(selector)]
+    const items = [...document.querySelectorAll<HTMLElement>(selector)]
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(({ target, isIntersecting }) => {
         if (!isIntersecting) return
