@@ -1357,11 +1357,15 @@ footer strong { color: #fff; }
   .hero .wrap { padding-top: clamp(210px, 30vh, 250px); }
   .hero-overlay { background: linear-gradient(180deg, rgba(5,8,16,.08) 0%, rgba(5,8,16,.34) 100%); }
   .hero-overlay::after { opacity: 0 !important; }
-  .hero-copy { padding: 20px; border-radius: 18px; background: rgba(255,255,255,.84); backdrop-filter: blur(5px); }
+  .hero-copy { padding: 20px; border-radius: 18px; background: rgba(255,255,255,.94); backdrop-filter: blur(5px); }
   .hero-copy .pill { justify-content: center; text-align: center; }
   .hero-copy .pill .dot { display: none; }
   .hero h1 { color: var(--navy) !important; }
   .hero p.sub { color: #475569; }
+  .hero-copy .sub a,
+  html[data-theme="dark"] .hero-copy .sub a { color: #0040C0; }
+  .hero-copy .sub a:hover,
+  html[data-theme="dark"] .hero-copy .sub a:hover { color: #003399; }
   .home-motion .font-switcher,
   .font-switcher { display: none !important; }
   .stage-tabs { flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; padding: 2px 0 8px; }
