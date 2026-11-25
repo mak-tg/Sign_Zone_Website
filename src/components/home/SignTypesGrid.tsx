@@ -18,6 +18,24 @@ const CAT_LABELS: Record<string, string> = {
   dig: 'Digital & LED',
 }
 
+const SIGN_HREFS: Record<string, string> = {
+  'Channel letters': '/channel-letters',
+  'Monument signs': '/monument-signs',
+  'Pylon & pole signs': '/pylon-signs',
+  'Cabinet & lightbox signs': '/storefront-signs',
+  'Blade & projecting signs': '/blade-signs',
+  'Awnings & canopies': '/awnings-canopies',
+  'Lobby & logo walls': '/lobby-signs',
+  'ADA & wayfinding': '/interior-ada-signs',
+  'Wall murals & graphics': '/wall-murals',
+  'Vehicle wraps': '/vehicle-wraps',
+  'Window graphics': '/window-graphics',
+  'Banners & temporary': '/banners-temporary',
+  'LED message centers': '/led-message-centers',
+  'Digital menu boards': '/digital-menu-boards',
+  'Sign repair & relighting': '/sign-repair',
+}
+
 export default function SignTypesGrid({ asH1 = false }: { asH1?: boolean }) {
   const [activeCat, setActiveCat] = useState('all')
 
@@ -61,12 +79,7 @@ export default function SignTypesGrid({ asH1 = false }: { asH1?: boolean }) {
 
         <div className="grid-auto" id="signGrid" style={{ marginTop: 28 }}>
           {filteredSigns.map((s) => {
-            let href = `/quote?type=${s.quoteType}`
-            if (s.name === 'Channel letters') href = '/channel-letters'
-            else if (s.name === 'Monument signs') href = '/monument-signs'
-            else if (s.name === 'Pylon & pole signs') href = '/pylon-signs'
-            else if (s.name === 'Cabinet & lightbox signs') href = '/storefront-signs'
-            else if (s.name === 'Lobby & logo walls') href = '/lobby-signs'
+            const href = SIGN_HREFS[s.name] ?? `/quote?type=${s.quoteType}`
 
             return (
               <Link
@@ -119,7 +132,7 @@ export default function SignTypesGrid({ asH1 = false }: { asH1?: boolean }) {
                     {s.price}
                   </span>
                   <span style={{ fontSize: 14, fontWeight: 700, color: 'var(--blue)' }}>
-                    {s.featured ? 'Explore →' : 'Get a quote →'}
+                    Explore →
                   </span>
                 </span>
               </Link>

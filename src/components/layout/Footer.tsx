@@ -61,14 +61,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <nav aria-label="Signs">
+        <nav aria-label="Signs" style={{ gap: 8 }}>
           <strong>Signs</strong>
           <Link href="/channel-letters">Channel letters</Link>
           <Link href="/monument-signs">Monument signs</Link>
           <Link href="/pylon-signs">Pylon &amp; pole signs</Link>
           <Link href="/storefront-signs">Storefront &amp; cabinet signs</Link>
+          <Link href="/blade-signs">Blade &amp; projecting signs</Link>
+          <Link href="/awnings-canopies">Awnings &amp; canopies</Link>
+          <Link href="/lobby-signs">Lobby &amp; logo walls</Link>
           <Link href="/interior-ada-signs">Interior &amp; ADA</Link>
+          <Link href="/wall-murals">Wall murals &amp; graphics</Link>
           <Link href="/vehicle-wraps">Vehicle wraps</Link>
+          <Link href="/window-graphics">Window graphics</Link>
+          <Link href="/banners-temporary">Banners &amp; temporary</Link>
+          <Link href="/led-message-centers">LED message centers</Link>
+          <Link href="/digital-menu-boards">Digital menu boards</Link>
         </nav>
 
         <nav aria-label="Plan">
