@@ -783,6 +783,12 @@ footer strong { color: #fff; }
 
 .stage-box-title,
 .loc-anchor-title { text-transform: none !important; }
+.font-variant-jakarta .stage-box-title,
+.font-variant-barlow .stage-box-title,
+.font-variant-outfit .stage-box-title,
+.font-variant-jakarta .loc-anchor-title,
+.font-variant-barlow .loc-anchor-title,
+.font-variant-outfit .loc-anchor-title { text-transform: none !important; }
 
 .loc-anchor-body {
   font-size: 15px;
