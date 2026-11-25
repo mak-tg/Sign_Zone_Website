@@ -17,7 +17,7 @@ export default function GuidesSection({ asH1 = false }: { asH1?: boolean }) {
           No sales spin. Straight, engineered answers to commercial sign costs, municipal permits, landlord criteria, and visibility formulas in Dallas–Fort Worth.
         </p>
 
-        <div className="grid-auto" id="guides" style={{ marginTop: 36, gap: 18 }}>
+        <div className="grid-auto guides-card-grid" id="guides" style={{ marginTop: 36, gap: 18 }}>
           {guidesList.map((g) => (
             <Link
               key={g.slug}
