@@ -41,7 +41,7 @@ export default function LocationsSection() {
           {/* Left anchor panel */}
           <div className="loc-anchor">
             <span className="loc-anchor-badge">DFW</span>
-            <h3 className="loc-anchor-title">Signs made for your city.</h3>
+            <h3 className="loc-anchor-title">Signs Made for Your City.</h3>
             <p className="loc-anchor-body">
               Every location has its own property requirements and sign rules. We help you plan for the details, from the first site review to installation.
             </p>
