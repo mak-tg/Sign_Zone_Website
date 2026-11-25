@@ -93,7 +93,7 @@ export default function ToolkitPage() {
       </section>
 
       {/* CTA Section (Dark Theme) */}
-      <section className="dark" style={{ borderTop: '1px solid var(--line2)' }}>
+      <section className="dark toolkit-quote-cta" style={{ borderTop: '1px solid var(--line2)' }}>
         <div
           className="wrap"
           style={{
