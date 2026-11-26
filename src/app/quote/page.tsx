@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import QuoteWizard from '@/components/quote/QuoteWizard'
 import { QUOTE_TYPES } from '@/data/siteData'
 
@@ -17,13 +18,21 @@ export const metadata: Metadata = {
   },
 }
 
-export default async function QuotePage({ searchParams }: { searchParams: Promise<{ type?: string }> }) {
+type QuotePageProps = { searchParams: Promise<{ type?: string | string[] }> }
+
+async function QuoteWithSelection({ searchParams }: QuotePageProps) {
   const { type } = await searchParams
-  const preselect = QUOTE_TYPES.some((item) => item.id === type) ? type : undefined
+  const preselect = QUOTE_TYPES.find((item) => item.id === type)?.id
+  return <QuoteWizard key={preselect} preselect={preselect} />
+}
+
+export default function QuotePage({ searchParams }: QuotePageProps) {
   return (
     <section className="paper" style={{ minHeight: '80vh' }}>
       <div className="wrap" style={{ paddingTop: 44, paddingBottom: 80 }}>
-        <QuoteWizard preselect={preselect} />
+        <Suspense fallback={<p role="status">Loading quote form…</p>}>
+          <QuoteWithSelection searchParams={searchParams} />
+        </Suspense>
       </div>
     </section>
   )
