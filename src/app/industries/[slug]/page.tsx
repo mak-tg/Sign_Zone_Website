@@ -43,18 +43,6 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
   // Match the actual projects from the portfolio assigned to this industry
   const matchingProjects = PROJECTS.filter((p) => ind.projectIds.includes(p.id))
 
-  // Sign type routing helper
-  const getSignLink = (signText: string) => {
-    const lower = signText.toLowerCase()
-    if (lower.includes('channel')) return '/channel-letters'
-    if (lower.includes('monument')) return '/monument-signs'
-    if (lower.includes('pylon') || lower.includes('pole')) return '/pylon-signs'
-    if (lower.includes('blade') || lower.includes('cabinet') || lower.includes('storefront')) return '/storefront-signs'
-    if (lower.includes('ada') || lower.includes('braille') || lower.includes('interior') || lower.includes('lobby')) return '/interior-ada-signs'
-    if (lower.includes('wrap') || lower.includes('fleet')) return '/vehicle-wraps'
-    return '/signs'
-  }
-
   return (
     <div className="view" id={`v-industry-${ind.slug}`}>
       {ind.faqs && <FaqJsonLd items={ind.faqs} />}
@@ -148,7 +136,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
             {ind.popularSigns.map((signItem, idx) => (
               <Link
                 key={idx}
-                href={getSignLink(signItem)}
+                href={signItem.href}
                 style={{
                   background: '#fff',
                   border: '1px solid var(--soft)',
@@ -166,7 +154,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   <span style={{ color: 'var(--blue)', fontWeight: 800, fontSize: 16 }}>✓</span>
-                  <span style={{ fontSize: 15, fontWeight: 700, color: 'var(--navy)' }}>{signItem}</span>
+                  <span style={{ fontSize: 15, fontWeight: 700, color: 'var(--navy)' }}>{signItem.label}</span>
                 </div>
                 <span style={{ color: 'var(--blue)', fontSize: 14 }}>→</span>
               </Link>
@@ -233,7 +221,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
                       System: <span style={{ color: 'var(--blue)' }}>{p.signType}</span>
                     </span>
                     <Link
-                      href={`/quote?type=${p.category || 'channel'}`}
+                      href={`/quote?type=${p.category === 'storefront' ? 'cabinet' : p.category}`}
                       className="quote-sign-btn"
                     >
                       <span>Quote this sign</span>

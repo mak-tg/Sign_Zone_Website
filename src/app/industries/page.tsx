@@ -155,29 +155,13 @@ export default function IndustriesPage() {
                       Recommended Sign Types:
                     </strong>
                     <ul style={{ margin: 0, paddingLeft: 18, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                      {ind.popularSigns.map((sign, sIdx) => {
-                        let linkUrl = ''
-                        const lower = sign.toLowerCase()
-                        if (lower.includes('channel letter')) linkUrl = '/channel-letters'
-                        else if (lower.includes('monument')) linkUrl = '/monument-signs'
-                        else if (lower.includes('pylon') || lower.includes('high-rise')) linkUrl = '/pylon-signs'
-                        else if (lower.includes('storefront') || lower.includes('blade') || lower.includes('cabinet')) linkUrl = '/storefront-signs'
-                        else if (lower.includes('lobby') || lower.includes('reception')) linkUrl = '/lobby-signs'
-                        else if (lower.includes('ada') || lower.includes('braille') || lower.includes('wayfinding')) linkUrl = '/interior-ada-signs'
-                        else if (lower.includes('wrap') || lower.includes('fleet')) linkUrl = '/vehicle-wraps'
-
-                        return (
+                      {ind.popularSigns.map((sign, sIdx) => (
                           <li key={sIdx} style={{ fontSize: 14.5, color: 'var(--muted)', lineHeight: 1.5 }}>
-                            {linkUrl ? (
-                              <Link href={linkUrl} style={{ color: 'var(--navy)', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--soft)' }}>
-                                {sign}
+                              <Link href={sign.href} style={{ color: 'var(--navy)', fontWeight: 600, textDecoration: 'underline', textDecorationColor: 'var(--soft)' }}>
+                                {sign.label}
                               </Link>
-                            ) : (
-                              sign
-                            )}
                           </li>
-                        )
-                      })}
+                      ))}
                     </ul>
                   </div>
 

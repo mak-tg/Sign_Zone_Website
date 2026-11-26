@@ -3,7 +3,7 @@ export interface IndustryProfile {
   name: string
   headline: string
   summary: string
-  popularSigns: string[]
+  popularSigns: { label: string; href: string }[]
   landlordCriteria: string
   permittingNotes: string
   turnaround: string
@@ -19,10 +19,10 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
     summary:
       'From fast-casual storefront channel letters to cafe dimensional lettering, patio illumination, and drive-thru signage, we build restaurant signs engineered to withstand Texas heat, kitchen grease, and high customer volume.',
     popularSigns: [
-      'Front-lit & combination LED channel letters',
-      'Under-canopy double-sided pedestrian blade signs',
-      'Illuminated contour storefront lightboxes',
-      'Architectural patio lighting & window merchandising graphics',
+      { label: 'Front-lit & combination LED channel letters', href: '/channel-letters' },
+      { label: 'Under-canopy double-sided pedestrian blade signs', href: '/blade-signs' },
+      { label: 'Illuminated contour storefront lightboxes', href: '/storefront-signs' },
+      { label: 'Architectural patio lighting & window merchandising graphics', href: '/window-graphics' },
     ],
     landlordCriteria:
       'Landlords typically mandate raceway mounting to avoid puncturing EIFS or architectural brick facades, plus exterior-accessible UL-listed emergency shutoff disconnect switches.',
@@ -67,10 +67,10 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
     summary:
       'Retail signage must bridge distant roadway visibility with close-up pedestrian foot traffic. We design, permit, and install high-contrast storefront channel letters, illuminated cabinet signs, and luxury monument plaques across DFW shopping centers.',
     popularSigns: [
-      'High-contrast LED channel letters (18"–30" letter height)',
-      'Shopping center tenant pylon & monument panels',
-      'Pedestrian storefront blade signs & window graphics',
-      'Halo-lit reverse luxury lettering for jewelers & boutiques',
+      { label: 'High-contrast LED channel letters (18"–30" letter height)', href: '/channel-letters' },
+      { label: 'Shopping center tenant pylon & monument panels', href: '/pylon-signs' },
+      { label: 'Pedestrian storefront blade signs & window graphics', href: '/blade-signs' },
+      { label: 'Halo-lit reverse luxury lettering for jewelers & boutiques', href: '/channel-letters' },
     ],
     landlordCriteria:
       'Strict square footage formulas (typically 1.0 to 1.5 sq ft per linear foot of store frontage) and mandated letter height caps (usually 24 inches for single-line tenant names).',
@@ -97,10 +97,10 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
     summary:
       'Healthcare practices require professional authority and effortless patient wayfinding. We craft elegant reverse halo-lit channel letters, ADA-compliant tactile interior room signage, and exterior medical plaza monument plaques.',
     popularSigns: [
-      'Halo-lit reverse channel letters (warm white 3000K–4000K)',
-      'ADA-compliant Grade 2 Braille room identifiers & directories',
-      'Freestanding medical plaza masonry monument signs',
-      'Brushed aluminum & acrylic reception logo walls',
+      { label: 'Halo-lit reverse channel letters (warm white 3000K–4000K)', href: '/channel-letters' },
+      { label: 'ADA-compliant Grade 2 Braille room identifiers & directories', href: '/interior-ada-signs' },
+      { label: 'Freestanding medical plaza masonry monument signs', href: '/monument-signs' },
+      { label: 'Brushed aluminum & acrylic reception logo walls', href: '/lobby-signs' },
     ],
     landlordCriteria:
       'Subdued, elegant illumination standards; non-glare finishes; and strict compliance with medical complex master sign programs.',
@@ -127,10 +127,10 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
     summary:
       'Gyms and fitness studios require bold, energetic exterior branding readable from high-speed roads, while luxury spas and salons demand refined, ambient aesthetics that welcome clients.',
     popularSigns: [
-      'High-lumen front-lit commercial channel letters',
-      'Architectural halo-lit letters for luxury spas & studios',
-      'Dimensional brushed metal logo signs for reception areas',
-      'High-contrast window vinyl graphics & frosted privacy glass',
+      { label: 'High-lumen front-lit commercial channel letters', href: '/channel-letters' },
+      { label: 'Architectural halo-lit letters for luxury spas & studios', href: '/channel-letters' },
+      { label: 'Dimensional brushed metal logo signs for reception areas', href: '/lobby-signs' },
+      { label: 'High-contrast window vinyl graphics & frosted privacy glass', href: '/window-graphics' },
     ],
     landlordCriteria:
       'Landlords require durable, weatherproof exterior materials and tight electrical enclosures, particularly for facilities operating early morning and late evening hours.',
@@ -166,10 +166,10 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
     summary:
       'Corporate headquarters demand flawless brand representation. We manufacture building-top halo letters visible from highways, laser-cut lobby logos in brushed metals, and frosted glass privacy graphics for conference rooms.',
     popularSigns: [
-      'High-elevation building-top LED channel letters',
-      'Waterjet-cut brushed aluminum & brass lobby logos',
-      'Architectural directional directories & floor suite plaques',
-      'Frosted crystal vinyl privacy film for glass conference rooms',
+      { label: 'High-elevation building-top LED channel letters', href: '/channel-letters' },
+      { label: 'Waterjet-cut brushed aluminum & brass lobby logos', href: '/lobby-signs' },
+      { label: 'Architectural directional directories & floor suite plaques', href: '/interior-ada-signs' },
+      { label: 'Frosted crystal vinyl privacy film for glass conference rooms', href: '/window-graphics' },
     ],
     landlordCriteria:
       'Direct-mount rear-access wiring preferred; exact corporate Pantone brand color matching required.',
@@ -196,10 +196,10 @@ export const INDUSTRY_PROFILES: Record<string, IndustryProfile> = {
     summary:
       'Multi-unit operators need exact brand compliance across multiple DFW cities. We manage surveys, municipal variances, custom fabrication, and coordinated installations for regional and national franchise brands.',
     popularSigns: [
-      'Corporate brand-standard LED channel letters',
-      'Under-canopy uniform pedestrian blade signs',
-      'Standardized monument & pylon acrylic tenant faces',
-      'Multi-location coordinated installation rollouts',
+      { label: 'Corporate brand-standard LED channel letters', href: '/channel-letters' },
+      { label: 'Under-canopy uniform pedestrian blade signs', href: '/blade-signs' },
+      { label: 'Standardized monument & pylon acrylic tenant faces', href: '/monument-signs' },
+      { label: 'Multi-location coordinated installation rollouts', href: '/franchise-signs' },
     ],
     landlordCriteria:
       'Balancing rigid corporate franchise brand books against restrictive local shopping center sign criteria.',

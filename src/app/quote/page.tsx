@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import QuoteWizard from '@/components/quote/QuoteWizard'
+import { QUOTE_TYPES } from '@/data/siteData'
 
 export const metadata: Metadata = {
   title: 'Get a Free Commercial Sign Quote | Sign Zone DFW',
@@ -16,11 +17,13 @@ export const metadata: Metadata = {
   },
 }
 
-export default function QuotePage() {
+export default async function QuotePage({ searchParams }: { searchParams: Promise<{ type?: string }> }) {
+  const { type } = await searchParams
+  const preselect = QUOTE_TYPES.some((item) => item.id === type) ? type : undefined
   return (
     <section className="paper" style={{ minHeight: '80vh' }}>
       <div className="wrap" style={{ paddingTop: 44, paddingBottom: 80 }}>
-        <QuoteWizard />
+        <QuoteWizard preselect={preselect} />
       </div>
     </section>
   )
