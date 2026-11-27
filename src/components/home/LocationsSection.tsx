@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { PROJECTS } from '@/data/projectsData'
 
 interface LocationItem {
   slug: string
@@ -28,11 +27,6 @@ const LOCATIONS_LIST: LocationItem[] = [
 ]
 
 export default function LocationsSection() {
-  const projectCounts = PROJECTS.reduce<Record<string, number>>((acc, project) => {
-    acc[project.city] = (acc[project.city] ?? 0) + 1
-    return acc
-  }, {})
-
   return (
     <section className="paper sec" id="locations" style={{ borderTop: '1px solid var(--soft)' }}>
       <div className="wrap">
@@ -59,29 +53,15 @@ export default function LocationsSection() {
           {/* Right city box grid (2 in a row) */}
           <div className="loc-right-col">
             <div className="loc-box-grid">
-              {LOCATIONS_LIST.map((loc) => {
-                const count = projectCounts[loc.name] ?? 0
-                const padded = String(count).padStart(2, '0')
-                return (
-                  <Link
-                    key={loc.slug}
-                    href={`/locations/${loc.slug}`}
-                    className="loc-box"
-                    title={`${count} ${count === 1 ? 'project' : 'projects'} in ${loc.name}`}
-                  >
-                    <div className="loc-box-info">
-                      <span className="loc-box-city">{loc.name}</span>
-                      <span className="loc-box-county">{loc.county}</span>
-                    </div>
-                    <div className="loc-box-right">
-                      <span className="loc-box-num" aria-label={`${count} ${count === 1 ? 'project' : 'projects'}`}>
-                        {padded}
-                      </span>
-                      <span className="loc-box-arrow" aria-hidden="true">→</span>
-                    </div>
-                  </Link>
-                )
-              })}
+              {LOCATIONS_LIST.map((loc) => (
+                <Link key={loc.slug} href={`/locations/${loc.slug}`} className="loc-box">
+                  <div className="loc-box-info">
+                    <span className="loc-box-city">{loc.name}</span>
+                    <span className="loc-box-county">{loc.county}</span>
+                  </div>
+                  <span className="loc-box-arrow" aria-hidden="true">→</span>
+                </Link>
+              ))}
             </div>
             <p className="loc-list-footnote">
               Serving the wider Dallas–Fort Worth area too.{' '}
