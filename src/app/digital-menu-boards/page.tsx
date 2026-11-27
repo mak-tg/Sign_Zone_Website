@@ -123,6 +123,7 @@ export default function DigitalMenuBoardsPage() {
                 <div><dt>Typical project</dt><dd>$1.4k – $16k+</dd></div>
                 <div><dt>Turnaround</dt><dd>1 – 3 weeks</dd></div>
                 <div><dt>Displays</dt><dd>24/7 Commercial</dd></div>
+                <div><dt>Updates</dt><dd>Mobile Cloud CMS</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=digital">Quote my menu boards</Link>

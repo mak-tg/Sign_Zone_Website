@@ -123,6 +123,7 @@ export default function WindowGraphicsPage() {
                 <div><dt>Typical project</dt><dd>$200 – $3k+</dd></div>
                 <div><dt>Turnaround</dt><dd>3 – 5 days</dd></div>
                 <div><dt>Material</dt><dd>3M UV Vinyl</dd></div>
+                <div><dt>Options</dt><dd>Perf / Frosted</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=window">Quote my window graphics</Link>

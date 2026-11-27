@@ -123,6 +123,7 @@ export default function BannersTemporaryPage() {
                 <div><dt>Typical price</dt><dd>$120 – $1.4k</dd></div>
                 <div><dt>Turnaround</dt><dd>2 – 4 days</dd></div>
                 <div><dt>Material</dt><dd>18oz / Wind Mesh</dd></div>
+                <div><dt>Finishing</dt><dd>Welded + Grommet</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=window">Order my banner</Link>

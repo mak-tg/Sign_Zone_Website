@@ -124,6 +124,7 @@ export default function PylonSignsPage() {
                 <div><dt>Typical project</dt><dd>$12k – $85k+</dd></div>
                 <div><dt>Timeline</dt><dd>6 – 10 weeks</dd></div>
                 <div><dt>Elevation</dt><dd>20 – 65+ ft</dd></div>
+                <div><dt>Engineering</dt><dd>Sealed TX PE</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=pylon">Quote my pylon sign</Link>

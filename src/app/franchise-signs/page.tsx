@@ -107,7 +107,7 @@ export default function FranchiseSignsPage() {
             Brands we have helped across DFW.
           </h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
+          <div className="franchise-project-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
             {franchiseProjects.map((p) => (
               <div
                 key={p.id}

@@ -123,6 +123,7 @@ export default function WallMuralsPage() {
                 <div><dt>Typical project</dt><dd>$950 – $5.5k+</dd></div>
                 <div><dt>Turnaround</dt><dd>5 – 8 days</dd></div>
                 <div><dt>Inks</dt><dd>Zero-VOC Latex</dd></div>
+                <div><dt>Finish</dt><dd>Matte UV Film</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=interior">Quote my wall mural</Link>

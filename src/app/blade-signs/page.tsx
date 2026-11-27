@@ -123,6 +123,7 @@ export default function BladeSignsPage() {
                 <div><dt>Typical project</dt><dd>$1.4k – $4.8k</dd></div>
                 <div><dt>Timeline</dt><dd>3 – 5 weeks</dd></div>
                 <div><dt>Clearance</dt><dd>8 ft+ code spec</dd></div>
+                <div><dt>Visibility</dt><dd>Double-Sided</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=cabinet">Quote my blade sign</Link>

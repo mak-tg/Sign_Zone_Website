@@ -124,6 +124,7 @@ export default function VehicleWrapsPage() {
                 <div><dt>Typical project</dt><dd>$1.4k – $4.5k</dd></div>
                 <div><dt>Timeline</dt><dd>3 – 5 days</dd></div>
                 <div><dt>Durability</dt><dd>5 – 7 Years</dd></div>
+                <div><dt>Media</dt><dd>3M Cast Vinyl</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=wrap">Quote my vehicle wrap</Link>

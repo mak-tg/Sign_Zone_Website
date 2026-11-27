@@ -124,6 +124,7 @@ export default function InteriorAdaSignsPage() {
                 <div><dt>Typical price</dt><dd>$45 – $250/sign</dd></div>
                 <div><dt>Timeline</dt><dd>5 – 8 days</dd></div>
                 <div><dt>Compliance</dt><dd>TAS &amp; ADA Compliant</dd></div>
+                <div><dt>Installation</dt><dd>48&quot;–60&quot; Spec</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=ada">Quote my ADA sign package</Link>

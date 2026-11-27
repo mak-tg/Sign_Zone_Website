@@ -44,13 +44,13 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
   const matchingProjects = PROJECTS.filter((p) => ind.projectIds.includes(p.id))
 
   return (
-    <div className="view" id={`v-industry-${ind.slug}`}>
+    <div className="view industry-page" id={`v-industry-${ind.slug}`}>
       {ind.faqs && <FaqJsonLd items={ind.faqs} />}
 
       {/* Hero Header (Dark Theme) */}
-      <section className="dark" style={{ paddingTop: 56, paddingBottom: 76 }}>
+      <section className="dark industry-hero" style={{ paddingTop: 56, paddingBottom: 76 }}>
         <div className="wrap">
-          <nav aria-label="Breadcrumb" style={{ fontSize: 14, color: 'var(--dmuted)', marginBottom: 20 }}>
+          <nav aria-label="Breadcrumb" className="industry-breadcrumb" style={{ fontSize: 14, color: 'var(--dmuted)', marginBottom: 20 }}>
             <Link href="/" style={{ color: 'var(--dmuted)', textDecoration: 'none' }}>Home</Link>
             {' / '}
             <Link href="/industries" style={{ color: 'var(--dmuted)', textDecoration: 'none' }}>Industries</Link>
@@ -66,7 +66,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
           <h1 className="disp sec-h" style={{ fontSize: 'clamp(34px, 4.8vw, 54px)', lineHeight: 1.05, margin: 0, maxWidth: 860 }}>
             {ind.headline}
           </h1>
-          <p style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 740 }}>
+          <p className="industry-hero-summary" style={{ fontSize: 19, lineHeight: 1.6, color: 'var(--dsub)', margin: '22px 0 0', maxWidth: 740 }}>
             {ind.summary}
           </p>
 
@@ -91,10 +91,12 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
       {/* Regulatory & Landlord Criteria (Paper Theme) */}
       <section className="paper sec" style={{ padding: '64px 0', borderBottom: '1px solid var(--soft)' }}>
         <div className="wrap">
-          <div className="eyebrow">Permitting &amp; Compliance</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.5vw, 38px)', color: 'var(--navy)', margin: '8px 0 32px' }}>
-            What {ind.name} businesses need to know before they choose a sign.
-          </h2>
+          <div className="industry-sec-head">
+            <div className="eyebrow">Permitting &amp; Compliance</div>
+            <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.5vw, 38px)', color: 'var(--navy)', margin: '8px 0 32px' }}>
+              What {ind.name} businesses need to know before they choose a sign.
+            </h2>
+          </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32 }}>
             <div style={{ background: '#fff', borderRadius: 14, padding: 32, border: '1px solid var(--soft)', boxShadow: '0 4px 16px rgba(0,0,0,0.03)' }}>
@@ -127,10 +129,12 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
       {/* Popular Sign Systems for this industry */}
       <section className="light sec" style={{ padding: '64px 0', borderBottom: '1px solid var(--soft)' }}>
         <div className="wrap">
-          <div className="eyebrow">Sign Systems</div>
-          <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.5vw, 38px)', color: 'var(--navy)', margin: '8px 0 28px' }}>
-            Signs that work well for {ind.name.toLowerCase()}.
-          </h2>
+          <div className="industry-sec-head">
+            <div className="eyebrow">Sign Systems</div>
+            <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.5vw, 38px)', color: 'var(--navy)', margin: '8px 0 28px' }}>
+              Signs that work well for {ind.name.toLowerCase()}.
+            </h2>
+          </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
             {ind.popularSigns.map((signItem, idx) => (
@@ -166,19 +170,21 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
       {/* Categorical Real Projects Showcase */}
       <section className="paper sec" style={{ padding: '72px 0' }}>
         <div className="wrap">
-          <div className="eyebrow">Local Portfolio Proof</div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', gap: 20, marginBottom: 36 }}>
-            <div>
-              <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.8vw, 42px)', color: 'var(--navy)', margin: '8px 0 0' }}>
-                Projects completed for {ind.name.toLowerCase()}.
-              </h2>
-              <p style={{ fontSize: 16.5, color: 'var(--muted)', margin: '10px 0 0', maxWidth: 640 }}>
-                Every sign below was designed, permitted, fabricated, and installed for local North Texas businesses by Sign Zone.
-              </p>
+          <div className="industry-portfolio-head">
+            <div className="eyebrow">Local Portfolio Proof</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', gap: 20, marginBottom: 36 }}>
+              <div>
+                <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.8vw, 42px)', color: 'var(--navy)', margin: '8px 0 0' }}>
+                  Projects completed for {ind.name.toLowerCase()}.
+                </h2>
+                <p style={{ fontSize: 16.5, color: 'var(--muted)', margin: '10px 0 0', maxWidth: 640 }}>
+                  Every sign below was designed, permitted, fabricated, and installed for local North Texas businesses by Sign Zone.
+                </p>
+              </div>
+              <Link href="/projects" className="btn btn-line" style={{ alignSelf: 'flex-start' }}>
+                View all 30 DFW projects →
+              </Link>
             </div>
-            <Link href="/projects" className="btn btn-line" style={{ alignSelf: 'flex-start' }}>
-              View all 30 DFW projects →
-            </Link>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))', gap: 28 }}>
@@ -239,10 +245,12 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
       {ind.faqs && ind.faqs.length > 0 && (
         <section className="light sec" style={{ padding: '64px 0', borderTop: '1px solid var(--soft)' }}>
           <div className="wrap" style={{ maxWidth: 840 }}>
-            <div className="eyebrow">Industry FAQs</div>
-            <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.2vw, 36px)', color: 'var(--navy)', margin: '8px 0 28px' }}>
-              Common questions about {ind.name.toLowerCase()} signs.
-            </h2>
+            <div className="industry-sec-head">
+              <div className="eyebrow">Industry FAQs</div>
+              <h2 className="disp sec-h" style={{ fontSize: 'clamp(26px, 3.2vw, 36px)', color: 'var(--navy)', margin: '8px 0 28px' }}>
+                Common questions about {ind.name.toLowerCase()} signs.
+              </h2>
+            </div>
             <FAQAccordion items={ind.faqs} />
           </div>
         </section>
@@ -250,7 +258,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<P
 
       {/* CTA Footer Section */}
       <section style={{ background: 'var(--blue)', color: '#fff', padding: '64px 0' }}>
-        <div className="wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 24, alignItems: 'center', justifyContent: 'space-between' }}>
+        <div className="wrap industry-cta-wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 24, alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
             <div className="disp" style={{ fontSize: 'clamp(28px, 4vw, 38px)', lineHeight: 1.05 }}>
               Opening or updating a {ind.name.toLowerCase()} location in DFW?

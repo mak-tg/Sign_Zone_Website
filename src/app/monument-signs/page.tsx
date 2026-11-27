@@ -124,6 +124,7 @@ export default function MonumentSignsPage() {
                 <div><dt>Typical project</dt><dd>$6k – $45k+</dd></div>
                 <div><dt>Timeline</dt><dd>5 – 8 weeks</dd></div>
                 <div><dt>Engineering</dt><dd>Sealed TX PE</dd></div>
+                <div><dt>Permits</dt><dd>Turnkey DFW</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=monument">Quote my monument sign</Link>

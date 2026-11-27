@@ -124,6 +124,7 @@ export default function LobbySignsPage() {
                 <div><dt>Typical project</dt><dd>$800 – $6k+</dd></div>
                 <div><dt>Timeline</dt><dd>10 – 15 days</dd></div>
                 <div><dt>Permit delay</dt><dd>0 days (None)</dd></div>
+                <div><dt>Mounting</dt><dd>Standoff / Flush</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=interior">Quote my lobby sign</Link>

@@ -357,7 +357,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<Para
                   One team handles the drawings, city permits, Texas fabrication, and crane installation.
                 </p>
               </div>
-              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <div className="guide-cta-actions" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                 <Link href="/toolkit" className="btn btn-ghost">
                   Use Cost Calculator →
                 </Link>

@@ -113,6 +113,7 @@ export default function ContactPage() {
       <section className="paper sec" style={{ padding: '72px 0', minHeight: '600px' }}>
         <div className="wrap">
           <div
+            className="contact-main-grid"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
@@ -121,7 +122,7 @@ export default function ContactPage() {
             }}
           >
             {/* Left Column: Direct Contact Methods & Info */}
-            <div>
+            <div className="contact-info-col">
               <div className="eyebrow">Get In Touch</div>
               <h2 className="disp sec-h" style={{ fontSize: 'clamp(28px, 3.5vw, 40px)', color: 'var(--navy)', margin: '8px 0 24px' }}>
                 Contact our team.

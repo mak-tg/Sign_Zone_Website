@@ -51,7 +51,7 @@ export default function ToolkitPage() {
       </section>
 
       {/* Interactive Tool Area (Project Standard Light Paper Theme) */}
-      <section className="light sec" style={{ background: 'var(--paper)', paddingTop: 48, paddingBottom: 80, minHeight: '60vh' }}>
+      <section className="light sec" style={{ background: 'var(--paper)', paddingTop: 48, paddingBottom: 64 }}>
         <div className="wrap">
           <ToolkitTabs />
         </div>
@@ -114,7 +114,7 @@ export default function ToolkitPage() {
               Get a written quote with real pricing from a licensed DFW sign contractor.
             </div>
           </div>
-          <div className="btn-row" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          <div className="btn-row" style={{ display: 'flex', flexDirection: 'row', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
             <Link href="/quote" className="btn btn-blue">
               Get my free quote
             </Link>

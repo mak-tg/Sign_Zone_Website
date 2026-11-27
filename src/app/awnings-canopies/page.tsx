@@ -123,6 +123,7 @@ export default function AwningsCanopiesPage() {
                 <div><dt>Typical project</dt><dd>$2.2k – $12k+</dd></div>
                 <div><dt>Timeline</dt><dd>3 – 6 weeks</dd></div>
                 <div><dt>Fabric life</dt><dd>8 – 12+ yrs UV</dd></div>
+                <div><dt>Frame</dt><dd>Welded 6061 Alu</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=help">Quote my awning</Link>

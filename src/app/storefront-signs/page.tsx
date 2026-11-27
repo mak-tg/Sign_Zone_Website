@@ -124,6 +124,7 @@ export default function StorefrontSignsPage() {
                 <div><dt>Typical project</dt><dd>$2k – $12k+</dd></div>
                 <div><dt>Timeline</dt><dd>2 – 4 weeks</dd></div>
                 <div><dt>Efficiency</dt><dd>80% Less Power</dd></div>
+                <div><dt>Components</dt><dd>UL 48 Listed</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=cabinet">Quote my storefront sign</Link>

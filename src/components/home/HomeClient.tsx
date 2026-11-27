@@ -81,8 +81,8 @@ export default function HomeClient() {
       <Hero />
       <TrustBar />
       <ClientStrip />
-      <StagesSection />
       <SignTypesGrid />
+      <StagesSection />
       <LocationsSection />
       <ProjectsSection />
       <EstimateSection />

@@ -1,32 +1,13 @@
 import Link from 'next/link'
+import HeroProjectSlideshow from './HeroProjectSlideshow'
+import HeroMotionBackdrop from './HeroMotionBackdrop'
 
 export default function Hero() {
   return (
     <section className="hero dark">
-      <img
-        src="/images/hero-1.jpg"
-        alt="Illuminated commercial channel letter signs on storefront at night in Dallas-Fort Worth"
-        width={1920}
-        height={1080}
-        className="hero-background hero-slide slide-1"
-      />
-      <img
-        src="/images/hero-2.jpg"
-        alt="Custom exterior commercial monument sign in North Texas business plaza"
-        width={1920}
-        height={1080}
-        className="hero-background hero-slide slide-2"
-      />
-      <img
-        src="/images/hero-3.jpg"
-        alt="High-impact commercial business sign fabrication and installation in DFW"
-        width={1920}
-        height={1080}
-        className="hero-background hero-slide slide-3"
-      />
+      <HeroMotionBackdrop />
       <div className="hero-overlay" aria-hidden="true" />
       <div className="stripes" style={{ top: -80, right: -120 }} />
-      <div className="hero-slide-progress" aria-hidden="true"><span /><span /><span /></div>
 
       <div className="wrap">
         <div className="hero-copy" style={{ flex: '1 1 480px', minWidth: 0 }}>
@@ -103,6 +84,8 @@ export default function Hero() {
             </li>
           </ul>
         </div>
+
+        <HeroProjectSlideshow />
       </div>
     </section>
   )

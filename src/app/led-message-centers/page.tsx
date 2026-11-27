@@ -123,6 +123,7 @@ export default function LedMessageCentersPage() {
                 <div><dt>Typical project</dt><dd>$9.5k – $85k+</dd></div>
                 <div><dt>Timeline</dt><dd>6 – 10 weeks</dd></div>
                 <div><dt>Warranty</dt><dd>5-Year Parts</dd></div>
+                <div><dt>Control</dt><dd>Cloud 4G / Wi-Fi</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=digital">Quote my LED display</Link>

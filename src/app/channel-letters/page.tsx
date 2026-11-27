@@ -48,6 +48,7 @@ export default function ChannelLettersPage() {
                 <div><dt>Typical project</dt><dd>$3k – $20k+</dd></div>
                 <div><dt>Timeline</dt><dd>4 – 8 weeks</dd></div>
                 <div><dt>Warranty</dt><dd>Parts &amp; Labor</dd></div>
+                <div><dt>Components</dt><dd>UL 48 Listed</dd></div>
               </dl>
               <div className="btn-row" style={{ marginTop: 30, gap: 12 }}>
                 <Link className="btn btn-blue" href="/quote?type=channel">Quote my channel letters</Link>
